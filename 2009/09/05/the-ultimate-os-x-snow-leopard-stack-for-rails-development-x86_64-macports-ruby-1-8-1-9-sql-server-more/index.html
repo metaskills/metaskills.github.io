@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ken Collins" />
+  <meta name="google-site-verification" content="W3DG-CkoWHypH24OfrGmGbMezvhC6AyLql4jLI7hXhI" />
+  <meta name="description" content="The personal blog of Ken Collins." />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  <title>The Ultimate OS X Snow Leopard Stack For Rails Development - x86_64, MacPorts, Ruby 1.8/1.9, SQL Server, SQLite3, MySQL & More - Ken Collins @MetaSkills.net</title>
+  <link rel="author" href="mailto:ken@metaskills.net" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/site/icon-57x57-2dc1878cbb26a72f6a2819a2959a45ce.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/site/icon-114x114-0f98048facce72f3ad247a009ea96f4a.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/site/icon-72x72-2744bec8e69ef81b753774e000caa98d.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/site/icon-144x144-0017fda127bc7319e5a20ece8baf1dc7.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/site/icon-60x60-07051b464dc0766991ee5ff852b094b6.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/site/icon-120x120-b042e116791abbbf98418647ac107fa1.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/site/icon-76x76-fe55f7ee2c9f030b64031197b06d42b7.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/site/icon-152x152-ba6a44bd01376645de8bd1ec76c06e04.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/site/icon-196x196-40d4187aec04946f3fc86d7c3103f603.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/assets/site/icon-160x160-ce83115bd1f54907855b72c8ecdfe5dc.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/site/icon-96x96-7817af4c06b1cc48e5d14e8d061b0d0e.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/site/icon-16x16-5ca4ac15b854c68d6dd989fd7aeaf6c5.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/site/icon-32x32-d44229e428c67291a65f57aac0fc029d.png">
+  <meta name="apple-mobile-web-app-title" content="MetaSkills">
+  <meta name="application-name" content="MetaSkills" />
+  <meta name="msapplication-TileImage" content="/assets/site/icon-144x144-0017fda127bc7319e5a20ece8baf1dc7.png">
+  <meta name="msapplication-TileColor" content="052838">
+  <link rel="stylesheet" href="/assets/site-ff922763cb97d2eb3fb9b19db7308e75.css">
+</head>
+
+  <body>
+    <section class="ms-Page is-Post">
+  <header class="ms-Page-header">
+    <section class="ms-Page-header-bg">
+      <object class="ms-Page-header-bg-svg" data="/assets/site/page-svg-d6ea380f6b530625d51eeeafaa44d925.svg" type="image/svg+xml"></object>
+    </section>
+    <section class="ms-Page-header-content">
+      <div class="ms-Page-header-avatar">
+<a class="ms-Avatar" href="/pages/colophon.html" title"About Ken Collins">
+  <div class="ms-Avatar-flipable">
+    <div class="ms-Avatar-front">
+      <img class="ms-Avatar-img" alt="Ken Collins" src="/assets/site/avatar-87e53dd8cc99a37a2842f8918ea310e7.jpg">
+    </div>
+    <div class="ms-Avatar-back">
+      <svg class="ms-Avatar-aboutme" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="47px" viewBox="0 0 350 47" preserveAspectRatio="xMidYMax meet" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000, 1.000)"><path d="M161.250 4.91 L-0.014 -0.12 L17.975 44.67 L178.787 37.22 L330.559 44.67 L347.824 -0.12 L161.250 4.91 Z" fill="#E4522A"/><g stroke="#FFFBE1"><path d="M275.89 25.53 L290.71 25.53 L287.55 20.31 L321.9 20.31 "/><path d="M276.55 22.54 L291.36 22.54 L288.2 17.33 L322.56 17.33 "/></g><g stroke="#FFFBE1"><path d="M72.76 25.53 L57.94 25.53 L61.1 20.31 L26.75 20.31 "/><path d="M72.1 22.54 L57.29 22.54 L60.45 17.33 L26.09 17.33 "/></g></g><path d="M89.184 15.23 L81.776 15.23 L81.724 15.52 C83.226 16.68 83.64 17.12 83.64 18.6 L83.641 31.76 L89.184 31.76 L89.184 27.43 L90.842 27.43 C91.955 27.43 92.19 28.05 92.19 29.04 L92.189 31.76 L97.732 31.76 L97.732 27.98 C97.732 24.92 96.9 24.04 93.64 24.04 L98.327 15.23 L92.189 15.23 L89.184 24.74 L89.184 15.23 Z M113.357 25.72 L113.357 21.99 L109.109 21.99 L109.109 19.14 L115.247 19.14 L115.247 15.23 L101.701 15.23 L101.649 15.52 C103.151 16.68 103.57 17.12 103.57 18.6 L103.566 31.76 L115.507 31.76 L115.507 28.03 L109.109 28.03 L109.109 25.72 L113.357 25.72 Z M119.346 15.23 L119.294 15.52 C120.797 16.68 121.21 17.12 121.21 18.6 L121.211 31.76 L126.754 31.76 L126.754 18.83 L129.008 18.83 C129.888 18.83 130.02 19.12 130.02 20 L130.018 31.76 L135.561 31.76 L135.561 19.84 C135.561 16.48 134.68 15.23 131.05 15.23 L119.346 15.23 Z M161.112 25.88 L161.112 26.92 C161.112 28.05 160.91 28.37 160.08 28.37 L159.014 28.37 C158.160 28.37 157.95 28.05 157.95 26.92 L157.952 20.26 C157.952 19.12 158.16 18.86 159.01 18.86 L160.076 18.86 C160.905 18.86 161.11 19.12 161.11 20.26 L161.112 23 L166.707 23 L166.707 20.05 C166.707 16.43 165.8 15.23 162.43 15.23 L156.631 15.23 C153.264 15.23 152.36 16.43 152.36 20.05 L152.357 26.53 C152.357 30.72 153.89 31.76 156.92 31.76 L162.433 31.76 C165.801 31.76 166.71 30.88 166.71 27.12 L166.707 25.88 L161.112 25.88 Z M186.606 20.05 C186.606 16.43 185.7 15.23 182.33 15.23 L176.375 15.23 C173.008 15.23 172.1 16.43 172.1 20.05 L172.101 26.53 C172.101 30.72 173.63 31.76 176.66 31.76 L182.332 31.76 C185.700 31.76 186.61 30.88 186.61 27.12 L186.606 20.05 Z M181.011 26.92 C181.011 28.05 180.8 28.37 179.97 28.37 L178.758 28.37 C177.903 28.37 177.7 28.05 177.7 26.92 L177.696 20.26 C177.696 19.12 177.9 18.86 178.76 18.86 L179.975 18.86 C180.804 18.86 181.01 19.12 181.01 20.26 L181.011 26.92 Z M198.216 15.23 L190.808 15.23 L190.757 15.52 C192.259 16.68 192.67 17.12 192.67 18.6 L192.673 31.76 L203.863 31.76 L203.863 28.03 L198.216 28.03 L198.216 15.23 Z M214.230 15.23 L206.822 15.23 L206.770 15.52 C208.272 16.68 208.69 17.12 208.69 18.6 L208.687 31.76 L219.877 31.76 L219.877 28.03 L214.230 28.03 L214.230 15.23 Z M230.244 15.23 L222.836 15.23 L222.784 15.52 C224.286 16.68 224.7 17.12 224.7 18.6 L224.700 31.76 L230.244 31.76 L230.244 15.23 Z M234.653 15.23 L234.601 15.52 C236.103 16.68 236.52 17.12 236.52 18.6 L236.518 31.76 L242.061 31.76 L242.061 18.83 L244.314 18.83 C245.195 18.83 245.32 19.12 245.32 20 L245.325 31.76 L250.868 31.76 L250.868 19.84 C250.868 16.48 249.99 15.23 246.36 15.23 L234.653 15.23 Z M268.410 15.23 L258.696 15.23 C256.805 15.23 256.13 16.06 256.13 17.36 C256.132 17.88 256.37 18.55 256.7 19.07 L261.753 27.07 C261.830 27.18 261.88 27.36 261.88 27.51 C261.882 27.82 261.65 28.03 261.18 28.03 L255.743 28.03 L255.743 31.76 L266.130 31.76 C268.073 31.76 268.8 30.49 268.8 29.45 C268.798 28.75 268.49 28.21 268.18 27.74 L262.970 20.13 C262.841 19.92 262.76 19.77 262.76 19.61 C262.763 19.33 263.02 19.14 263.49 19.14 L268.410 19.14 L268.410 15.23 Z" fill="#FFFBE1"/></g></svg>
+
+    </div>
+  </div>
+</a>
+</div>
+      <ul class="ms-Page-nav">
+        <li class="ms-Page-nav-item">
+          <a class="ms-Page-nav-link" href="/">HOME</a>
+        </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/programming.html">Programming</a>
+          </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/lifestyle.html">Lifestyle</a>
+          </li>
+        
+      </ul>
+      <div class="ms-Page-social"><div class="ms-Social">
+  <a href="http://twitter.com/metaskills" title="MetaSkills On Twitter">
+    <span class="ms-Social-icon ms-Social-icon--twitter"><i class="icon-twitter"></i></span>
+  </a>
+  <a href="https://github.com/metaskills/" title="MetaSkills On GitHub">
+    <span class="ms-Social-icon ms-Social-icon--github"><i class="icon-github"></i></span>
+  </a>
+  <a href="http://www.linkedin.com/in/metaskills" title="Ken Collins On LinkedIn">
+    <span class="ms-Social-icon ms-Social-icon--linkedin"><i class="icon-linkedin"></i></span>
+  </a>
+</div>
+</div>
+      <div class="ms-Page-blurb">
+        Ruby, JavaScript, Sass, iOS. Stinky Cheese &amp; Beer Advocate. Working at CustomInk and loving it!
+      </div>
+    </section>
+  </header>
+  <article class="ms-Page-article">
+    <article class="ms-Post">
+  <header class="ms-Post-header">
+    <time class="ms-Post-time" pubdate datetime="2009-09-05T00:00:00-04:00">
+      2009 September 05
+    </time>
+    <h1 class="ms-Post-header-h1">The Ultimate OS X Snow Leopard Stack For Rails Development - x86_64, MacPorts, Ruby 1.8/1.9, SQL Server, SQLite3, MySQL & More</h1>
+  </header>
+  <p><aside class="ms-Flash">
+  If you are interested in <a href="/2010/07/30/the-rvm-ruby-api/">using RVM with a MacPort base for the SQL Server stack</a>, check out this article.
+</aside></p>
+
+<p><aside class="ms-Flash">
+  <a href="https://github.com/rails-sqlserver/tiny_tds">TinyTDS</a> is the upcoming de facto raw connection method for the SQL Server adapter. Please read the <em><a href="https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/wiki/Using-TinyTds">Using TinyTDS</a></em> wiki page on the adapter for switching. No longer do you have to worry about compiling ODBC layers!
+</aside></p>
+
+<p><aside class="ms-Flash">
+  I have written <a href="/2010/07/19/a-macport-rubyodbc-update/">an updated article on the MacPorts installation of the latest RubyODBC</a>. It includes information pertaining to utf8 support.
+</aside></p>
+
+<p>
+  This guide is all encompassing but primarily focuses on the benefits of MacPorts, second the development stack for SQL Server and lastly on anything else a rails developer might need on OS X. If you are on a Mac, possibly running Snow Leopard and x86_64 is near and dear to your heart, this article is for you. <strong>If you do not "have" to use SQL Server, you can safely skip those sections and get to the Ruby1.9/Apache2/SQLite3/MySQL stuff.</strong>
+</p>
+
+<p>
+  A small forward. If you are developing rails applications on a modern OS such as Snow Leopard and your needs never make it out of the shallow end of the default Ruby and SQLite3, then this how-to might not be for you. However if you find yourself needing more and you want it to be easy and optimized for your architecture, then I highly suggest MacPorts.
+</p>
+
+<p>
+  Even though this tutorial is based on MacPorts, there are alternatives if you have the guts. One is called <a href="http://github.com/mxcl/homebrew/tree/masterbrew">Homebrew</a> by Max Howell, which offers a very easy package management system that is closely knit to OS X's own libraries. If your smart enough to manage the sheer amount of dependencies and different ways OS X wants to pull you when using their libraries, then have at it. I failed horribly and I consider myself somewhat smart. This article also focuses on running multiple versions of ruby, specifically 1.8.7 and a flavor of 1.9.x. Again to this end there are other solutions. One recent one is called <a href="http://rvm.beginrescueend.com/">Ruby Version Manager (rvm)</a> by Wayne Seguin. An incredible library, but something I could not use with my level of compiling source due to the fact that all the dependencies needed for SQL Server to ODBC are hard enough to get in place for one ruby installation. RVM has it's use, but if you just need two versions of ruby with a full 64-bit stack to SQL Server, read on.
+</p>
+
+<h2>Install MacPorts</h2>
+
+<p>
+  If you have not done so already, go <a href="http://www.macports.org/install.php">download MacPorts</a> and run the installer and follow <a href="http://guide.macports.org/">their installation instructions</a>. At the time of this writing, the current version is 1.8 and has tons of new stuff for Snow Leopard. If you use bash, the default shell on OS X, then add this to your ~/.profile.
+</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/usr/local/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">"/usr/local/share/man:</span><span class="nv">$MANPATH</span><span class="s2">"</span>
+<span class="nb">export </span><span class="nv">INFOPATH</span><span class="o">=</span><span class="s2">"/usr/local/share/info:</span><span class="nv">$INFOPATH</span><span class="s2">"</span>
+</code></pre></div>
+<p>
+  However, if you have <a href="http://books.google.com/books?id=jKY-rDoJx3wC&pg=PA115&lpg=PA115&dq=system+preferences+account+right+click+os+x+switch+to+zsh+default+shell&source=bl&ots=J0eyfcuH37&sig=F4MrA0-NmqeprnqEneAhAdqJBPg&hl=en&ei=FFigSs73GMqc8QaAzoDeDw&sa=X&oi=book_result&ct=result&resnum=2#v=onepage&q=system%20preferences%20account%20right%20click%20os%20x%20switch%20to%20zsh%20default%20shell&f=false">changed your default shell to ZSH</a>, then put this in your ~/.zshenv file. I highly recommend switching your default shell to ZSH.
+</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">path</span><span class="o">=(</span>/opt/local/bin /opt/local/sbin /opt/local/apache2/bin <span class="nv">$path</span><span class="o">)</span>
+<span class="nv">manpath</span><span class="o">=(</span>/opt/local/share/man <span class="nv">$manpath</span><span class="o">)</span>
+<span class="nv">infopath</span><span class="o">=(</span>/opt/local/share/info <span class="nv">$infopath</span><span class="o">)</span>
+</code></pre></div>
+<h3>Important x86_64 Arch Notice</h3>
+
+<p>
+  If you are running Snow Leopard and if your processor supports 64-bit, say a Core 2 Duo (consult your manual), then I highly suggest you set the MacPorts build_arch to force it to x86_64 for all installed ports. Remember, even if you have a unibody MacBook that can not boot the 64-bit kernel yet, that does not mean you are not running 64-bit apps. If your chip supports it and your on Snow Leopard, turn it on. Here is how.
+</p>
+
+<p>
+  Open up your MacPorts config file located at <code>/opt/local/etc/macports/macports.conf</code>. Around line 59, find the section that has the build_arch and set it to x86_64. I have done this on both my unibody MacBook 13" and Nehalem MacPro and everything has installed and works perfectly. This includes, ruby, git, and everything in between. See screenshots below for proof. Lastly, as a good habit, always run <code>sudo port selfupdate</code> before installing ports. This makes sure you have the latest port files.
+</p>
+
+<h2>Installing Ruby 1.8.7</h2>
+
+<p>
+  By now Ruby 1.8.7 is the new 1.8.6. It will be the de-facto low level version that supports the enterprise. Frankly, 1.9.2 is really where it is at, but we all have our day jobs right. Either way it is good to have this version installed. You may ask why, 1.8.7 comes on OS X by default now in Snow Leopard? Correct, but the goal here is to get a base ruby installed whose libs are known and compiled the way we want them for our low level SQL Server libraries and their dependencies. The goal here is to avoid dependency hell.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install ruby
+
+$ which ruby
+/opt/local/bin/ruby
+
+$ ruby -v
+ruby 1.8.7 (2009-06-12 patchlevel 174) [i686-darwin10]
+</code></pre></div>
+<p>
+  Running that port install may have taken awhile, but let me show you something. Do you see that below? That's right, it's 64-bit ruby just like the default OS X installed 1.8.7. In fact, it's even a bit faster for some reason. So remember, using MacPorts this way means that everything you install that supports it, will be built for 64-bit.
+</p>
+
+<p><img src="/assets/ruby18_darwin_x86_64.jpg" alt="Ruby 1.8.7 64-bit Activity Monitor" class="ms-Img ms-Img--responsive-ctr ms-Img--fancy" /></p>
+
+<p>
+  Lets get RubyGems package management up and running. Thanks again to MacPorts this is really easy. Some advice. Never use MacPorts to update RubyGems! We just used it to get it installed easily and quickly and in the right scope. If you need to update RubyGems, just use it's own self update feature.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install rb-rubygems
+</code></pre></div>
+<p>
+  Feeling good? Maybe like me, you wouldn't mind getting side tracked. If so, go ahead and install Subversion and/or Git. I personally like to install both of these since I use Git to manage my Subversion repos too.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install subversion
+$ sudo port install git-core +svn
+</code></pre></div>
+<h2>The SQL Server Connection Stack</h2>
+
+<p>
+  So back on track. The low level connection stack for SQL Server is pretty easy. We need unixODBC and not OS X's installed iODBC. After that FreeTDS needs to be installed with the +odbc variant so that it prefers the installed unixODBC. If you did not get side tracked above, these two installs could pull in a lot of dependency installs too and take some time. When we are done the final stack for connecting Rails to SQL Server will look something like this. Ruby/Rails => ActiveRecord SQL Server Adapter => DBI Gem w/DBD-ODBC => Ruby ODBC => unixODBC => FreeTDS => SQL Server.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install unixODBC
+$ sudo port install freetds +odbc
+</code></pre></div>
+<p>
+  If all went well, you should see a configuration file notice after FreeTDS installs. This is just the port reminding us that we will ultimately have to configure FreeTDS to point to our SQL Server box. We'll get back to that later, for now, let's check that the install is looking good.
+<p>
+
+```
+$ which tsql
+/opt/local/bin/tsql
+
+$ tsql -C
+Compile-time settings (established with the "configure" script)
+                            Version: freetds v0.82
+             freetds.conf directory: /opt/local/etc/freetds
+     MS db-lib source compatibility: no
+        Sybase binary compatibility: no
+                      Thread safety: yes
+                      iconv library: yes
+                        TDS version: 5.0
+                              iODBC: no
+                           unixodbc: yes
+
+$ tsql I
+locale is "en_US.utf-8"
+locale charset is "utf-8"
+```
+
+<p>
+  See that last line after <code>tsql -C</code>? It says unixodbc is a go! That's important. If for some reason you do not see this, then I suggest reinstalling unixODBC and FreeTDS in that order again. Also note the output of <code>tsql I</code> and check out the locale settings. On Mac OS X, this seems to default to the utf-8 stuff we would expect. Possibly due to the default LANG env var is set to en_US.utf-8. However, on other systems this may note be right. See the configure FreeTDS section below for what to do if this is the case.
+</p>
+
+<p>
+  Right. That completes the UNIX'y low level parts to get us talking to SQL Server, now to put the focus back on Ruby again by installing a few gems that will be needed. Here are the ones critical to this setup. Please consult the adapter's <a href="http://github.com/rails-sqlserver/activerecord-sqlserver-adapter/tree/master">README</a> for update to date version information on the approved/latest gems for DBI.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo gem install dbi -v 0.4.1
+$ sudo gem install dbd-odbc -v 0.2.4
+$ sudo gem install activerecord-sqlserver-adapter
+</code></pre></div>
+<p>
+  Almost there, we need one more piece, the Ruby ODBC bindings, so we can talk to the low level unixODBC. At the time of this writing, the MacPort portfile for rb-odbc was stuck at 0.9995 while the <a href="http://www.ch-werner.de/rubyodbc/">ruby odbc project page</a> reports that the latest version is 0.9997. So here is a little lesson on how to edit a portfile to get our desired results.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ port file rb-odbc
+/opt/local/var/macports/sources/rsync.macports.org/release/ports/ruby/rb-odbc/Portfile
+
+$ port file rb-odbc | xargs mate
+</code></pre></div>
+<p>
+  The first command simply shows you how you can get MacPorts to revel where the port file is located. The second shows how you can pipe that result to xargs to get TextMate to open the portfile. Now that we have the port file in front of us, let's edit it so that it pulls the latest. First change all occurrences of the version to latest, in this case from 0.9995 to 0.9997. Lastly, download your target version from the ruby odbc project page and do a MD5 checksum on it. In my case, when I downloaded 0.9997, the md5 checksum is 36d21519795c3edc8bc63b1ec6682b99. Now change the odd md5 in the portfile to this new one, hit save, and close. Let's try it out.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install rb-odbc +utf8
+</code></pre></div>
+<p>
+  So without little fuss, that should have worked. Did you notice how we have the +utf8 variant there? If your like me and have national/unicode columns in your database, this is a good thing. The adapter has tests and support for unicode as well.
+</p>
+
+<h2>Configure The SQL Server Stack</h2>
+
+<p>
+  First, let's configure FreeTDS to point to our server. Assuming you have TextMate a simple <code>mate /opt/local/etc/freetds/freetds.conf</code> should get it open for us. FreeTDS even put in a few examples at the bottom of the file, I typically comment these out and add my own. In this example I am naming my server "my_dev_server". Note that tds version section, I personally use tds version 8.0 and have tested this against my stack on all SQL Server types with the ActiveRecord tests. Some have reported that they have errors unless the use 7.0. Your mileage may vary. Save and close the file. <strong>UPDATE:</strong> As noted above when running <code>tsql I</code>, if you do not see a utf-8 locale setting, you may have to add this line <code>client charset = UTF-8</code> to your configuration file. Here is a thread on <a href="http://lists.ibiblio.org/pipermail/freetds/2006q3/020396.html">how to set tsql's client character set</a>.
+</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># A typical Sybase server
+# [egServer50]
+#   host = symachine.domain.com
+#   port = 5000
+#   tds version = 5.0
+
+# A typical Microsoft server
+# [egServer70]
+#   host = ntmachine.domain.com
+#   port = 1433
+#   tds version = 7.0
+
+[my_dev_server]
+  host = 192.168.1.58
+  port = 1433
+  tds version = 8.0
+</code></pre></div>
+<p>
+  It has been noted that Windows user may want to include client encodings and character sets that set UTF-8 values. If you are running on Windows, try out this style freetds conf.
+</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[YOURSERVER]
+ host             = yourserver.com
+ port             = 1433
+ tds version      = 7.0
+ text size = 64512
+ client encoding  = UTF-8
+ client charset   = UTF-8
+</code></pre></div>
+<p>
+  So after you have added your own server here, it is now time to configure unixODBC to use FreeTDS. Let's copy the default distribution files to the correctly named ones that unixODBC will look for.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo cp /opt/local/etc/odbc.ini.dist /opt/local/etc/odbc.ini
+$ sudo cp /opt/local/etc/odbcinst.ini.dist /opt/local/etc/odbcinst.ini
+</code></pre></div>
+<p>
+  Open up the newly copied <code>/opt/local/etc/odbcinst.ini</code> file. More than likely, this will be the only time you ever edit this file. Add a FreeTDS configuration to it like so. No personal configuration options here, this just links up the MacPort installed unixODBC and FreeTDS.
+</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[FreeTDS]
+Decscription = FreeTDS driver for SQLServer
+Driver = /opt/local/lib/libtdsodbc.so
+Setup = /opt/local/lib/libtdsodbc.so
+FileUsage = 1
+</code></pre></div>
+<p>
+  So the last thing is to create some DSNs in your <code>/opt/local/etc/odbc.ini</code> file. It is very likely that you could edit this file often. Perhaps you do a lot of development and DB server changes. My personal file has over 20 some DSNs here. Here is one example. The name and description of the DSN is up to you. Take note how I made the server name "my_dev_server" line up to that used in the FreeTDS conf file. That is important. Flavor this to your tastes.
+</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[my_dev_server_dsn]
+Driver=FreeTDS
+Description=My Server Connection
+Servername=my_dev_server
+Server=my_dev_server
+Port=1433
+Database=killer_app
+</code></pre></div>
+<p>
+  Here is an example of what your database.yml will look like. So by now you should be able to connect and work with your database. I have this working on quite a few Macs. If you found any issues, let me know, but a good place to start is running the adapter tests. That is of course if you have the stack setup right.
+</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">development:
+  adapter: sqlserver
+  mode: ODBC
+  username: rails
+  password: secret
+  database: killer_app
+  dsn: my_dev_server_dsn
+</code></pre></div>
+<h2>Going The Extra Mile With Ruby 1.9.x</h2>
+
+<p>
+  Here is a little trick that I put in an article called <a href="http://www.metaskills.net/2009/1/20/multiruby-the-macports-way-testing-your-rails-apps-with-ruby-1-9">MultiRuby The MacPorts Way. Testing Your Rails Apps With Ruby 1.9</a>. Follow the steps in this post to get 1.9.x installed and switchable between your default 1.8.7 install.
+</p>
+
+<p>
+  Remember, RubyGems already comes in 1.9 and that tutorial leaves your installed gems under 1.9 empty. Do the right thing and install gems on an as needed basis under 1.9. As for the ruby-odbc which is installed in the 1.8's vendor ruby directory, we will need to trick MacPorts to recompile and reinstall that for us. Here is how I did it. First make sure you in the right ruby version.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ ruby -v
+ruby 1.9.1p243 (2009-07-16 revision 24175) [i386-darwin10]
+</code></pre></div>
+<p>
+  Now we need to trick MacPorts to forget about the previous install so it will build and use the extconf.rb of the ruby 1.9 installation. Here are the commands to softly remove rb-odbc from MacPorts memory. If you want, you can change <code>rm -rf</code> to just <code>mv</code> and move these files to some other place.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">sudo rm -rf /opt/local/var/macports/receipts/rb-odbc
+sudo rm -rf /opt/local/var/macports/software/rb-odbc
+sudo rm -rf /opt/local/share/doc/rb-odbc
+</code></pre></div>
+<p>
+  Now you can tell MacPorts to reinstall ruby-odbc and it should create a new odbc.bundle in your <code>/opt/local/lib/ruby1.9/site_ruby/1.9.1/i386-darwin10/odbc.bundle</code>.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install rb-odbc +utf8
+</code></pre></div>
+<p>
+  Here is the proof that I have 1.9 installed, working with SQL Server adapter and 64-bit. Thanks to the <code>chruby</code> ZSH function described in my other post, I can easily switch between my ruby installs.
+</p>
+
+<p><img src="/assets/ruby19_darwin_x86_64.jpg" alt="Ruby 1.8.7 64-bit Activity Monitor" class="ms-Img ms-Img--responsive-ctr ms-Img--fancy" /></p>
+
+<h2>Complete The Marathon!</h2>
+
+<p>
+  Installing apache2 and passenger, yes all 64-bit happy.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install apache2
+$ sudo gem install passenger
+$ sudo passenger-install-apache2-module
+</code></pre></div>
+<p>
+  How about a more common setup for SQLite3? If you took the side track and installed subversion from above, then you already have SQLite3 installed via MacPorts. If not, that's easy to fix. Here is how to install it and the ruby sqlite3 gem. I have done this for both my 1.8.7 and 1.9.x install above and again I am all 64-bit happy and passing all my tets.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install sqlite3
+$ sudo gem install sqlite3-ruby
+</code></pre></div>
+<p>
+  Installing MySQL and the ruby drivers are a bit more involved. This will get it installed and your launch control setup to act as if your box is a server, ie. load MySQL when it starts up.
+</p>
+<div class="highlight"><pre><code class="language-" data-lang="">$ sudo port install mysql5-server
+$ sudo launchctl load -w /Library/LaunchDaemons/org.macports.mysql5.plist
+$ sudo -u _mysql mysql_install_db5
+$ sudo /opt/local/share/mysql5/mysql/mysql.server start
+ Starting MySQL
+ SUCCESS!
+$ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
+</code></pre></div>
+<p>
+  Nice, fully 64-bit and passing all the ActiveRecord tests for me. Note, sometimes you will have to reset your shell for new path binaries to become usable. It's always a good idea to open a new shell post a port install If you get an unfound <code>mysql_install_db5</code>, try opening a new shell. Pay attention to some of the output from that command too. For instance, if you want to set a root user password. I choose not to do this for a dev DB, but I do like to limit the connections so that only local connections can be used by editing the conf file. To create yourself a my.cnf file, copy one of the templates in <code>/opt/local/share/mysql5/mysql</code>, I choose to copy the large conf like so <code>sudo cp /opt/local/share/mysql5/mysql/my-large.cnf /opt/local/etc/mysql5/my.cnf</code>. Then I edit the conf file and uncomment the link that says "skip-networking". That way no one on the local network can hit my DBs. Lastly, here are some helpful aliases that I use.
+</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">alias </span><span class="nv">my_stop</span><span class="o">=</span><span class="s2">"sudo launchctl stop org.macports.mysql5"</span>
+<span class="nb">alias </span><span class="nv">my_start</span><span class="o">=</span><span class="s2">"sudo launchctl start org.macports.mysql5"</span>
+<span class="nb">alias </span><span class="nv">my_rs</span><span class="o">=</span><span class="s2">"my_stop ; my_start"</span>
+<span class="nb">alias </span><span class="nv">myconf</span><span class="o">=</span><span class="s2">"mate /opt/local/etc/mysql5/my.cnf"</span>
+</code></pre></div>
+  <footer class="ms-Post-footer">
+    
+
+<section id="disqus_thread">
+</section>
+<script type="text/javascript">
+  var disqus_shortname = 'metaskillsnet';
+  var disqus_identifier = '/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86_64-macports-ruby-1-8-1-9-sql-server-more/';
+  var disqus_title = "The Ultimate OS X Snow Leopard Stack For Rails Development - x86_64, MacPorts, Ruby 1.8/1.9, SQL Server, SQLite3, MySQL & More";
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  </footer>
+</article>
+
+    
+
+<section id="disqus_thread">
+</section>
+<script type="text/javascript">
+  var disqus_shortname = 'metaskillsnet';
+  var disqus_identifier = '/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86_64-macports-ruby-1-8-1-9-sql-server-more/';
+  var disqus_title = "The Ultimate OS X Snow Leopard Stack For Rails Development - x86_64, MacPorts, Ruby 1.8/1.9, SQL Server, SQLite3, MySQL & More";
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+    <footer class="ms-Footer">
+  <p>
+    &copy; 2006-2014 Ken Collins. All rights reserved.<br/>
+    MetaSkills.net is powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://disqus.com">Disqus</a>.
+  </p>
+</footer>
+
+  </article>
+</section>
+
+    <script src="/assets/site-5b742dd84d08dc11c2e75947ba53428e.js"></script>
+  </body>
+</html>

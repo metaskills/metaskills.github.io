@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ken Collins" />
+  <meta name="google-site-verification" content="W3DG-CkoWHypH24OfrGmGbMezvhC6AyLql4jLI7hXhI" />
+  <meta name="description" content="The personal blog of Ken Collins." />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  <title>LESS Is More - Using Twitter's Bootstrap In The Rails 3.1 Asset Pipeline - Ken Collins @MetaSkills.net</title>
+  <link rel="author" href="mailto:ken@metaskills.net" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/site/icon-57x57-2dc1878cbb26a72f6a2819a2959a45ce.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/site/icon-114x114-0f98048facce72f3ad247a009ea96f4a.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/site/icon-72x72-2744bec8e69ef81b753774e000caa98d.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/site/icon-144x144-0017fda127bc7319e5a20ece8baf1dc7.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/site/icon-60x60-07051b464dc0766991ee5ff852b094b6.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/site/icon-120x120-b042e116791abbbf98418647ac107fa1.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/site/icon-76x76-fe55f7ee2c9f030b64031197b06d42b7.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/site/icon-152x152-ba6a44bd01376645de8bd1ec76c06e04.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/site/icon-196x196-40d4187aec04946f3fc86d7c3103f603.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/assets/site/icon-160x160-ce83115bd1f54907855b72c8ecdfe5dc.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/site/icon-96x96-7817af4c06b1cc48e5d14e8d061b0d0e.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/site/icon-16x16-5ca4ac15b854c68d6dd989fd7aeaf6c5.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/site/icon-32x32-d44229e428c67291a65f57aac0fc029d.png">
+  <meta name="apple-mobile-web-app-title" content="MetaSkills">
+  <meta name="application-name" content="MetaSkills" />
+  <meta name="msapplication-TileImage" content="/assets/site/icon-144x144-0017fda127bc7319e5a20ece8baf1dc7.png">
+  <meta name="msapplication-TileColor" content="052838">
+  <link rel="stylesheet" href="/assets/site-ff922763cb97d2eb3fb9b19db7308e75.css">
+</head>
+
+  <body>
+    <section class="ms-Page is-Post">
+  <header class="ms-Page-header">
+    <section class="ms-Page-header-bg">
+      <object class="ms-Page-header-bg-svg" data="/assets/site/page-svg-d6ea380f6b530625d51eeeafaa44d925.svg" type="image/svg+xml"></object>
+    </section>
+    <section class="ms-Page-header-content">
+      <div class="ms-Page-header-avatar">
+<a class="ms-Avatar" href="/pages/colophon.html" title"About Ken Collins">
+  <div class="ms-Avatar-flipable">
+    <div class="ms-Avatar-front">
+      <img class="ms-Avatar-img" alt="Ken Collins" src="/assets/site/avatar-87e53dd8cc99a37a2842f8918ea310e7.jpg">
+    </div>
+    <div class="ms-Avatar-back">
+      <svg class="ms-Avatar-aboutme" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="47px" viewBox="0 0 350 47" preserveAspectRatio="xMidYMax meet" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000, 1.000)"><path d="M161.250 4.91 L-0.014 -0.12 L17.975 44.67 L178.787 37.22 L330.559 44.67 L347.824 -0.12 L161.250 4.91 Z" fill="#E4522A"/><g stroke="#FFFBE1"><path d="M275.89 25.53 L290.71 25.53 L287.55 20.31 L321.9 20.31 "/><path d="M276.55 22.54 L291.36 22.54 L288.2 17.33 L322.56 17.33 "/></g><g stroke="#FFFBE1"><path d="M72.76 25.53 L57.94 25.53 L61.1 20.31 L26.75 20.31 "/><path d="M72.1 22.54 L57.29 22.54 L60.45 17.33 L26.09 17.33 "/></g></g><path d="M89.184 15.23 L81.776 15.23 L81.724 15.52 C83.226 16.68 83.64 17.12 83.64 18.6 L83.641 31.76 L89.184 31.76 L89.184 27.43 L90.842 27.43 C91.955 27.43 92.19 28.05 92.19 29.04 L92.189 31.76 L97.732 31.76 L97.732 27.98 C97.732 24.92 96.9 24.04 93.64 24.04 L98.327 15.23 L92.189 15.23 L89.184 24.74 L89.184 15.23 Z M113.357 25.72 L113.357 21.99 L109.109 21.99 L109.109 19.14 L115.247 19.14 L115.247 15.23 L101.701 15.23 L101.649 15.52 C103.151 16.68 103.57 17.12 103.57 18.6 L103.566 31.76 L115.507 31.76 L115.507 28.03 L109.109 28.03 L109.109 25.72 L113.357 25.72 Z M119.346 15.23 L119.294 15.52 C120.797 16.68 121.21 17.12 121.21 18.6 L121.211 31.76 L126.754 31.76 L126.754 18.83 L129.008 18.83 C129.888 18.83 130.02 19.12 130.02 20 L130.018 31.76 L135.561 31.76 L135.561 19.84 C135.561 16.48 134.68 15.23 131.05 15.23 L119.346 15.23 Z M161.112 25.88 L161.112 26.92 C161.112 28.05 160.91 28.37 160.08 28.37 L159.014 28.37 C158.160 28.37 157.95 28.05 157.95 26.92 L157.952 20.26 C157.952 19.12 158.16 18.86 159.01 18.86 L160.076 18.86 C160.905 18.86 161.11 19.12 161.11 20.26 L161.112 23 L166.707 23 L166.707 20.05 C166.707 16.43 165.8 15.23 162.43 15.23 L156.631 15.23 C153.264 15.23 152.36 16.43 152.36 20.05 L152.357 26.53 C152.357 30.72 153.89 31.76 156.92 31.76 L162.433 31.76 C165.801 31.76 166.71 30.88 166.71 27.12 L166.707 25.88 L161.112 25.88 Z M186.606 20.05 C186.606 16.43 185.7 15.23 182.33 15.23 L176.375 15.23 C173.008 15.23 172.1 16.43 172.1 20.05 L172.101 26.53 C172.101 30.72 173.63 31.76 176.66 31.76 L182.332 31.76 C185.700 31.76 186.61 30.88 186.61 27.12 L186.606 20.05 Z M181.011 26.92 C181.011 28.05 180.8 28.37 179.97 28.37 L178.758 28.37 C177.903 28.37 177.7 28.05 177.7 26.92 L177.696 20.26 C177.696 19.12 177.9 18.86 178.76 18.86 L179.975 18.86 C180.804 18.86 181.01 19.12 181.01 20.26 L181.011 26.92 Z M198.216 15.23 L190.808 15.23 L190.757 15.52 C192.259 16.68 192.67 17.12 192.67 18.6 L192.673 31.76 L203.863 31.76 L203.863 28.03 L198.216 28.03 L198.216 15.23 Z M214.230 15.23 L206.822 15.23 L206.770 15.52 C208.272 16.68 208.69 17.12 208.69 18.6 L208.687 31.76 L219.877 31.76 L219.877 28.03 L214.230 28.03 L214.230 15.23 Z M230.244 15.23 L222.836 15.23 L222.784 15.52 C224.286 16.68 224.7 17.12 224.7 18.6 L224.700 31.76 L230.244 31.76 L230.244 15.23 Z M234.653 15.23 L234.601 15.52 C236.103 16.68 236.52 17.12 236.52 18.6 L236.518 31.76 L242.061 31.76 L242.061 18.83 L244.314 18.83 C245.195 18.83 245.32 19.12 245.32 20 L245.325 31.76 L250.868 31.76 L250.868 19.84 C250.868 16.48 249.99 15.23 246.36 15.23 L234.653 15.23 Z M268.410 15.23 L258.696 15.23 C256.805 15.23 256.13 16.06 256.13 17.36 C256.132 17.88 256.37 18.55 256.7 19.07 L261.753 27.07 C261.830 27.18 261.88 27.36 261.88 27.51 C261.882 27.82 261.65 28.03 261.18 28.03 L255.743 28.03 L255.743 31.76 L266.130 31.76 C268.073 31.76 268.8 30.49 268.8 29.45 C268.798 28.75 268.49 28.21 268.18 27.74 L262.970 20.13 C262.841 19.92 262.76 19.77 262.76 19.61 C262.763 19.33 263.02 19.14 263.49 19.14 L268.410 19.14 L268.410 15.23 Z" fill="#FFFBE1"/></g></svg>
+
+    </div>
+  </div>
+</a>
+</div>
+      <ul class="ms-Page-nav">
+        <li class="ms-Page-nav-item">
+          <a class="ms-Page-nav-link" href="/">HOME</a>
+        </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/programming.html">Programming</a>
+          </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/lifestyle.html">Lifestyle</a>
+          </li>
+        
+      </ul>
+      <div class="ms-Page-social"><div class="ms-Social">
+  <a href="http://twitter.com/metaskills" title="MetaSkills On Twitter">
+    <span class="ms-Social-icon ms-Social-icon--twitter"><i class="icon-twitter"></i></span>
+  </a>
+  <a href="https://github.com/metaskills/" title="MetaSkills On GitHub">
+    <span class="ms-Social-icon ms-Social-icon--github"><i class="icon-github"></i></span>
+  </a>
+  <a href="http://www.linkedin.com/in/metaskills" title="Ken Collins On LinkedIn">
+    <span class="ms-Social-icon ms-Social-icon--linkedin"><i class="icon-linkedin"></i></span>
+  </a>
+</div>
+</div>
+      <div class="ms-Page-blurb">
+        Ruby, JavaScript, Sass, iOS. Stinky Cheese &amp; Beer Advocate. Working at CustomInk and loving it!
+      </div>
+    </section>
+  </header>
+  <article class="ms-Page-article">
+    <article class="ms-Post">
+  <header class="ms-Post-header">
+    <time class="ms-Post-time" pubdate datetime="2011-09-26T00:00:00-04:00">
+      2011 September 26
+    </time>
+    <h1 class="ms-Post-header-h1">LESS Is More - Using Twitter's Bootstrap In The Rails 3.1 Asset Pipeline</h1>
+  </header>
+  <p>
+  <img src="/assets/less.png" alt="LESS - The Dynamic Stylesheet language" class="ms-Img ms-Img--responsive" />
+  This weekend I decided to experiment with <a href="http://lesscss.org/">LESS CSS</a> by replacing the existing <a href="http://sass-lang.com/">Sass</a> and <a href="http://compass-style.org/">Compass</a> code that had been built thus far a small project. Why? Three basic reasons. First, I wanted to see how LESS stacked up. Second, I was intrigued by some of LESS' features, in particular <a href="http://lesscss.org/#-namespaces">their namespace support.</a> Lastly, I wanted to use <a href="http://twitter.github.com/bootstrap/">Twitter's Bootstrap</a> project as a baseline for my design. Since Rails 3.1 has been out for some time, I was expecting the move to LESS to go considerably smoother than my <a href="/2011/07/29/use-compass-sass-framework-files-with-the-rails-3.1.0.rc5-asset-pipeline/">pre-release attempts with Compass and Sass</a>. I was wrong.
+</p>
+
+<p>
+  So the tilt gem already supported LESS templates and that means that Sprockets and the asset pipeline rendering technically did too. But there was <a href="https://github.com/cowboyd/less.rb/issues/8">no official less-rails gem</a> that setup a standard configuration for other gems to hook into. This meant that libraries that distributed the Twitter Bootstrap assets were often hard to use or had inconsistent results. For example, it was not possible to load the Bootstrap's assets in such as way that let you build on top of the LESS mixins they had build. Nor were those assets namespaced in such a way that would allow you to have a <code>modal.less</code> asset as it would have conflicted with Bootstrap's version. So since I apparently have a bunch of free time and I hate building on top of a bad foundation, I set out to learn both <code>Rails::Railtie</code> and <code>Rails::Engine</code> to build the proper tools for LESS and Bootstrap in the Rails 3.1 asset pipeline.
+</p>
+
+<h2>New LESS Gems</h2>
+
+<p>
+  I introduce you to both the new <a href="http://github.com/metaskills/less-rails">less-rails</a> and <a href="http://github.com/metaskills/less-rails-bootstrap">less-rails-bootstrap</a> gems. Take a look at the source code if you ever wanted to learn how to implement a simple Rails::Railtie or Engine. But assuming you want to use Twitter's Bootstrap, here are a few examples to get you started. First just bundle up to less-rails-bootstrap, it will automatically pull in less-rails and less.rb via their dependencies. BTW, I am going to keep the semantic versioning of the less-rails-bootstrap gem in sync with the major and minor versions of the Bootstrap project.
+</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">'less-rails-bootstrap'</span><span class="p">,</span> <span class="s1">'~&gt; 1.3.0'</span>
+</code></pre></div>
+<p>
+  From here, the easiest way to use Bootstrap is to require it in your <code>application.css</code> file. Doing so will compile the complete LESS libraries files for Bootstrap. Note how we namespace the files using a simple directory structure.
+</p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*
+ *= require twitter/bootstrap
+*/</span>
+
+<span class="nf">#foo</span> <span class="p">{</span>
+  <span class="c">/* Your styles... */</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>
+  Alternatively, in a file with the <code>.css.less</code> extension, you can import the entire Bootstrap LESS framework. This will allow you to use Bootstrap's variables and mixins in your CSS that follows. Remember, unlike other CSS frameworks, requiring or importing Bootstrap will include all the CSS for building a bootstrapped website. If you only want variables or mixins, you will have to import those discreet files, see next section.
+</p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@import</span> <span class="s1">"twitter/bootstrap"</span><span class="p">;</span>
+
+<span class="nf">#foo</span> <span class="p">{</span>
+  <span class="err">.border-radius(4px);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>
+  Maybe all you want to use are the variables and mixins that come with Twitter Bootstrap. No problem, just import them individually from you own <code>.css.less</code> file. In this case only the <code>#foo</code> selector is output.
+</p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@import</span> <span class="s1">"twitter/bootstrap/variables"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">"twitter/bootstrap/mixins"</span><span class="p">;</span>
+
+<span class="nc">.myButton</span><span class="o">(</span><span class="k">@radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.border-radius</span><span class="o">(</span><span class="k">@radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nf">#foo</span> <span class="p">{</span>
+  <span class="err">.myButton(10px);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>
+  Using the <a href="http://twitter.github.com/bootstrap/#javascript">Bootstrap JavaScript</a> files is just as easy. Again, you can include all them with a single directive from your <code>application.js</code> file. Optionally, you can require only the files you need like <code>require twitter/bootstrap/modal</code>.
+</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//= require twitter/bootstrap</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="c1">//...</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>
+  The less-rails project has already started getting some good feedback. Soon we hope to implement all the features that you may have used in the sass-rails project, <a href="https://github.com/metaskills/less-rails/issues/1">like asset pipeline helpers</a>. One last thing, I wanted to say thanks to <a href="https://github.com/nmerouze">Nicolas Mérouze</a> for opening up the old less-rails gem space on rubygems.org for the new gem!
+</p>
+
+<h2>Resources</h2>
+
+<ul>
+  <li><a href="http://lesscss.org/">LESS - The Dynamic Stylesheet Language</a></li>
+  <li><a href="http://github.com/metaskills/less-rails">LESS-Rails - Official Support For LESS In Rails</a></li>
+  <li><a href="http://github.com/metaskills/less-rails-bootstrap">LESS-Rails-Bootstrap - CSS toolkit from Twitter For Rails 3.1 Asset Pipeline</a></li>
+  <li><a href="http://github.com/cowboyd/less.rb">LESS.rb - LESS CSS Rendering From Ruby</a></li>
+  <li><a href="http://sass-lang.com/">Sass - Syntactically Awesome Stylesheets</a></li>
+  <li><a href="http://github.com/rails/sass-rails">Sass-Rails - Official Support For Sass In Rails</a></li>
+  <li><a href="http://compass-style.org/">Compass - An Open-Source CSS Authoring Framework</a></li>
+  <li><a href="http://twitter.github.com/bootstrap/">Bootstrap - A Toolkit From Twitter Designed To Kickstart Development</a></li>
+</ul>
+
+  <footer class="ms-Post-footer">
+    
+
+<section id="disqus_thread">
+</section>
+<script type="text/javascript">
+  var disqus_shortname = 'metaskillsnet';
+  var disqus_identifier = '/2011/09/26/less-is-more-using-twitter-bootstrap-in-the-rails-3-1-asset-pipeline';
+  var disqus_title = "LESS Is More - Using Twitter's Bootstrap In The Rails 3.1 Asset Pipeline";
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  </footer>
+</article>
+
+    
+
+<section id="disqus_thread">
+</section>
+<script type="text/javascript">
+  var disqus_shortname = 'metaskillsnet';
+  var disqus_identifier = '/2011/09/26/less-is-more-using-twitter-bootstrap-in-the-rails-3-1-asset-pipeline';
+  var disqus_title = "LESS Is More - Using Twitter's Bootstrap In The Rails 3.1 Asset Pipeline";
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+    <footer class="ms-Footer">
+  <p>
+    &copy; 2006-2014 Ken Collins. All rights reserved.<br/>
+    MetaSkills.net is powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://disqus.com">Disqus</a>.
+  </p>
+</footer>
+
+  </article>
+</section>
+
+    <script src="/assets/site-5b742dd84d08dc11c2e75947ba53428e.js"></script>
+  </body>
+</html>
