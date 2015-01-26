@@ -7,6 +7,38 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>ActiveRecord SQLServer v4.2.0 - Code Name Kantishna</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/content/kantishna.jpg&quot; class=&quot;ms-Img ms-Img--responsive ms-Img--fancy&quot; alt=&quot;&quot; /&gt;
+After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rails v4.2.0. The list of features is impressive. But first, some bad news. Code named Kantishna, after a small community in Denali area of Alaska, the adapter is only for SQL Server 2012 and higher. This is a good thing because these versions of SQL Server have something we have needed for a very long time, simple offset and limit windowing functions.&lt;/p&gt;
+
+&lt;h2 id=&quot;fetch-can-happen&quot;&gt;FETCH Can Happen&lt;/h2&gt;
+
+&lt;p&gt;Sure there are hacks like &lt;code&gt;ROW_NUMBER&lt;/code&gt; and in theory these work. In reality it has caused our code to &lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/blob/4-1-stable/lib/arel/visitors/sqlserver.rb&quot;&gt;be incredible complex&lt;/a&gt; and infected all parts of the adapter. Problems were often solved by using regular expressions and affected performance. Even worse, I think it kept people from contributing to the project. Worry not, if you are on an older version of SQL Server, please feel free to use an older version of Rails and the adapter.&lt;/p&gt;
+
+&lt;p&gt;For the rest, FETCH can happen and that is indeed what we are using, &lt;code&gt;OFFSET&lt;/code&gt; and &lt;code&gt;FETCH&lt;/code&gt;. Here is a &lt;a href=&quot;http://dbadiaries.com/new-t-sql-features-in-sql-server-2012-offset-and-fetch&quot;&gt;great article&lt;/a&gt; that describes its basic usage. To see the benefits, &lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/blob/master/lib/arel/visitors/sqlserver.rb&quot;&gt;take a quick look&lt;/a&gt; at our latest Arel visitor and note the difference.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-new&quot;&gt;Whats New&lt;/h2&gt;
+
+&lt;p&gt;For full details check out the &lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/blob/master/CHANGELOG.md&quot;&gt;latest CHANGELOG&lt;/a&gt; on our project repo. But here is a great summary. The v4.2.0 adapter is the strongest version to date!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TYPE CASTING&lt;/strong&gt;: A few weeks ago I wrote a &lt;a href=&quot;http://technology.customink.com/blog/2015/01/06/activerecord-42s-type-casting/&quot;&gt;full article on the new Type&lt;/a&gt; objects in ActiveRecord 4.2. These objects help us do a much better job of ensure data going in and out of the DB are proper. They will play a huge role in Rails 5.0 when the API becomes public. In Rails 4.2 they help us quote values and output proper schema.rb files. We have aliased our type namespace to &lt;code&gt;ActiveRecord::Type::SQLServer&lt;/code&gt; and these objects will help us win at every datatype FreeTDS supports.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;OBJECT IDENTIFICATION&lt;/strong&gt;: Inspired by the PostgreSQL adapter, we now have a &lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/blob/master/lib/active_record/connection_adapters/sqlserver/utils.rb&quot;&gt;plain ruby object&lt;/a&gt; which is responsible for identifying servers, databases, objects, and schemas. No more ad-hoc quoting which caused us to blow up when needing to use quoted/unquoted identifier parts at different times. Our new identifier rules should allow legacy systems to easily use &lt;code&gt;dbo.&lt;/code&gt; or other schema prefixes in table names and everything from DDL statements to our schema cache &amp;amp; column reflection will just work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NATIONAL DEFAULTS&lt;/strong&gt;: Not new, but all Rails simplified types now default to matching SQL Server &amp;quot;national&amp;quot; or Unicode types. If you need to a non-national type or other special type, we have full column extensions in place. For example, need a &lt;code&gt;char(24)&lt;/code&gt; vs a full length national varying character, just use the &lt;code&gt;t.char&lt;/code&gt; method and proper Rails options in your schema migrations.&lt;/p&gt;
+
+&lt;h1 id=&quot;whats-coming&quot;&gt;Whats Coming&lt;/h1&gt;
+
+&lt;p&gt;The v4.2.0 adapter is now in pre-release and we only have a few issues to track down and fix. Check out the issues in &lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/milestones/4-2-stable&quot;&gt;our Github milestone&lt;/a&gt; if you are interested in helping. The biggest feature will be turning on foreign key support!&lt;/p&gt;
+
+&lt;p&gt;But why stop there? There is so much more to help with. From &lt;a href=&quot;http://confreaks.com/videos/5081-RubyConf2014-benchmarking-ruby&quot;&gt;benchmark and performance&lt;/a&gt; tuning, to Database task support. We sure could use your help. Thanks!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
+        <link>/2015/01/25/activerecord-sqlserver-v4.2.0---code-name-kantishna</link>
+        <guid isPermaLink="true">/2015/01/25/activerecord-sqlserver-v4.2.0---code-name-kantishna</guid>
+      </item>
+    
+      <item>
         <title>ActiveRecord 4.2&#39;s Type Casting</title>
         <description>&lt;p&gt;Last month &lt;a href=&quot;http://weblog.rubyonrails.org/2014/12/19/Rails-4-2-final/&quot;&gt;Rails 4.2&lt;/a&gt; was released and if you have been keeping up with my posts, I even covered &lt;a href=&quot;/2014/09/16/from-rails-3.2-to-4.2/&quot;&gt;how you can upgrade&lt;/a&gt; from 3.2 to 4.2 in one step! This speaks volumes to how easy it is to adopt to outward facing API changes within our beloved framework. But often times, version changes bring implementation changes that we never see. For example, all of Aaron Patterson&amp;#39;s work for &lt;a href=&quot;http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html&quot;&gt;AdequateRecord Pro&amp;trade;&lt;/a&gt; are performance optimizations that affect no outward API interface at all. Unless you read the source, many of these awesome changes go unnoticed and that&amp;#39;s a damn shame because some of them can make our lives easier.&lt;/p&gt;
 
