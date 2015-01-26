@@ -9,7 +9,7 @@
       <item>
         <title>ActiveRecord SQLServer v4.2.0 - Code Name Kantishna</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/content/kantishna.jpg&quot; class=&quot;ms-Img ms-Img--responsive ms-Img--fancy&quot; alt=&quot;&quot; /&gt;
-After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rails v4.2.0. The list of features is impressive. But first, some bad news. Code named Kantishna, after a small community in Denali area of Alaska, the adapter is only for SQL Server 2012 and higher. This is a good thing because these versions of SQL Server have something we have needed for a very long time, simple offset and limit windowing functions.&lt;/p&gt;
+After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rails v4.2.0 and in pre-release status. The list of features is impressive. But first, some bad news. Code named Kantishna, after a small community in Denali area of Alaska, the adapter is only for SQL Server 2012 and higher. This is a good thing because these versions of SQL Server have something we have needed for a very long time, simple offset and limit windowing functions.&lt;/p&gt;
 
 &lt;h2 id=&quot;fetch-can-happen&quot;&gt;FETCH Can Happen&lt;/h2&gt;
 
@@ -31,8 +31,9 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 
 &lt;p&gt;The v4.2.0 adapter is now in pre-release and we only have a few issues to track down and fix. Check out the issues in &lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/milestones/4-2-stable&quot;&gt;our Github milestone&lt;/a&gt; if you are interested in helping. The biggest feature will be turning on foreign key support!&lt;/p&gt;
 
-&lt;p&gt;But why stop there? There is so much more to help with. From &lt;a href=&quot;http://confreaks.com/videos/5081-RubyConf2014-benchmarking-ruby&quot;&gt;benchmark and performance&lt;/a&gt; tuning, to Database task support. We sure could use your help. Thanks!&lt;/p&gt;
-</description>
+&lt;p&gt;But why stop there? There is so much more to help with. From &lt;a href=&quot;http://confreaks.com/videos/5081-RubyConf2014-benchmarking-ruby&quot;&gt;benchmark and performance&lt;/a&gt; tuning, to Database task support. We sure could use your help. For now, give it a try. Thanks!&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;activerecord-sqlserver-adapter&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;~&amp;gt; 4.2.0.pre&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
         <link>/2015/01/25/activerecord-sqlserver-v4.2.0---code-name-kantishna</link>
         <guid isPermaLink="true">/2015/01/25/activerecord-sqlserver-v4.2.0---code-name-kantishna</guid>
