@@ -22,7 +22,7 @@
 
 &lt;p&gt;That sentiment was echoed by everyone I met. From engineers to leadership and various product managers in-between, Microsoft is hungry to learn and this time it does not feel like the old consume &amp;amp; conquer strategies from the &lt;a href=&quot;http://ironruby.net&quot;&gt;IronRuby&lt;/a&gt; days. Instead their new culture closely reflects that of &lt;a href=&quot;http://www.customink.com/about/our_story/&quot;&gt;CustomInk&amp;#39;s&lt;/a&gt; own Inkers. Our hosts were the most upbeat and polite folks I have seen.&lt;/p&gt;
 
-&lt;h5 id=&quot;windows-support---a-diversity-issue&quot;&gt;Windows Support - A Diversity Issue&lt;/h5&gt;
+&lt;h5 id=&quot;windows-support-a-diversity-issue&quot;&gt;Windows Support - A Diversity Issue&lt;/h5&gt;
 
 &lt;p&gt;As Sean Griffin put it, we cannot require new engineers to buy a MacBook Pro to learn Ruby. Be it a &lt;a href=&quot;http://railsgirls.com&quot;&gt;Rails Girls&lt;/a&gt; workshop or your local meetup group, a poor Windows experience can literally lose good, diverse talent in our community. Thanks to projects like RailsInstaller, and the modern replacement &lt;a href=&quot;http://rubyinstaller.org&quot;&gt;RubyInstaller&lt;/a&gt;, we are stronger than we have historically been. But we can do better.&lt;/p&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;It&amp;#39;s simple, use 2-way, fast-paced, verbal communication to quickly identify and defuse a virtual ticking time bomb. As it turned out, this is a great team building exercise. Becoming a bomb defusing expert is high on my list and I can not wait to play with a group of my fellow Inkers. Thanks Sean!&lt;/p&gt;
 
-&lt;h2 id=&quot;coming-soon-to-ruby/rails&quot;&gt;Coming Soon To Ruby/Rails&lt;/h2&gt;
+&lt;h2 id=&quot;coming-soon-to-ruby-rails&quot;&gt;Coming Soon To Ruby/Rails&lt;/h2&gt;
 
 &lt;p&gt;We got a lot of work done along with establishing some big milestones for those using Windows and/or SQL Server with Ruby. Here are some things you can look forward to:&lt;/p&gt;
 
@@ -66,7 +66,7 @@
 &lt;li&gt;1.6 million SQL databases.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&quot;command-line-&amp;amp;-application-interfaces&quot;&gt;Command Line &amp;amp; Application Interfaces&lt;/h5&gt;
+&lt;h5 id=&quot;command-line-amp-application-interfaces&quot;&gt;Command Line &amp;amp; Application Interfaces&lt;/h5&gt;
 
 &lt;p&gt;Portal smortal, who wants GUIs? The real power is in the command line and automation. Just like Heroku&amp;#39;s toolbelt, Azure has cross platform binaries that are open source on GitHub. This client has rich 2FA and is packed with interfaces. Services can even be stood up with a simple JSON template hosted on GitHub. Need an application interface? They have a Ruby SDK too.&lt;/p&gt;
 
@@ -95,7 +95,7 @@
 
 &lt;p&gt;One feature that stood out was SQL Server&amp;#39;s ability to &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/dn935011.aspx&quot;&gt;stretch&lt;/a&gt; or archive historical data transparently and securely. This can be done entirely via their hosted service or coupled with your on-premises SQL Server databases. All without the application caring about managing that cold &amp;lt;=&amp;gt; hot data.&lt;/p&gt;
 
-&lt;h2 id=&quot;many-thanks!&quot;&gt;Many Thanks!&lt;/h2&gt;
+&lt;h2 id=&quot;many-thanks&quot;&gt;Many Thanks!&lt;/h2&gt;
 
 &lt;p&gt;Special thanks to Microsoft as a whole. Especially to Andrea Lam and Meet Bhagdev for their personal &amp;amp; professional support during our trip. You made us feel right at home. Also in attendance for the first #OSSDataCamp were &lt;a href=&quot;https://twitter.com/manfre&quot;&gt;Michael Manfre&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/michiyata&quot;&gt;Michiya Takahashi&lt;/a&gt;, and &lt;a href=&quot;https://github.com/timgraham?tab=activity&quot;&gt;Tim Graham&lt;/a&gt;. All of whom represented the Python/Django community and helped our open source cause.&lt;/p&gt;
 
@@ -122,7 +122,7 @@
 
 &lt;p&gt;When moving to Rails 4.2 I found that my integration tests were mixed together with everything else. This was a problem since I really wanted my slower integration tests to run after all my other tests. No matter what I tried, I could not get the setup I wanted. So like most problems, I solved this by diving into the code and learning.&lt;/p&gt;
 
-&lt;h2 id=&quot;deconstructing-rails::testtask&quot;&gt;Deconstructing Rails::TestTask&lt;/h2&gt;
+&lt;h2 id=&quot;deconstructing-rails-testtask&quot;&gt;Deconstructing Rails::TestTask&lt;/h2&gt;
 
 &lt;p&gt;So we already had a look at the new testing.rake file above. But looking closer, we can see how the default test task is defined right at the top. Also of interest to us is that &lt;code&gt;test:run&lt;/code&gt; task.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;rake/testtask&#39;&lt;/span&gt;
@@ -267,8 +267,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;activerecord-sqlserver-adapter&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;~&amp;gt; 4.2.0.pre&#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
-        <link>/2015/01/25/activerecord-sqlserver-v4.2.0---code-name-kantishna</link>
-        <guid isPermaLink="true">/2015/01/25/activerecord-sqlserver-v4.2.0---code-name-kantishna</guid>
+        <link>/2015/01/25/activerecord-sqlserver-v4-2-0-code-name-kantishna</link>
+        <guid isPermaLink="true">/2015/01/25/activerecord-sqlserver-v4-2-0-code-name-kantishna</guid>
       </item>
     
       <item>
@@ -545,7 +545,7 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This makes updating these files in the future go much quicker. Here are some general notes I had when doing my entire mimesis process.&lt;/p&gt;
 
-&lt;h4 id=&quot;environments-&amp;amp;-initializers&quot;&gt;Environments &amp;amp; Initializers&lt;/h4&gt;
+&lt;h4 id=&quot;environments-amp-initializers&quot;&gt;Environments &amp;amp; Initializers&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Removed &lt;code&gt;config.filter_parameters&lt;/code&gt; from application.rb to config/initializers/filter_parameter_logging.rb&lt;/li&gt;
@@ -557,7 +557,7 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 
 &lt;p&gt;I fully embraced the new concern directories. I created both &lt;code&gt;app/controllers/concerns/.keep&lt;/code&gt; and &lt;code&gt;app/models/concerns/.keep&lt;/code&gt;. I found there were a few files in my lib directory that were actually concerns. For example, I moved both my AuthenticatedSystem and RenderInvalidRecord modules to the controller concerns. This allowed me to remove any hacks I had for setting the auto load path on the lib directory too.&lt;/p&gt;
 
-&lt;h4 id=&quot;bin-directory-&amp;amp;-spring&quot;&gt;Bin Directory &amp;amp; Spring&lt;/h4&gt;
+&lt;h4 id=&quot;bin-directory-amp-spring&quot;&gt;Bin Directory &amp;amp; Spring&lt;/h4&gt;
 
 &lt;p&gt;I have been using both bundler bin stubs and Spring in all of my 3.2 applications. Now that Rails supports both the local &lt;code&gt;bin&lt;/code&gt; directory and Spring in an integrated way, I wanted to follow the golden path of least resistance.&lt;/p&gt;
 
@@ -616,10 +616,10 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Lastly, the &lt;code&gt;all&lt;/code&gt; method no longer takes finder options.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Old&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conditions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;ken@metaskills.net&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conditions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&#39;ken@metaskills.net&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# New&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;ken@metaskills.net&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&#39;ken@metaskills.net&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id=&quot;actionmailer&quot;&gt;ActionMailer&lt;/h4&gt;
 
@@ -657,8 +657,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;p&gt;In closing, thanks for reading and I hope you found this information helpful. If you have any questions, feel free to ask in the comments. Cheers!&lt;/p&gt;
 </description>
         <pubDate>Tue, 16 Sep 2014 00:00:00 -0400</pubDate>
-        <link>/2014/09/16/from-rails-3.2-to-4.2</link>
-        <guid isPermaLink="true">/2014/09/16/from-rails-3.2-to-4.2</guid>
+        <link>/2014/09/16/from-rails-3-2-to-4-2</link>
+        <guid isPermaLink="true">/2014/09/16/from-rails-3-2-to-4-2</guid>
       </item>
     
       <item>
@@ -720,7 +720,7 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 
 &lt;p&gt;Still kind of boring... and who has time to stochastically place several dozen stars around the canvas? Time for some JavaScript automation.&lt;/p&gt;
 
-&lt;h2 id=&quot;svgs-&amp;amp;-javascript&quot;&gt;SVGs &amp;amp; JavaScript&lt;/h2&gt;
+&lt;h2 id=&quot;svgs-amp-javascript&quot;&gt;SVGs &amp;amp; JavaScript&lt;/h2&gt;
 
 &lt;p&gt;Yes! SVGs are distinct documents that can have their own CSS and JavaScript. But in order for this JavaScript to execute, we must embed it into the parent HTML document. Linking to an SVG via an &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag will not allow this due to security concerns. We can get around that issue by using an &lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt; tag instead.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;our-awesome.svg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/svg+xml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/object&amp;gt;&lt;/span&gt;
@@ -1023,7 +1023,7 @@ Do you want to use your existing Rails&amp;#39; layouts &amp;amp; business logic
 
 &lt;p&gt;For the &lt;a href=&quot;http://homemarks.com/&quot;&gt;HomeMarks&lt;/a&gt; blog, I used the github &lt;code&gt;jekyll-github.css&lt;/code&gt; from the last resource above. Have fun choosing your own and &lt;code&gt;@import&lt;/code&gt; it into your existing CSS bundle in the manner that matches your own project.&lt;/p&gt;
 
-&lt;h2 id=&quot;taking-it-further?&quot;&gt;Taking It Further?&lt;/h2&gt;
+&lt;h2 id=&quot;taking-it-further&quot;&gt;Taking It Further?&lt;/h2&gt;
 
 &lt;p&gt;So that&amp;#39;s it, we can ship it! But what about those other great requirements like YAML front matter, ERB templates, Rails&amp;#39; routes/helpers, and more? The good news is that I found the time to do them all. You can find each implemented in the final &lt;a href=&quot;https://gist.github.com/metaskills/11071934&quot;&gt;Jekyll-Style Blogging On Rails&lt;/a&gt; gist.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;scope&lt;/span&gt;
@@ -1034,7 +1034,7 @@ Do you want to use your existing Rails&amp;#39; layouts &amp;amp; business logic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;One aspect that I was particularly proud of was ERB pre-processing with a evaluation scope to Rails&amp;#39; routes and helpers. The solution turned out to be simple after digging into the &lt;a href=&quot;https://github.com/rails/rails/tree/4-1-stable/railties/lib/rails/console&quot;&gt;railties IRB console&lt;/a&gt; helpers and ActionPack. My solution above used this &lt;code&gt;scope&lt;/code&gt; with the Tilt&amp;#39;s erubis template.&lt;/p&gt;
 
-&lt;h2 id=&quot;where-to-go-from-here?&quot;&gt;Where To Go From Here?&lt;/h2&gt;
+&lt;h2 id=&quot;where-to-go-from-here&quot;&gt;Where To Go From Here?&lt;/h2&gt;
 
 &lt;p&gt;With &lt;a href=&quot;https://gist.github.com/metaskills/11071934&quot;&gt;this setup&lt;/a&gt;, you have a great foundation for Jekyll on Rails. Feel free to customize it as needed. Some ideas include:&lt;/p&gt;
 
@@ -1080,7 +1080,7 @@ So let me introduce you to my Mom and share a bit of her story which seems to st
 
 &lt;p&gt;To this day I joke that she loved her computer way too much. I have fond memories of the 1986 Mac Plus getting a front seat in the Dodge Caravan (with a seat belt) while I and my Brother had to ride in the back. Before then, she used to turn the house into a social software copy party and we spent family time notching disks before the guests would arrive.&lt;/p&gt;
 
-&lt;h2 id=&quot;thanks-mom!&quot;&gt;Thanks Mom!&lt;/h2&gt;
+&lt;h2 id=&quot;thanks-mom&quot;&gt;Thanks Mom!&lt;/h2&gt;
 
 &lt;p&gt;In closing, many thanks to my Mom for allowing me to share her story with you all. I am forever grateful to her teaching me that I can do anything I want and exposing me to computers and many other things. Maybe this is not uncommon? Maybe many more male software developers owe many things to a strong matriarchal influence? That would be really neat and I&amp;#39;d love to hear your story about it. Thanks for reading mine.&lt;/p&gt;
 </description>
@@ -1098,7 +1098,7 @@ Have you ever wondered how tools like New Relic are able to gain valuable metric
 
 &lt;p&gt;Today I want to share a working example of how you might use ActiveSupport::Notifications. Instead of presenting some contrived code, I thought it would be fun to &lt;a href=&quot;http://vimeo.com/17420638#t=27m27s&quot;&gt;freedom-patch&lt;/a&gt; a popular gem so that we can garner supernatural metrics that would have otherwise been lost or hidden deep in our log. For this exercise I have chosen the &lt;a href=&quot;https://github.com/nulayer/subexec&quot;&gt;Subexec&lt;/a&gt; gem. Subexec is a simple library that spawns an external command with an optional timeout parameter. It is used by other gems like &lt;a href=&quot;https://github.com/minimagick/minimagick&quot;&gt;MiniMagick&lt;/a&gt; – a popular minimal replacement for RMagick.&lt;/p&gt;
 
-&lt;h2 id=&quot;building-subexec::notifications&quot;&gt;Building Subexec::Notifications&lt;/h2&gt;
+&lt;h2 id=&quot;building-subexec-notifications&quot;&gt;Building Subexec::Notifications&lt;/h2&gt;
 
 &lt;p&gt;Our goal will be to build a new gem called subexec-notifications that instruments all commands run by the Subexec library. Once completed, third-party subscribers would be able collect these metrics thereby opening up developer/operational insights into how long certain commands were taking and on which server(s).&lt;/p&gt;
 
@@ -1266,9 +1266,9 @@ Last week, our localy Ruby community in Norfolk, VA re-launched the &lt;a href=&
 
 &lt;p&gt;I have no idea where I picked this up, but the general idea is to create a &lt;code&gt;tasks&lt;/code&gt; directory that holds a set of useful shell scripts. My Jekyll projects usually contain the following executables.&lt;/p&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
-  Remember to add the tasks directory to jekyll&amp;#39;s exclude array in your config file(s).
-&lt;/aside&gt;&lt;/p&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
+  Remember to add the tasks directory to jekyll&#39;s exclude array in your config file(s).
+&lt;/aside&gt;
 
 &lt;ul&gt;
 &lt;li&gt;jekyll&lt;/li&gt;
@@ -1283,7 +1283,7 @@ Last week, our localy Ruby community in Norfolk, VA re-launched the &lt;a href=&
 &lt;p&gt;I will cover &lt;code&gt;jekyll-livereload&lt;/code&gt; and &lt;code&gt;deploy&lt;/code&gt; later in this post. The &lt;a href=&quot;https://gist.github.com/metaskills/6414700&quot;&gt;optipng&lt;/a&gt; script is a useful command line utility that compresses assets. While the &lt;a href=&quot;https://gist.github.com/metaskills/6414713&quot;&gt;post&lt;/a&gt; script allows you to easily create a new post. For example:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;$ ./tasks/post &quot;Jekyll Tips And Tricks&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;development-&amp;amp;-production-environments&quot;&gt;Development &amp;amp; Production Environments&lt;/h2&gt;
+&lt;h2 id=&quot;development-amp-production-environments&quot;&gt;Development &amp;amp; Production Environments&lt;/h2&gt;
 
 &lt;p&gt;Sometimes you do not want a production feature turned on when developing your site locally. Blogs backed by &lt;a href=&quot;https://disqus.com&quot;&gt;DISQUS&lt;/a&gt; comments would be a great example. Likewise, maybe you want to develop a new feature that you can see during local development only to be enabled at a later time. Thanks to v1.0 of Jekyll and up, this is easy to do with different configuration files.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# In _config.yml&lt;/span&gt;
@@ -1371,9 +1371,9 @@ $ ln -s /path/to/myjekyllapp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can now access your generated site at &lt;code&gt;http://myjekyllapp.dev&lt;/code&gt; via Pow.&lt;/p&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
-  Remember to add both config.ru and the public directory to jekyll&amp;#39;s exclude array in your config file(s).
-&lt;/aside&gt;&lt;/p&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
+  Remember to add both config.ru and the public directory to jekyll&#39;s exclude array in your config file(s).
+&lt;/aside&gt;
 
 &lt;h2 id=&quot;live-reloads&quot;&gt;Live Reloads&lt;/h2&gt;
 
@@ -1401,9 +1401,9 @@ Also, make sure to exclude any directories that you do not want LiveReload to mo
 
 jekyll build --limit_posts 1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   Remember turn off LiveReload while you are deploying!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
 
@@ -1422,7 +1422,7 @@ jekyll build --limit_posts 1
     
       <item>
         <title>In Loving Memory of Kenneth Earle Collins</title>
-        <description>&lt;h4 id=&quot;kenneth-earle-collins,-66,-of-chesapeake,-virginia,-passed-away-january-5th,-2013.&quot;&gt;Kenneth Earle Collins, 66, of Chesapeake, Virginia, passed away January 5th, 2013.&lt;/h4&gt;
+        <description>&lt;h4 id=&quot;kenneth-earle-collins-66-of-chesapeake-virginia-passed-away-january-5th-2013&quot;&gt;Kenneth Earle Collins, 66, of Chesapeake, Virginia, passed away January 5th, 2013.&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/dad-sheriff.jpg&quot; alt=&quot;Kenneth Earle Collins - Master Deputy Sheriff&quot; class=&quot;ms-Img ms-Img--quarter ms-Img--fancy&quot; /&gt;
 My father, known to his friends and family as Kenny, was born in Logan, West Virginia and was the son of the late Edgar and Frances Collins. He was a retired Master Deputy with the Chesapeake Sheriff&amp;#39;s Department. Kenny is survived by his beloved wife of 7 years, Lois V. Collins; a sister, Lanna DeVites and husband John of Zuni, VA; 4 sons, Benjamin M. Collins and fiancée Samantha of Williamsburg, VA, Kenneth Collins and wife Kelly of Portsmouth, VA, Brian Seabold and wife Kelly of Chesapeake, VA, and George Seabold and wife Terri of Elizabeth City, North Carolina; a daughter, Lisa Berger and husband Keith Berger of VA Beach, VA; and 6 grandchildren, Marcus, Zachery, Grayson, Bryson, Jacob, and Trey.&lt;/p&gt;
@@ -1502,9 +1502,9 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
     
       <item>
         <title>HolyGrailHarness</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   The latest README for HolyGrailHarness project will always be on the &lt;a href=&quot;http://github.com/metaskills/holy_grail_harness&quot;&gt;Github project&lt;/a&gt; page.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.github.com/metaskills/holy_grail_harness/master/app/assets/images/holy_grail_harness.png&quot; class=&quot;ms-Img ms-Img--responsive&quot;/&gt;&lt;/p&gt;
 
@@ -1546,7 +1546,7 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 
 &lt;h2 id=&quot;testing&quot;&gt;Testing&lt;/h2&gt;
 
-&lt;h3 id=&quot;minitest::spec-all-the-way-across-the-sky!&quot;&gt;MiniTest::Spec All The Way Across The Sky!&lt;/h3&gt;
+&lt;h3 id=&quot;minitest-spec-all-the-way-across-the-sky&quot;&gt;MiniTest::Spec All The Way Across The Sky!&lt;/h3&gt;
 
 &lt;p&gt;Don&amp;#39;t wait for Rails 4 to use MiniTest::Spec! This application is using the &lt;a href=&quot;https://github.com/metaskills/minitest-spec-rails&quot;&gt;minitest-spec-rails&lt;/a&gt; gem which forces &lt;code&gt;ActiveSupport::TestCase&lt;/code&gt; to subclass &lt;code&gt;MiniTest::Spec&lt;/code&gt;. This means that you can start using the MiniTest&amp;#39;s Spec or Unit structure and assertions directly within the familiar Rails unit, functional, or integration directories. For full details, check out the &lt;a href=&quot;https://github.com/metaskills/minitest-spec-rails&quot;&gt;minitest-spec-rails&lt;/a&gt; documentation or some of the &lt;a href=&quot;https://github.com/metaskills/holy_grail_harness/blob/master/test/functional/application_controller_test.rb&quot;&gt;test shims&lt;/a&gt; within HolyGrailHarness. For example, a &lt;code&gt;test/unit/user_test.rb&lt;/code&gt; might look like this.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;test_helper&#39;&lt;/span&gt;
@@ -1674,7 +1674,7 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 
 &lt;p&gt;Also included is the &lt;a href=&quot;https://github.com/nathansobo/space-pen&quot;&gt;SpacePen&lt;/a&gt; view framework. SpacePen is a powerful and minimalist client-side view framework authored in CoffeeScript. It is actually a jQuery subclass which makes your views really easy to traverse and respond to controller events. Read my &lt;a href=&quot;http://metaskills.net/2012/05/22/view-controller-patterns-with-spine-js-and-spacepen/&quot;&gt;&lt;em&gt;View Controller Patterns With Spine.js &amp;amp; SpacePen&lt;/em&gt;&lt;/a&gt; article to learn why views should not be dumb and how you can take advantage of SpacePen no matter what JavaScript MV* framework you use.&lt;/p&gt;
 
-&lt;h3 id=&quot;with-spine.js&quot;&gt;With Spine.js&lt;/h3&gt;
+&lt;h3 id=&quot;with-spine-js&quot;&gt;With Spine.js&lt;/h3&gt;
 
 &lt;p&gt;If you choose to use Spine.js as your JavaScript MVC structure, the setup script will create a git submodule to the Spine repository to the &lt;code&gt;vendor/assets/javascripts/spine&lt;/code&gt; directory. This allows your project to use the the source CoffeeScript files, which makes for a wonderful &lt;a href=&quot;http://metaskills.net/2012/01/15/rails-and-spine-js-using-the-coffeescript-source/&quot;&gt;learning experience&lt;/a&gt; to both Spine.js and idomatic CoffeeScript.&lt;/p&gt;
 
@@ -1687,7 +1687,7 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No JavaScript project should be without a local notification system to help keep disparate components up to date. Thankfully, Spine&amp;#39;s event module makes a local PubSub system a breeze. The HolyGrailHarness has a &lt;a href=&quot;https://github.com/metaskills/holy_grail_harness/blob/master/app/assets/javascripts/holy_grail_harness/lib/notifications.js.coffee&quot;&gt;&lt;code&gt;notifications.js.coffee&lt;/code&gt;&lt;/a&gt; that exposes a class level &lt;code&gt;bind()&lt;/code&gt; and &lt;code&gt;trigger()&lt;/code&gt; to any event string/namespace you want. To make more simple, we recommend creating class level functions that expose the event name as the function name and pass the args to the &lt;code&gt;handle()&lt;/code&gt; function. We have done this for the &lt;code&gt;MyAppName.Notifications.appReady()&lt;/code&gt; to demonstrate. Calling this function will trigger the &lt;code&gt;app.ready&lt;/code&gt; event and passing a function to this function will bind that function to the same event name.&lt;/p&gt;
 
-&lt;h2 id=&quot;sass-&amp;amp;-compass&quot;&gt;Sass &amp;amp; Compass&lt;/h2&gt;
+&lt;h2 id=&quot;sass-amp-compass&quot;&gt;Sass &amp;amp; Compass&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://sass-lang.com&quot;&gt;Sass&lt;/a&gt; is the only way to write CSS for today&amp;#39;s modern web applications. &lt;a href=&quot;http://compass-style.org&quot;&gt;Compass&lt;/a&gt; is the CSS framework that no Sass user should go without. Together they provide a foundation for writing beautiful CSS using pre-built time saving functions. The HolyGrailHarness includes both the &lt;a href=&quot;https://github.com/rails/sass-rails&quot;&gt;sass-rails&lt;/a&gt; and &lt;a href=&quot;https://github.com/Compass/compass-rails&quot;&gt;compass-rails&lt;/a&gt; gems.&lt;/p&gt;
 
@@ -1706,7 +1706,7 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
     ├── _variables.scss
     └── base.scss
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;the-application.css-file.&quot;&gt;The application.css file.&lt;/h3&gt;
+&lt;h3 id=&quot;the-application-css-file&quot;&gt;The application.css file.&lt;/h3&gt;
 
 &lt;p&gt;Never write CSS in &lt;code&gt;application.css&lt;/code&gt;. Say what? I know right, but trust me. Just consider this file a top level bundle dependency that only requires other top level bundle assets. Here is the contents of that file. Notice how it requires a bundle called twitter and an index. One is for twitter bootstrap, see section below, and the other is the index to your own Sass framework.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/*
@@ -1714,7 +1714,7 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
  *= require application/index
 */&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;the-shared-directory.&quot;&gt;The shared directory.&lt;/h3&gt;
+&lt;h3 id=&quot;the-shared-directory&quot;&gt;The shared directory.&lt;/h3&gt;
 
 &lt;p&gt;Think of this as your own Compass framework. The &lt;a href=&quot;https://github.com/metaskills/holy_grail_harness/blob/master/app/assets/stylesheets/shared/base.scss&quot;&gt;&lt;code&gt;base.scss&lt;/code&gt;&lt;/a&gt; is your single file to &lt;code&gt;@import&lt;/code&gt; to get everything loaded and ready to go. &lt;strong&gt;Nothing in any of the shared files should generate CSS!&lt;/strong&gt; Importing &lt;code&gt;shared/base&lt;/code&gt; should act just like importing &lt;code&gt;compass&lt;/code&gt;. Use these files for setting your own variables and creating misc helper functions &amp;amp; mixins. There is a variables file for... variables! Another for animations, fonts and mixins too.&lt;/p&gt;
 
@@ -1733,7 +1733,7 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;shared/animations&quot;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;shared/placeholders&quot;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;the-application-directory.&quot;&gt;The application directory.&lt;/h3&gt;
+&lt;h3 id=&quot;the-application-directory&quot;&gt;The application directory.&lt;/h3&gt;
 
 &lt;p&gt;Organize this as you see fit. We have started you off by creating a &lt;code&gt;_layout.scss&lt;/code&gt; file for your general layout/structure styles. There is also a &lt;code&gt;components&lt;/code&gt; directory which all sub files are imported via a glob. The idea is that components are not dependent upon another. Files that might go in here are things like datepicker, navigation, and general files named after components or widgets. Below is what the &lt;code&gt;application/index.scss&lt;/code&gt; looks like.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;shared/base&quot;;&lt;/span&gt;
@@ -1788,9 +1788,9 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 
 &lt;h2&gt;Faking Time With Sinon.JS&lt;/h2&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   &lt;a href=&quot;http://pivotal.github.com/jasmine/#section-Mocking_the_JavaScript_Clock&quot;&gt;Jasmine 1.2 now has a similiar mocking technique for the JavaScript clock.&lt;/a&gt;
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   &lt;a href=&quot;http://sinonjs.org&quot;&gt;Sinon.JS&lt;/a&gt; is a small stand-alone library that provides spies, stubs and mocks for your JavaScript. To be honest, I use Jasmine and supporting extensions for most of these features. However, Sinon.JS has one killer feature, faking time! Yup, it allows you to freeze JavaScript&#39;s clock to a specific time and tick it forward as needed. I want you to ponder the benefits of that for awhile. Imagine you have time sensitive JavaScript code that uses &lt;code&gt;setInterval()&lt;/code&gt; or the like. Sinon.JS will actually allow you to tick time forward and still maintain compatibility with that code&#39;s behavior! Basically Sinon.JS is equal to our Ruby Timecop gem and then some! Check out their &lt;a href=&quot;http://sinonjs.org/docs/#clock-api&quot;&gt;clock API&lt;/a&gt; or read the code if you want to learn more. Remember, it is safe to include Sinon.JS in any existing JavaScript project since it will not do anything unless you ask it too. So no fear in it clashing with your other JavaScript test setup.
@@ -1876,8 +1876,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 07 Aug 2012 00:00:00 -0400</pubDate>
-        <link>/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon.js</link>
-        <guid isPermaLink="true">/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon.js</guid>
+        <link>/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon-js</link>
+        <guid isPermaLink="true">/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon-js</guid>
       </item>
     
       <item>
@@ -2285,9 +2285,9 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
     
       <item>
         <title>Too LESS? Should You Be Using Sass?</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   Previously I had updated this article to say that this &lt;a href=&quot;http://github.com/cloudhead/less.js/commit/93b23d2c24936d5bd829ba1f725ef442e9475747&quot;&gt;commit&lt;/a&gt; looked like it gives you real variable properties in LESS. I was wrong! So even in LESS v1.3 you are still screwed for doing metaprogramming and working with a real CSS preprocessor. That may change for LESS v1.4 and if you want to help make that happen. I suggst you put your weight behind &lt;a href=&quot;https://github.com/cloudhead/less.js/pull/698&quot;&gt;this github pull request&lt;/a&gt;.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   First, a little bit of background. A while back ago I took a great deal of my personal time to try out Twitter&#39;s Bootstrap project for a Rails application of mine. This meant that I was willing to throw away some of the work I had done in Sass and rewrite it using LESS. No problem I thought, at first glance LESS and Sass look almost identical in functionality. So after some weeks of improving the toolchain for LESS with Ruby and then Rails, I set out to do just that &amp;ndash; and what a miserable failure it was. My goal is to share my experiences to anyone considering using LESS and why it might be wrong for your Rails project.
@@ -3037,9 +3037,9 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
     
       <item>
         <title>How Do You Encapsulate Your JavaScript</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   This page has been translated into &lt;a href=&quot;http://www.webhostinghub.com/support/es/misc/encapsular-javascript&quot;&gt;Spanish&lt;/a&gt; language by Maria Ramos from &lt;a href=&quot;http://www.webhostinghub.com/&quot;&gt;Webhostinghub.com&lt;/a&gt;.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   I ask this question a lot! To Job candidates, friends, and almost any developer that says they work with JavaScript. I believe how you encapsulate your JavaScript is a good indicator on your level of expertise with the language. I find that most beginners have come to JavaScript via jQuery and often define their functions at the top level namespace in some application.js file. These functions are loosely organized and often have no way of sharing simple object state and behavior. A good object oriented programmer would never write their application code like that. JavaScript should be no different and I think jQuery has a part in the blame of those not knowing this.
@@ -3106,15 +3106,15 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;noticeDiv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;div.flash.notice&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_doFlashFor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alertDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_doFlashFor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alertDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;notice&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_doFlashFor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;noticeDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;notice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_doFlashFor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;noticeDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;_doFlashFor&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;_doFlashFor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mobile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;silentScroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -3242,9 +3242,9 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Integration Testing &amp;amp; Capybara-Webkit&lt;/h2&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: After this article I posted a gist titled &lt;a href=&quot;https://gist.github.com/1172519&quot;&gt;Never sleep() using Capybara!&lt;/a&gt; that details how to deal with CSS animations and AJAX requests using Capybara. Check it out too!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   Those that know me are familiar that I do not use RSpec or Test::Unit but instead opt for a simple testing framework built into Ruby 1.9, &lt;a href=&quot;/2011/03/26/using-minitest-spec-with-rails/&quot;&gt;MiniTest::Spec&lt;/a&gt;. I also use the &lt;a href=&quot;https://github.com/thoughtbot/capybara-webkit&quot;&gt;Capybara-WebKit&lt;/a&gt; driver for my acceptance testing in both &lt;a href=&quot;https://github.com/metaskills/holygrail_rails23&quot;&gt;Rails 2.3&lt;/a&gt; and &lt;a href=&quot;https://github.com/metaskills/holygrail_rails31&quot;&gt;Rails 3.1&lt;/a&gt;&#39;s standard integration test layer. Reference the &lt;code&gt;integration_test_helper.rb&lt;/code&gt; file in each link above to learn how to use Capybara-WebKit with your rails app. Thanks to Wyatt Greene for his &lt;a href=&quot;http://techiferous.com/2010/04/using-capybara-in-rails-3/&quot;&gt;original article&lt;/a&gt; on the matter.
@@ -3311,9 +3311,9 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
     
       <item>
         <title>Use Compass Sass Framework Files With The Rails 3.1.0.rc5 Asset Pipeline</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: Now that Rails 3.1 is out, just use the &lt;a href=&quot;http://rubygems.org/gems/compass&quot;&gt;latest compass&lt;/a&gt; or pre-release. No hacks needed!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   This is a simple update to my &lt;a href=&quot;/2011/05/18/use-compass-sass-framework-files-with-the-rails-3.1-asset-pipeline/&quot;&gt;original article&lt;/a&gt; for using compass&#39;s &lt;code&gt;.scss&lt;/code&gt; files with the asset pipeline. This assumes you had this setup working in Rails 3.1.0.rc4, but should be helpful to anybody. The good news is that most everything is wired up.
@@ -3344,8 +3344,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 29 Jul 2011 00:00:00 -0400</pubDate>
-        <link>/2011/07/29/use-compass-sass-framework-files-with-the-rails-3.1.0.rc5-asset-pipeline</link>
-        <guid isPermaLink="true">/2011/07/29/use-compass-sass-framework-files-with-the-rails-3.1.0.rc5-asset-pipeline</guid>
+        <link>/2011/07/29/use-compass-sass-framework-files-with-the-rails-3-1-0-rc5-asset-pipeline</link>
+        <guid isPermaLink="true">/2011/07/29/use-compass-sass-framework-files-with-the-rails-3-1-0-rc5-asset-pipeline</guid>
       </item>
     
       <item>
@@ -3462,9 +3462,9 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
     
       <item>
         <title>Use Compass Sass Framework Files With The Rails 3.1 Asset Pipeline</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: Now that Rails 3.1 is out, just use the &lt;a href=&quot;http://rubygems.org/gems/compass&quot;&gt;latest compass&lt;/a&gt; or pre-release. No hacks needed!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   The Sprockets 2 gem along with the Tilt gem make it really easy to write JavaScript or CSS using any templating language you desire. The rails defaults are CoffeeScript and Sass. About the &lt;a href=&quot;https://github.com/chriseppstein/compass/tree/stable/frameworks/compass/stylesheets&quot;&gt;best collection of Sass framework files&lt;/a&gt; for easy cross-browser CSS authoring are packaged in the compass framework. Compass even has &lt;a href=&quot;http://compass-style.org/reference/compass/css3/&quot;&gt;great documentation&lt;/a&gt; for using their Sass framework. But what if you want to use those within the asset pipeline provided by Rails? Easy enough!
@@ -3498,8 +3498,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
   &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 18 May 2011 00:00:00 -0400</pubDate>
-        <link>/2011/05/18/use-compass-sass-framework-files-with-the-rails-3.1-asset-pipeline</link>
-        <guid isPermaLink="true">/2011/05/18/use-compass-sass-framework-files-with-the-rails-3.1-asset-pipeline</guid>
+        <link>/2011/05/18/use-compass-sass-framework-files-with-the-rails-3-1-asset-pipeline</link>
+        <guid isPermaLink="true">/2011/05/18/use-compass-sass-framework-files-with-the-rails-3-1-asset-pipeline</guid>
       </item>
     
       <item>
@@ -3523,15 +3523,15 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;p&gt;Lastly, I will review the bleeding edge tools being actively created for Windows developers to ease the transition to Ruby, Rails and OSS from a POSIX driven world. Many things have changed. It is time to learn and perform some occupational maintenance.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 May 2011 00:00:00 -0400</pubDate>
-        <link>/2011/05/06/speaking_at_madexpo</link>
-        <guid isPermaLink="true">/2011/05/06/speaking_at_madexpo</guid>
+        <link>/2011/05/06/speaking-at-madexpo</link>
+        <guid isPermaLink="true">/2011/05/06/speaking-at-madexpo</guid>
       </item>
     
       <item>
         <title>Using MiniTest::Spec With Rails</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: I have renamed the gem that allows you to switch to MiniTest::Spec in Rails to minitest-spec-rails. It is now considered a single gem install with a drop-in to switch to MiniTest::Spec. This article has been updated to reflect this change.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   So after a few blog post on the subject of MiniTest::Spec, I finally have a simple solution for Rails 3 that leverages MiniTest&#39;s spec DSL. I introduce to you the &lt;a href=&quot;http://github.com/metaskills/minitest-spec-rails&quot;&gt;minitest-spec-rails&lt;/a&gt; gem. MiniTestSpecRails defines a &lt;code&gt;Test::Unit::TestCase&lt;/code&gt; class that subclasses MiniTest::Spec. It implements only what is needed to make Rails happy.
@@ -3591,12 +3591,12 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
     
       <item>
         <title>MiniBacktrace - For MiniTest &amp; Rails</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE:
   &lt;a href=&quot;/2011/03/26/using-minitest-spec-with-rails/&quot;&gt;Using MiniTest::Spec With Rails&lt;/a&gt;
   &amp;amp;
   &lt;a href=&quot;/2011/03/26/using-minitest-spec-with-rails/&quot;&gt;From Test::Unit &amp;amp; Shoulda To MiniTest::Spec &amp;amp; MiniShoulda&lt;/a&gt;
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   &lt;a href=&quot;https://github.com/metaskills/mini_backtrace&quot;&gt;MiniBacktrace&lt;/a&gt; allows you to take advantage of the Rails.backtrace_cleaner when using MiniTest. This includes everyone using Rails 3 with Ruby 1.9.
@@ -3646,9 +3646,9 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
   Sometimes it is useful to start at the end. So the first thing we need is a new layout for all of our pdf templates to use. Here is a &lt;a href=&quot;http://haml-lang.com/&quot;&gt;HAML&lt;/a&gt; file that I recommend you name &lt;code&gt;app/views/layouts/pdf.html.pdf.haml&lt;/code&gt;. Did you see that name? &lt;strong&gt;This is important!&lt;/strong&gt; because Rails allows us to specify template names that can service more than one mime type format. So in this case, the layout will be found when rendering both HTML and .pdf formats.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   Somewhere along the way to Rails 3, dual mime type support was lost. Now to render a template/partial for multiple mime types you must remove them all together from the name. Thereby making the file a catch-all for any mime type. In this case, pdf.haml would work.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;!!!&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:lang&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;en&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;
@@ -3676,11 +3676,11 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;span class=&quot;nt&quot;&gt;pre&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;fieldset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;th&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;td&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border-collapse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;collapse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border-spacing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;fieldset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;cite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;dfn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;th&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;list-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;th&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;th&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;abbr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;acronym&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-variant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;sup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;vertical-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;text-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;vertical-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;text-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;inherit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;inherit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;inherit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;/* Your Base Foundation */&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -3823,8 +3823,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;span class=&quot;k&quot;&gt;esac&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 09 Mar 2011 00:00:00 -0500</pubDate>
-        <link>/2011/03/09/gc-tune-ruby-1.9.2-with-rvm</link>
-        <guid isPermaLink="true">/2011/03/09/gc-tune-ruby-1.9.2-with-rvm</guid>
+        <link>/2011/03/09/gc-tune-ruby-1-9-2-with-rvm</link>
+        <guid isPermaLink="true">/2011/03/09/gc-tune-ruby-1-9-2-with-rvm</guid>
       </item>
     
       <item>
@@ -3892,8 +3892,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Feb 2011 00:00:00 -0500</pubDate>
-        <link>/2011/02/10/modern-sql-server--rails</link>
-        <guid isPermaLink="true">/2011/02/10/modern-sql-server--rails</guid>
+        <link>/2011/02/10/modern-sql-server-rails</link>
+        <guid isPermaLink="true">/2011/02/10/modern-sql-server-rails</guid>
       </item>
     
       <item>
@@ -3918,20 +3918,20 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
       &lt;span class=&quot;c1&quot;&gt;# Higher percentages, above 90%, are good.&lt;/span&gt;
       &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hit_ratio&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({})&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;memo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;get_hits&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_f&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/ stat[&#39;cmd_get&#39;].to_f) * 100
-          memo[server] = number_to_percentage(value,:precision=&amp;gt;2)
-          memo
-        end
-      end
+          &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;get_hits&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cmd_get&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;memo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number_to_percentage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:precision&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;memo&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-      # Another good statistic to look at is percentage of gets to sets. For a well-tuned application,
-      # there should be more gets than sets. High percents are bad, negatives are great.
-      def gets_to_sets
-        stats.inject({}) do |memo, (server,stat)|
-          sets = stat[&#39;cmd_set&#39;].to_f
-          gets = stat[&#39;cmd_get&#39;].to_f
-          more_sets = sets - gets
-          value = (more_sets /&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# Another good statistic to look at is percentage of gets to sets. For a well-tuned application,&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# there should be more gets than sets. High percents are bad, negatives are great.&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;gets_to_sets&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({})&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;memo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;sets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cmd_set&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_f&lt;/span&gt;
+          &lt;span class=&quot;nb&quot;&gt;gets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cmd_get&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_f&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;more_sets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;gets&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;more_sets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
           &lt;span class=&quot;n&quot;&gt;memo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number_to_percentage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:precision&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
           &lt;span class=&quot;n&quot;&gt;memo&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
@@ -3976,9 +3976,9 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
     
       <item>
         <title>From Test::Unit &amp; Shoulda To MiniTest::Spec &amp; MiniShoulda</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: If you want to use MiniTest::Spec with Rails please read my &lt;a href=&quot;/2011/03/26/using-minitest-spec-with-rails/&quot;&gt;updated post&lt;/a&gt; and how to use the minitest-spec-rails gem.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   It seems the MiniTest replacement for Test::Unit in Ruby 1.9 has been presenting itself more and more in my daily readings. Recently was Jamis Buck&#39;s article titled &lt;a href=&quot;http://37signals.com/svn/posts/2742-the-road-to-faster-tests&quot;&gt;The road to faster tests&lt;/a&gt; where he talks about optimizing basecamp&#39;s suite to run faster. And there again, some of the comments below mentioned MiniTest as a solution. That got me thinking on what would it take for me to switch from Test::Unit to MiniTest.
@@ -4184,7 +4184,7 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;p&gt;
   So maybe you have an old Mephisto install that you would like to migrate to Jekyll? If so, I have &lt;a href=&quot;https://gist.github.com/756111&quot;&gt;posted a gist&lt;/a&gt; of some rails 3 models that I used to export my data from MySQL to static files following the format required by Jekyll. Simply populate a new rails 3 project with these, fire up a console and do &lt;code&gt;Site.export_jekyll&lt;/code&gt;. This will create a folder in &lt;code&gt;tmp/jekyll_posts&lt;/code&gt; and write a file for each Mephisto article. The posts will contain the YAML front matter for jekyll and hopefully a good starting point of the categories you had assigned to that post. As a bonus, the export will create a &lt;code&gt;tmp/jekyll_posts/rewrites.txt&lt;/code&gt; file that will be very useful to include in a .htaccess file of your jekyll project. An example below.
 &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;RewriteRule ^2010/8/19/how-to-clean-a-campfire-room-of-uploads$ /2010/08/19/how-to-clean-a-campfire-room-of-uploads/ [L]
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nl&quot;&gt;RewriteRule&lt;/span&gt; ^2010/8/19/how-to-clean-a-campfire-room-of-uploads$ /2010/08/19/how-to-clean-a-campfire-room-of-uploads/ [L]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   Also included in the gist is a &lt;code&gt;Site.export_jskit&lt;/code&gt; method that will generate an XML file of  your comments to import into Disqus. Though I was able to import my Mephisto comments into Disqus and see them linked from the admin interface, I have yet to get them to show up on the new site. I have a support request open with Disqus and will update this article and the gist with any new information.
@@ -4698,13 +4698,13 @@ section#page {
     
       <item>
         <title>A MacPort/RubyODBC Update</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   &lt;a href=&quot;https://github.com/rails-sqlserver/tiny_tds&quot;&gt;TinyTDS&lt;/a&gt; is the upcoming de facto raw connection method for the SQL Server adapter. Please read the &lt;em&gt;&lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/wiki/Using-TinyTds&quot;&gt;Using TinyTDS&lt;/a&gt;&lt;/em&gt; wiki page on the adapter for switching. No longer do you have to worry about compiling ODBC layers!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   I have changed my mind about the UTF-8 version of RubyODBC. Please &lt;a href=&quot;http://groups.google.com/group/rails-sqlserver-adapter/browse_thread/thread/367cf70b2b48d4a0?hl=en&quot;&gt;read that section&lt;/a&gt; in the the rails 3 announcements for the SQL Server adapter.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   Quite a while ago I wrote a &lt;a href=&quot;/2009/9/5/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86_64-macports-ruby-1-8-1-9-sql-server-more&quot;&gt;soup to nuts article on getting the full multi-ruby development stack installed&lt;/a&gt; for those using the SQL Server adapter. The base package management system used there was MacPorts. In it I described how to edit the outdated Portfile for the rb-odbc package and exclaimed how important it was to use the +utf8 variant. I was totally wrong about that part.
@@ -4747,7 +4747,7 @@ variant utf8 {
 &lt;p&gt;
   So, even though my updated Portfile above now fixes that issue and supports actually building a utf8 version of RubyODBC, &lt;strong&gt;YOU DO NOT NEED IT!&lt;/strong&gt; In fact the entire SQL Server stack is tested with the plain non-utf8 package and passes with flying colors. This includes passing tests where unicode columns return correctly utf8-encoded strings, among others. Though I have not tested it, I believe the utf8 version would do more damage than good. The RubyODBC documentation says it would make every string utf8 encoded. Not good for an adapter that has mixed data types. For my own personal notes, here is a diff of the Makefile below. I think the Init_odbc error was a result of a missing flag in the Makefile.
 &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-diff&quot; data-lang=&quot;diff&quot;&gt;&lt;span class=&quot;err&quot;&gt;# My notes
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-diff&quot; data-lang=&quot;diff&quot;&gt;# My notes
 # +CPPFLAGS = -DHAVE_LONG_LONG
 # +CPPFLAGS = -DHAVE_VERSION_H
 # +CPPFLAGS = -DHAVE_TYPE_SQLBIGINT
@@ -4755,9 +4755,9 @@ variant utf8 {
 # -CPPFLAGS = -DHAVE_SQLINSTALLERERRORW
 # -CPPFLAGS = -DHAVE_SQLWRITEFILEDSNW
 # -CPPFLAGS = -DHAVE_SQLREADFILEDSNW
-&lt;/span&gt;&lt;span class=&quot;gd&quot;&gt;--- Makefile(+utf8)  2010-07-18 12:00:24.000000000 -0400
+&lt;span class=&quot;gd&quot;&gt;--- Makefile(+utf8)  2010-07-18 12:00:24.000000000 -0400
 &lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+++ Makefile(-utf8)  2010-07-18 12:49:32.000000000 -0400
-&lt;/span&gt;&lt;span class=&quot;gh&quot;&gt;@@ -47,7 +47,7 @@
+&lt;/span&gt;&lt;span class=&quot;gu&quot;&gt;@@ -47,7 +47,7 @@
 &lt;/span&gt; CFLAGS   =  -fno-common -O2 -arch x86_64  -fno-common -pipe -fno-common $(cflags) -arch x86_64
  INCFLAGS = -I. -I. -I/opt/local/lib/ruby/1.8/i686-darwin10 -I.
  DEFS     =
@@ -4766,7 +4766,7 @@ variant utf8 {
 &lt;/span&gt; CXXFLAGS = $(CFLAGS)
  ldflags  = -L. -L/opt/local/lib -arch x86_64
  dldflags =
-&lt;span class=&quot;gh&quot;&gt;@@ -89,7 +89,7 @@
+&lt;span class=&quot;gu&quot;&gt;@@ -89,7 +89,7 @@
 &lt;/span&gt; LIBS = $(LIBRUBYARG_SHARED) -lodbcinst -lodbc  -lpthread -ldl -lobjc
  SRCS = init.c odbc.c
  OBJS = init.o odbc.o
@@ -4919,8 +4919,8 @@ variant utf8 {
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 06 Jul 2010 00:00:00 -0400</pubDate>
-        <link>/2010/07/06/custom-webrat-session-formatted_error-for-rails-with-nokogiri</link>
-        <guid isPermaLink="true">/2010/07/06/custom-webrat-session-formatted_error-for-rails-with-nokogiri</guid>
+        <link>/2010/07/06/custom-webrat-session-formatted-error-for-rails-with-nokogiri</link>
+        <guid isPermaLink="true">/2010/07/06/custom-webrat-session-formatted-error-for-rails-with-nokogiri</guid>
       </item>
     
       <item>
@@ -4973,8 +4973,8 @@ variant utf8 {
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 May 2010 00:00:00 -0400</pubDate>
-        <link>/2010/05/26/the-alias_method_chain-of-rake-override-rake-task</link>
-        <guid isPermaLink="true">/2010/05/26/the-alias_method_chain-of-rake-override-rake-task</guid>
+        <link>/2010/05/26/the-alias-method-chain-of-rake-override-rake-task</link>
+        <guid isPermaLink="true">/2010/05/26/the-alias-method-chain-of-rake-override-rake-task</guid>
       </item>
     
       <item>
@@ -5214,9 +5214,9 @@ build
     
       <item>
         <title>Unobtrusive JS In Rails 3 With Prototype</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   An updated version of UJS and forgery protection in Rails3 &lt;a href=&quot;/2010/4/13/restful-ajax-with-forgery-protection-with-rails-3&quot;&gt;here&lt;/a&gt;.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   Are you bleeding on the edge of rails 3 and need to shim up some unobtrusive JavaScript to work with your &lt;code&gt;link_to&lt;/code&gt; code that uses a destructive :method option? I did today and here is what I did to solve it. If you are unfamiliar with the problem, and what has been happening in rails 3 with UJS, check out &lt;a href=&quot;http://blog.solnic.eu/2009/09/08/unobtrusive-javascript-helpers-in-rails-3&quot;&gt;Piotr Solnica&#39;s&lt;/a&gt; blog for a good run down. Or you can check out the simple code block below.
@@ -5269,9 +5269,9 @@ build
     
       <item>
         <title>Quickie.js - Prototype wrapper for QuickTime</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: May 15th, 2011 - Today I decided to to re-write this class as my first dive into both CoffeeScript and jQuery. You can find an &lt;a href=&quot;https://gist.github.com/973483&quot;&gt;updated version in this gist on github&lt;/a&gt;.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   As some of you know, I am in the last steps of announcing my first iPhone application. We all know that every good iPhone application has a great marketing website with a screen cast. I myself was heavily inspired by the &lt;a href=&quot;http://tapbots.com/convertbot&quot;&gt;Tapbots Convertbot&lt;/a&gt; website while building my own and wanted a good way of embedding the screen cast. I think the last time I did an object/embed tag was god... around 2003 or something, seriously.
@@ -5341,16 +5341,16 @@ License:
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_assignElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;toElement&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;toElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;_assignElement&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;_assignElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Browser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;IE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_buildObjectTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_buildEmbedTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;div&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;down&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;_buildObjectTag&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;_buildObjectTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&amp;lt;object classid=&quot;clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B&quot; codebase=&quot;http://www.apple.com/qtactivex/qtplugin.cab&quot;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39; id=&quot;&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&quot;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -5366,7 +5366,7 @@ License:
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;_buildEmbedTag&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;_buildEmbedTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&amp;lt;embed &#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39; id=&quot;&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;&quot;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -5461,9 +5461,9 @@ Example Container
     
       <item>
         <title>Authenticated S3 GETs For Private Objects Using Paperclip</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: [10/18/2011] I now use Fog vs AWS::S3 with Paperclip. I have included a Fog specific example below.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   Yea I know, I am probably the last person on earth that is just getting around to using &lt;a href=&quot;http://github.com/thoughtbot/paperclip&quot;&gt;Paperclip&lt;/a&gt;. To be honest, most of my file upload code was written way before Paperclip or even AttachementFu was ever conceived. And frankly, I do not do much social app coding on the side - so the need never came up. But that changed recently and I wanted a really really good way of leveraging AWS::S3 storage with the best local app security while maintaining tight control over the files.
@@ -5861,17 +5861,17 @@ $ sudo passenger-install-apache2-module
     
       <item>
         <title>The Ultimate OS X Snow Leopard Stack For Rails Development - x86_64, MacPorts, Ruby 1.8/1.9, SQL Server, SQLite3, MySQL &amp; More</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   If you are interested in &lt;a href=&quot;/2010/07/30/the-rvm-ruby-api/&quot;&gt;using RVM with a MacPort base for the SQL Server stack&lt;/a&gt;, check out this article.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   &lt;a href=&quot;https://github.com/rails-sqlserver/tiny_tds&quot;&gt;TinyTDS&lt;/a&gt; is the upcoming de facto raw connection method for the SQL Server adapter. Please read the &lt;em&gt;&lt;a href=&quot;https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/wiki/Using-TinyTds&quot;&gt;Using TinyTDS&lt;/a&gt;&lt;/em&gt; wiki page on the adapter for switching. No longer do you have to worry about compiling ODBC layers!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   I have written &lt;a href=&quot;/2010/07/19/a-macport-rubyodbc-update/&quot;&gt;an updated article on the MacPorts installation of the latest RubyODBC&lt;/a&gt;. It includes information pertaining to utf8 support.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   This guide is all encompassing but primarily focuses on the benefits of MacPorts, second the development stack for SQL Server and lastly on anything else a rails developer might need on OS X. If you are on a Mac, possibly running Snow Leopard and x86_64 is near and dear to your heart, this article is for you. &lt;strong&gt;If you do not &quot;have&quot; to use SQL Server, you can safely skip those sections and get to the Ruby1.9/Apache2/SQLite3/MySQL stuff.&lt;/strong&gt;
@@ -6137,8 +6137,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;myconf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mate /opt/local/etc/mysql5/my.cnf&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sat, 05 Sep 2009 00:00:00 -0400</pubDate>
-        <link>/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86_64-macports-ruby-1-8-1-9-sql-server-more</link>
-        <guid isPermaLink="true">/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86_64-macports-ruby-1-8-1-9-sql-server-more</guid>
+        <link>/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86-64-macports-ruby-1-8-1-9-sql-server-more</link>
+        <guid isPermaLink="true">/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86-64-macports-ruby-1-8-1-9-sql-server-more</guid>
       </item>
     
       <item>
@@ -6151,9 +6151,9 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
     
       <item>
         <title>Visor Terminal on Snow Leopard</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: Hacks no longer needed, latest Visor/SIMBL is 64-bit Snow Leopard happy!
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   This is a similar process that I had to go through back in the day when I had to hack visor terminal in Leopard. Basically the steps are pretty easy. First you just install &lt;a href=&quot;http://www.culater.net/software/SIMBL/SIMBL.php&quot;&gt;SIMBL&lt;/a&gt; and the &lt;a href=&quot;http://visor.binaryage.com/&quot;&gt;Visor.bundle&lt;/a&gt; as a SIMBL plugin in &lt;code&gt;~/Library/Application Support/SIMBL/Plugins/Visor.bundle&lt;/code&gt;. Once that is done here is the process to get this working in Snow Leopard.
@@ -6405,9 +6405,9 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
     
       <item>
         <title>MultiRuby The MacPorts Way. Testing Your Rails Apps With Ruby 1.9</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
-  UPDATE: In a recent article, I &lt;a href=&quot;/2009/10/27/installing-ree-with-the-snow-leopard-sql-server-stack/&quot;&gt;covered how to install REE&lt;/a&gt; and have hence NOOP&amp;#39;ed this function to ignore the symlinking when REE is installed.
-&lt;/aside&gt;&lt;/p&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
+  UPDATE: In a recent article, I &lt;a href=&quot;/2009/10/27/installing-ree-with-the-snow-leopard-sql-server-stack/&quot;&gt;covered how to install REE&lt;/a&gt; and have hence NOOP&#39;ed this function to ignore the symlinking when REE is installed.
+&lt;/aside&gt;
 
 &lt;p&gt;
   Ruby 1.9.1, the stable release, is just around the corner and if your like me, maybe you want to start playing around with it and perhaps test a few projects using 1.9 with edge rails 2.3. If so, and your on a Mac, then perhaps this installation method might appeal to you. I&#39;ll break this article up in two parts, the first will be on installing multiple versions of ruby and how to switch between them while the other will be some things I noticed when testing ruby 1.9 with edge rails on my favorite pet project &lt;a href=&quot;http://github.com/metaskills/homemarks/tree/master&quot;&gt;HomeMarks&lt;/a&gt;.
@@ -6734,8 +6734,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 28 Sep 2008 00:00:00 -0400</pubDate>
-        <link>/2008/09/28/jack-has_many-things</link>
-        <guid isPermaLink="true">/2008/09/28/jack-has_many-things</guid>
+        <link>/2008/09/28/jack-has-many-things</link>
+        <guid isPermaLink="true">/2008/09/28/jack-has-many-things</guid>
       </item>
     
       <item>
@@ -7037,10 +7037,18 @@ loading autotest/railsplugin
       </item>
     
       <item>
+        <title>The Ajax Head Br Design Pattern_redirect</title>
+        <description></description>
+        <pubDate>Sat, 24 May 2008 00:00:00 -0400</pubDate>
+        <link>/2008/5/24/the-ajax-head-br-design-pattern</link>
+        <guid isPermaLink="true">/2008/5/24/the-ajax-head-br-design-pattern</guid>
+      </item>
+    
+      <item>
         <title>The &quot;AJAX Head&quot; Design Pattern</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   Chris Williams did a really great write up on this pattern with great details on when/how to use it. Please considering &lt;a href=&quot;http://voodootikigod.com/ajax-head-design-pattern&quot;&gt;reading it&lt;/a&gt; afterward.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   This is the first of a few articles covering the total rewrite of the &lt;a href=&quot;http://homemarks.com/&quot;&gt;HomeMarks.com&lt;/a&gt; code base as I upgrade it to Rails 2.1. The &quot;AJAX Head&quot; pattern is the moniker I have assigned to methodology that has come about during said rewrite and the design decisions I choose early on. The rules were simple.
@@ -7172,7 +7180,7 @@ loading autotest/railsplugin
   &lt;span class=&quot;na&quot;&gt;getRequestMood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;good&#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;bad&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;messagesToList&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;messagesToList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;messages&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;responseJSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;messageList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;messages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
@@ -7186,7 +7194,7 @@ loading autotest/railsplugin
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;signupForm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;signup_form&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;initEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;startAjaxForm&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;startAjaxForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;form&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;imgSrc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;loading_invert.gif&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{});&lt;/span&gt;
@@ -7195,16 +7203,16 @@ loading autotest/railsplugin
     &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;imgTag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Ajax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
       &lt;span class=&quot;na&quot;&gt;onComplete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;delegateCompleteAjaxForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;serialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;serialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;disable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;delegateCompleteAjaxForm&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;delegateCompleteAjaxForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mood&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getRequestMood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completeAjaxForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;mood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mood&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;good&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
       &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;supportForm&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completeSupportForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;supportForm&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completeSupportForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -7215,7 +7223,7 @@ loading autotest/railsplugin
       &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;completeAjaxForm&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;completeAjaxForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;mood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;good&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{});&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;loadArea&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;down&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;#form_loading&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;completeId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;complete_ajax_form_&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -7224,14 +7232,14 @@ loading autotest/railsplugin
     &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;moodHtml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completeId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;completeSignupForm&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;completeSignupForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Thank your for signing up for your own HomeMarks page. An email has been sent to &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
       &lt;span class=&quot;s2&quot;&gt;&quot;your address along with a link to activate your account. If you have not done so already, please &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
       &lt;span class=&quot;s2&quot;&gt;&quot;take a moment to read the HomeMarks documentation.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;flashHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;DIV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;H2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Signup Complete:&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;good&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flashHTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;initEvents&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;initEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;signupForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;signupForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;observe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;submit&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;startAjaxForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bindAsEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
@@ -7246,11 +7254,11 @@ loading autotest/railsplugin
   The second slightly more interesting way was to create a flash message that used the same XHTML/CSS already present in my layout file. This was real easy to implement. Basically using the ERB fragment below in my layout, I guaranteed that I had 3 unique DOM elements for each of my flash message styles, good/bad/indif. Now all I had to do was to create an accessor in my HomeMarksSite class. I choose &lt;code&gt;this.flashes&lt;/code&gt;. I then created a &lt;code&gt;clearFlashes()&lt;/code&gt; function and then a &lt;code&gt;flash()&lt;/code&gt; function that would take the mood and the HTML to embed, viola â€“ I can now call &lt;code&gt;this.flash.(&#39;good&#39;,someHTML)&lt;/code&gt; and I get the same type of flash one would have seen if I set it in the controller and rendered. Note, this is what I used on the the signup form success above.
 &lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% [:good,:bad,:indif].each &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%&amp;gt;
-  &amp;lt;div id=&quot;flash_&amp;lt;%= key %&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; class=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flash_message&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; style=&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%= flash[key].blank? ? &#39;none&#39; : &#39;block&#39; %&amp;gt;;&quot;&amp;gt;
-      &amp;lt;span&amp;gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&amp;gt;
-    &amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% end &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &amp;lt;div id=&quot;flash_&amp;lt;%= key %&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; class=&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flash_message&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; style=&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;blank?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;none&#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;block&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+      &amp;lt;span&amp;gt;&amp;lt;%= flash[key] %&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;% end %&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HomeMarksBase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;messagesToAlert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -7258,7 +7266,7 @@ loading autotest/railsplugin
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alertText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;messages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.\n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alertText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;endsWith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;.&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alertText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alertText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;.&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;messagesToList&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;messagesToList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;messages&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;responseJSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;messageList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;messages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
@@ -7271,11 +7279,11 @@ loading autotest/railsplugin
   &lt;span class=&quot;na&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flashes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;div.flash_message&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;clearFlashes&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clearFlashes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flashes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;hide&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flashes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;update&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clearFlashes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;moodFlash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flashes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;flash_&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mood&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;moodFlash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -7327,14 +7335,6 @@ loading autotest/railsplugin
         <pubDate>Sat, 24 May 2008 00:00:00 -0400</pubDate>
         <link>/2008/05/24/the-ajax-head-design-pattern</link>
         <guid isPermaLink="true">/2008/05/24/the-ajax-head-design-pattern</guid>
-      </item>
-    
-      <item>
-        <title>The Ajax Head Br Design Pattern_redirect</title>
-        <description></description>
-        <pubDate>Sat, 24 May 2008 00:00:00 -0400</pubDate>
-        <link>/2008/5/24/the-ajax-head-br-design-pattern</link>
-        <guid isPermaLink="true">/2008/5/24/the-ajax-head-br-design-pattern</guid>
       </item>
     
       <item>
@@ -7397,9 +7397,9 @@ $ mv ~/Desktop/environment.plist ~/.MacOSX
     
       <item>
         <title>How to use Passenger (mod_rails) with rails edge 2.1</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: This issue has &lt;a href=&quot;http://github.com/FooBarWidget/passenger/commit/53301de464b323d364723854d3a8d293ab8327d6&quot;&gt;now been resolved&lt;/a&gt; in the official release.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   If you are like me and have &lt;a href=&quot;/2008/04/13/now-on-passenger-mod_rails/&quot;&gt;been using passenger&lt;/a&gt;, then you may have run into an issue when working with rails edge. I mean the REAL rails edge on Git, not that fancy rake task which I think is still pointing to a subversion snapshot. Let me take an aside on how to freeze rails edge to a project that you are managing in Git. This method is akin to using svn:externals. As a cop out, here are 3 links that you should read to learn how.
@@ -7426,8 +7426,8 @@ Exception class: ArgumentError
 &lt;ul&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/22/how-to-use-passenger-mod_rails-with-rails-edge-2-1</link>
-        <guid isPermaLink="true">/2008/04/22/how-to-use-passenger-mod_rails-with-rails-edge-2-1</guid>
+        <link>/2008/04/22/how-to-use-passenger-mod-rails-with-rails-edge-2-1</link>
+        <guid isPermaLink="true">/2008/04/22/how-to-use-passenger-mod-rails-with-rails-edge-2-1</guid>
       </item>
     
       <item>
@@ -7459,8 +7459,8 @@ Exception class: ArgumentError
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 13 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/13/now-on-passenger-mod_rails</link>
-        <guid isPermaLink="true">/2008/04/13/now-on-passenger-mod_rails</guid>
+        <link>/2008/04/13/now-on-passenger-mod-rails</link>
+        <guid isPermaLink="true">/2008/04/13/now-on-passenger-mod-rails</guid>
       </item>
     
       <item>
@@ -7469,6 +7469,14 @@ Exception class: ArgumentError
         <pubDate>Sun, 06 Apr 2008 00:00:00 -0400</pubDate>
         <link>/2008/4/6/autotest-playlist-for-red-green-feedback</link>
         <guid isPermaLink="true">/2008/4/6/autotest-playlist-for-red-green-feedback</guid>
+      </item>
+    
+      <item>
+        <title>Autotest Infinite Loop On Failure Error_redirect</title>
+        <description></description>
+        <pubDate>Sun, 06 Apr 2008 00:00:00 -0400</pubDate>
+        <link>/2008/4/6/autotest-infinite-loop-on-failure-error</link>
+        <guid isPermaLink="true">/2008/4/6/autotest-infinite-loop-on-failure-error</guid>
       </item>
     
       <item>
@@ -7504,14 +7512,6 @@ $ mv autotest_playlist .autotest_playlist &amp;amp;&amp;amp; rm autotest_playlis
         <pubDate>Sun, 06 Apr 2008 00:00:00 -0400</pubDate>
         <link>/2008/04/06/autotest-playlist-for-red-green-feedback</link>
         <guid isPermaLink="true">/2008/04/06/autotest-playlist-for-red-green-feedback</guid>
-      </item>
-    
-      <item>
-        <title>Autotest Infinite Loop On Failure Error_redirect</title>
-        <description></description>
-        <pubDate>Sun, 06 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/4/6/autotest-infinite-loop-on-failure-error</link>
-        <guid isPermaLink="true">/2008/4/6/autotest-infinite-loop-on-failure-error</guid>
       </item>
     
       <item>
@@ -7562,6 +7562,14 @@ Dunno! config/uuid.state
       </item>
     
       <item>
+        <title>How To Stop Delivery Of An Email Within An Actionmailer Method_redirect</title>
+        <description></description>
+        <pubDate>Thu, 03 Apr 2008 00:00:00 -0400</pubDate>
+        <link>/2008/4/3/how-to-stop-delivery-of-an-email-within-an-actionmailer-method</link>
+        <guid isPermaLink="true">/2008/4/3/how-to-stop-delivery-of-an-email-within-an-actionmailer-method</guid>
+      </item>
+    
+      <item>
         <title>MacBook With 4GB Of Memory</title>
         <description>&lt;p&gt;
   My MacBook is about a year old now and I&#39;ve read in &lt;a href=&quot;http://forums.macrumors.com/showthread.php?t=364707&quot;&gt;quite a few places&lt;/a&gt; that they could be upgraded to around 3.3GB of memory for this specific model. Unlike the latest MacBook which can &quot;as advertised&quot; accommodate 4GB of memory, the theory was that the Santa Rosa chipset can address all 4GB. It could very well be that technically my MacBook is only using ~3.3GB of that memory but the performance has been significant for a very &lt;a href=&quot;http://www.crucial.com/store/partspecs.aspx?imodule=CT25664AC667&quot;&gt;cheap stick of RAM&lt;/a&gt;. I highly recommend Crucial.
@@ -7578,14 +7586,6 @@ Dunno! config/uuid.state
         <pubDate>Thu, 03 Apr 2008 00:00:00 -0400</pubDate>
         <link>/2008/04/03/macbook-with-4gb-of-memory</link>
         <guid isPermaLink="true">/2008/04/03/macbook-with-4gb-of-memory</guid>
-      </item>
-    
-      <item>
-        <title>How To Stop Delivery Of An Email Within An Actionmailer Method_redirect</title>
-        <description></description>
-        <pubDate>Thu, 03 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/4/3/how-to-stop-delivery-of-an-email-within-an-actionmailer-method</link>
-        <guid isPermaLink="true">/2008/4/3/how-to-stop-delivery-of-an-email-within-an-actionmailer-method</guid>
       </item>
     
       <item>
@@ -7907,9 +7907,9 @@ Dunno! config/uuid.state
     
       <item>
         <title>HomeMarks, My First Ruby On Rails Pet Project</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: HomeMarks is no longer an open source project available to download.
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/homemarks.png&quot; alt=&quot;HomeMarks, Simple Project-Based Bookmarks&quot; class=&quot;floatl mr20&quot; /&gt; I&#39;ve heard that the best web applications are ones that usually start as a simple tool that meets the needs of its creator, in this case, myself. I have always been close to Web Developers that code their own HTML start pages with links to the projects they are working on. So when the time came for me to really get serious with my programing career using &lt;a href=&quot;http://www.rubyonrails.org/&quot;&gt;RAILS&lt;/a&gt;, this was the first app that I thought about building. From the site&#39;s copy...&lt;/p&gt;
 
@@ -8140,9 +8140,9 @@ $ sudo cp /opt/local/etc/php.ini-recommended /opt/local/etc/php.ini
     
       <item>
         <title>Quake Style Terminal Window on OS X</title>
-        <description>&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: (May 18th, 2012) The modern replacement for VisorTerminal is called TotalTerminal and cand be found &lt;a href=&quot;http://totalterminal.binaryage.com/&quot;&gt;on the binaryage site&lt;/a&gt;
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;
   &lt;img src=&quot;/assets/visor_screenshot.jpg&quot; alt=&quot;Visor Screenshot&quot; width=&quot;550&quot; height=&quot;413&quot; class=&quot;floatr ml20 shadow&quot; /&gt; Well this is far beyond cool but highly functional, a Quake like terminal implementation of Terminal.app that is a HotKey away from within any application. A friend turned me on to this after it showed up on the &lt;a href=&quot;http://arstechnica.com/journals/apple.ars/2006/6/12/4291&quot;&gt;Monday morning Apple links&lt;/a&gt; post from arstechnica.com. Although I have never thought of this idea, it seems to have been a popular request for quite some time and after a &lt;a href=&quot;http://episteme.arstechnica.com/eve/forums/a/tpc/f/8300945231/m/332004739731&quot;&gt;public request&lt;/a&gt;, the author of &lt;a href=&quot;http://quicksilver.blacktree.com/&quot;&gt;QuickSilver&lt;/a&gt; stepped up to the challenge and coded this little goodie using the application enhancer method called &lt;a href=&quot;http://www.culater.net/software/SIMBL/SIMBL.php&quot;&gt;SIMBL&lt;/a&gt; which was created by Mike Solomon, the creator of the PithHelmet plugin for Safari.
@@ -8559,13 +8559,13 @@ $ sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql
 &lt;span class=&quot;n&quot;&gt;bday&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;mktime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;month&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;diftime&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bday&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;diftoyears&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diftime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;365&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/1
+&lt;span class=&quot;n&quot;&gt;diftoyears&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diftime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;365&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 
-puts
-diftoyears.times do
-  puts &#39;SPANK!&#39;
-end
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;diftoyears&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;times&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;SPANK!&#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 05 Mar 2006 00:00:00 -0500</pubDate>
         <link>/2006/03/05/learn-to-program-in-ruby-and-basic-sql</link>
         <guid isPermaLink="true">/2006/03/05/learn-to-program-in-ruby-and-basic-sql</guid>
@@ -8655,8 +8655,8 @@ find /Volumes/Your_NetworkVolume -name &lt;span class=&quot;s1&quot;&gt;&#39;._*
 find /Volumes/Your_NetworkVolume -name &lt;span class=&quot;s1&quot;&gt;&#39;._*&#39;&lt;/span&gt; -print0 | xargs -t0 rm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 24 Feb 2006 00:00:00 -0500</pubDate>
-        <link>/2006/02/24/shell-script-to-delete-all-invisible-_-resource-files</link>
-        <guid isPermaLink="true">/2006/02/24/shell-script-to-delete-all-invisible-_-resource-files</guid>
+        <link>/2006/02/24/shell-script-to-delete-all-invisible-resource-files</link>
+        <guid isPermaLink="true">/2006/02/24/shell-script-to-delete-all-invisible-resource-files</guid>
       </item>
     
       <item>
@@ -8740,8 +8740,8 @@ Content-Type: image/png
 &lt;p&gt;What we are looking for in the header are the &amp;quot;Cache-Control&amp;quot; and &amp;quot;Expires&amp;quot; fields. These fields control how long the browser will cache this media or page asset from your server. Having a low value like &amp;quot;1&amp;quot; in &amp;quot;Cache-Control&amp;quot; can be just as bad as no value at all.&lt;/p&gt;
 
 &lt;p&gt;If you have those fields present, you&#39;ve got a head start on the situation. If not, you may need to make sure Apache 2 is loading the &lt;a href=&quot;http://httpd.apache.org/docs/2.0/mod/mod_expires.html&quot;&gt;mod_expires&lt;/a&gt; and &lt;a href=&quot;http://httpd.apache.org/docs/2.0/mod/mod_headers.html&quot;&gt;mod_headers&lt;/a&gt; modules. Most installations and builds of Apache 2 include these modules since they are pretty essential. If you are using the Apache 2 in OS X Server&#39;s opt directory, this is the case and you only need to make sure that they are turned on by opening the http.conf file and making sure the following two lines do not have an # sign in front of them. &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;LoadModule expires_module modules/mod_expires.so
-LoadModule headers_module modules/mod_headers.so
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nl&quot;&gt;LoadModule&lt;/span&gt; expires_module modules/mod_expires.so
+&lt;span class=&quot;nl&quot;&gt;LoadModule&lt;/span&gt; headers_module modules/mod_headers.so
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;When these modules are loaded and working, we can then start to use the correct Apache 2 directives to control how browsers cache everything from pages to images across the whole site or in a specific directory. &lt;/p&gt;
 
@@ -8752,19 +8752,19 @@ LoadModule headers_module modules/mod_headers.so
 &lt;p&gt;Now that we are here, I can assume that you have both the &lt;a href=&quot;http://httpd.apache.org/docs/2.0/mod/mod_expires.html&quot;&gt;mod_expires&lt;/a&gt; and &lt;a href=&quot;http://httpd.apache.org/docs/2.0/mod/mod_headers.html&quot;&gt;mod_headers&lt;/a&gt; modules  compiled and loaded into your Apache 2 installation. I can also assume that you have examined a few headers from your server&#39;s responses and  determined that the &amp;quot;Cache-Control&amp;quot; and &amp;quot;Expires&amp;quot; fields are either not set or they are configured at such a low value to be ineffective. Lastly, you may have bypassed some header examinations and just determined that browser caching is  not happening  by tailing your Apache 2 log file and monitoring redundant requests. Either way, let&#39;s get to fixing Apache 2 to control browser caching that is right for you and your particular site.&lt;/p&gt;
 
 &lt;p&gt;Here is a code snippet of an Apache 2 directive that we will be using. This directive can be modified to suite your tastes  or it can just be used &amp;quot;as is&amp;quot; for most users. The directives here can  be placed into the &amp;lt;Directory&amp;gt; directive of your virtual host in http.conf or it can be placed loosely in a .htaccess file in the root of your website.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&amp;lt;IfModule mod_expires.c&amp;gt;
-  ExpiresActive On
-  ExpiresDefault &quot;access plus 1 seconds&quot;
-  ExpiresByType text/html &quot;access plus 1 seconds&quot;
-  ExpiresByType image/gif &quot;access plus 120 minutes&quot;
-  ExpiresByType image/jpeg &quot;access plus 120 minutes&quot;
-  ExpiresByType image/png &quot;access plus 120 minutes&quot;
-  ExpiresByType text/css &quot;access plus 60 minutes&quot;
-  ExpiresByType text/javascript &quot;access plus 60 minutes&quot;
-  ExpiresByType application/x-javascript &quot;access plus 60 minutes&quot;
-  ExpiresByType text/xml &quot;access plus 60 minutes&quot;
-&amp;lt;/IfModule&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;IfModule&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;mod_expires.c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;
+&lt;/span&gt;  &lt;span class=&quot;nl&quot;&gt;ExpiresActive&lt;/span&gt; On
+  &lt;span class=&quot;nl&quot;&gt;ExpiresDefault&lt;/span&gt; &quot;access plus 1 seconds&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; text/html &quot;access plus 1 seconds&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; image/gif &quot;access plus 120 minutes&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; image/jpeg &quot;access plus 120 minutes&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; image/png &quot;access plus 120 minutes&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; text/css &quot;access plus 60 minutes&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; text/javascript &quot;access plus 60 minutes&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; application/x-javascript &quot;access plus 60 minutes&quot;
+  &lt;span class=&quot;nl&quot;&gt;ExpiresByType&lt;/span&gt; text/xml &quot;access plus 60 minutes&quot;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;IfModule&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Let&#39;s examine what is happening here in brief. If you are interested &lt;a href=&quot;http://httpd.apache.org/docs/2.0/mod/mod_expires.html&quot;&gt;full documentation of the expires directive&lt;/a&gt; can be found on Apache&#39;s website along with different syntax formats than the ones used here. I like this format since it is inheritably legible. This directive will do the following:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -8824,9 +8824,9 @@ LoadModule headers_module modules/mod_headers.so
 
 &lt;p&gt;&lt;img src=&quot;/assets/map-world-gen-1.gif&quot; alt=&quot;The Coral cache network map.&quot; width=&quot;248&quot; height=&quot;107&quot; class=&quot;floatr ml20&quot; /&gt; The most popular CDN that is freely used by many digg.com readers is a company called &lt;a href=&quot;http://www.coralcdn.org/&quot;&gt;Coral&lt;/a&gt;. Many times a Digg or Slashdot article will take down an unsuspecting server (know as the slashdot effect)   forcing prospective visitors to view your content from a cached version on a sever very far away from your own. Often readers on both Slashdot and Digg try to &amp;quot;coralize&amp;quot; your article by linking to it from a comment thread using the Coral network as a cache. This is easily done by  adding &lt;code&gt;.nyud.net:8090&lt;/code&gt; to the end of any hostname in a URL. For instance &lt;code&gt;http://www.metaskills.net/article.php&lt;/code&gt; would become &lt;code&gt;http://www.metaskills.net.nyud.net:8090/article.php&lt;/code&gt; but this is really only helpful to prospective readers if the coralized link was used as the initial link on Digg or Slashdot.&lt;/p&gt;
 
-&lt;p&gt;&lt;aside class=&quot;ms-Flash&quot;&gt;
+&lt;aside class=&quot;ms-Flash&quot;&gt;
   UPDATE: As of February 17th, Coral now uses both ports &lt;strong&gt;:8090&lt;/strong&gt; and &lt;strong&gt;:8080&lt;/strong&gt;
-&lt;/aside&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;In my case it was not and I did not like the idea of users having to read my article on somebody else&#39;s server nor relying on them finding a coralized link to my site buried in a comment thread. If that had happened, I would have lost traffic statistics, user comments, RSS subscriptions, lateral page visitation, and many  visitors altogether. I had to get the server running again and cope with my limited bandwidth. Wow, I just said 2.6 megabits was limited :) &lt;/p&gt;
 
