@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ken Collins" />
+  <meta name="google-site-verification" content="W3DG-CkoWHypH24OfrGmGbMezvhC6AyLql4jLI7hXhI" />
+  <meta name="description" content="The personal blog of Ken Collins aka MetaSkills" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  
+  <title>How Do You Encapsulate Your JavaScript - Ken Collins @MetaSkills.net</title>
+  <link rel="author" href="mailto:ken@metaskills.net" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/site/icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/site/icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/site/icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/site/icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/site/icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/site/icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/site/icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/site/icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/site/icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/assets/site/icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/site/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/site/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/site/icon-32x32.png">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://metaskills.net/feed.xml" />
+  <meta name="apple-mobile-web-app-title" content="MetaSkills">
+  <meta name="application-name" content="MetaSkills" />
+  <meta name="msapplication-TileImage" content="/assets/site/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="052838">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+
+  <body>
+    <section class="ms-Page ">
+  <header class="ms-Page-header">
+    <section class="ms-Page-header-bg">
+      <object class="ms-Page-header-bg-svg" data="/assets/site/page-svg.svg" type="image/svg+xml"></object>
+    </section>
+    <section class="ms-Page-header-content">
+      <div class="ms-Page-header-avatar">
+<a class="ms-Avatar" href="/pages/colophon.html" title"About Ken Collins">
+  <div class="ms-Avatar-flipable">
+    <div class="ms-Avatar-front">
+      <img class="ms-Avatar-img" alt="Ken Collins" src="/assets/site/avatar.jpg">
+    </div>
+    <div class="ms-Avatar-back">
+      <svg class="ms-Avatar-aboutme" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="47px" viewBox="0 0 350 47" preserveAspectRatio="xMidYMax meet" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000, 1.000)"><path d="M161.250 4.91 L-0.014 -0.12 L17.975 44.67 L178.787 37.22 L330.559 44.67 L347.824 -0.12 L161.250 4.91 Z" fill="#E4522A"/><g stroke="#FFFBE1"><path d="M275.89 25.53 L290.71 25.53 L287.55 20.31 L321.9 20.31 "/><path d="M276.55 22.54 L291.36 22.54 L288.2 17.33 L322.56 17.33 "/></g><g stroke="#FFFBE1"><path d="M72.76 25.53 L57.94 25.53 L61.1 20.31 L26.75 20.31 "/><path d="M72.1 22.54 L57.29 22.54 L60.45 17.33 L26.09 17.33 "/></g></g><path d="M89.184 15.23 L81.776 15.23 L81.724 15.52 C83.226 16.68 83.64 17.12 83.64 18.6 L83.641 31.76 L89.184 31.76 L89.184 27.43 L90.842 27.43 C91.955 27.43 92.19 28.05 92.19 29.04 L92.189 31.76 L97.732 31.76 L97.732 27.98 C97.732 24.92 96.9 24.04 93.64 24.04 L98.327 15.23 L92.189 15.23 L89.184 24.74 L89.184 15.23 Z M113.357 25.72 L113.357 21.99 L109.109 21.99 L109.109 19.14 L115.247 19.14 L115.247 15.23 L101.701 15.23 L101.649 15.52 C103.151 16.68 103.57 17.12 103.57 18.6 L103.566 31.76 L115.507 31.76 L115.507 28.03 L109.109 28.03 L109.109 25.72 L113.357 25.72 Z M119.346 15.23 L119.294 15.52 C120.797 16.68 121.21 17.12 121.21 18.6 L121.211 31.76 L126.754 31.76 L126.754 18.83 L129.008 18.83 C129.888 18.83 130.02 19.12 130.02 20 L130.018 31.76 L135.561 31.76 L135.561 19.84 C135.561 16.48 134.68 15.23 131.05 15.23 L119.346 15.23 Z M161.112 25.88 L161.112 26.92 C161.112 28.05 160.91 28.37 160.08 28.37 L159.014 28.37 C158.160 28.37 157.95 28.05 157.95 26.92 L157.952 20.26 C157.952 19.12 158.16 18.86 159.01 18.86 L160.076 18.86 C160.905 18.86 161.11 19.12 161.11 20.26 L161.112 23 L166.707 23 L166.707 20.05 C166.707 16.43 165.8 15.23 162.43 15.23 L156.631 15.23 C153.264 15.23 152.36 16.43 152.36 20.05 L152.357 26.53 C152.357 30.72 153.89 31.76 156.92 31.76 L162.433 31.76 C165.801 31.76 166.71 30.88 166.71 27.12 L166.707 25.88 L161.112 25.88 Z M186.606 20.05 C186.606 16.43 185.7 15.23 182.33 15.23 L176.375 15.23 C173.008 15.23 172.1 16.43 172.1 20.05 L172.101 26.53 C172.101 30.72 173.63 31.76 176.66 31.76 L182.332 31.76 C185.700 31.76 186.61 30.88 186.61 27.12 L186.606 20.05 Z M181.011 26.92 C181.011 28.05 180.8 28.37 179.97 28.37 L178.758 28.37 C177.903 28.37 177.7 28.05 177.7 26.92 L177.696 20.26 C177.696 19.12 177.9 18.86 178.76 18.86 L179.975 18.86 C180.804 18.86 181.01 19.12 181.01 20.26 L181.011 26.92 Z M198.216 15.23 L190.808 15.23 L190.757 15.52 C192.259 16.68 192.67 17.12 192.67 18.6 L192.673 31.76 L203.863 31.76 L203.863 28.03 L198.216 28.03 L198.216 15.23 Z M214.230 15.23 L206.822 15.23 L206.770 15.52 C208.272 16.68 208.69 17.12 208.69 18.6 L208.687 31.76 L219.877 31.76 L219.877 28.03 L214.230 28.03 L214.230 15.23 Z M230.244 15.23 L222.836 15.23 L222.784 15.52 C224.286 16.68 224.7 17.12 224.7 18.6 L224.700 31.76 L230.244 31.76 L230.244 15.23 Z M234.653 15.23 L234.601 15.52 C236.103 16.68 236.52 17.12 236.52 18.6 L236.518 31.76 L242.061 31.76 L242.061 18.83 L244.314 18.83 C245.195 18.83 245.32 19.12 245.32 20 L245.325 31.76 L250.868 31.76 L250.868 19.84 C250.868 16.48 249.99 15.23 246.36 15.23 L234.653 15.23 Z M268.410 15.23 L258.696 15.23 C256.805 15.23 256.13 16.06 256.13 17.36 C256.132 17.88 256.37 18.55 256.7 19.07 L261.753 27.07 C261.830 27.18 261.88 27.36 261.88 27.51 C261.882 27.82 261.65 28.03 261.18 28.03 L255.743 28.03 L255.743 31.76 L266.130 31.76 C268.073 31.76 268.8 30.49 268.8 29.45 C268.798 28.75 268.49 28.21 268.18 27.74 L262.970 20.13 C262.841 19.92 262.76 19.77 262.76 19.61 C262.763 19.33 263.02 19.14 263.49 19.14 L268.410 19.14 L268.410 15.23 Z" fill="#FFFBE1"/></g></svg>
+
+    </div>
+  </div>
+</a>
+</div>
+      <ul class="ms-Page-nav">
+        <li class="ms-Page-nav-item">
+          <a class="ms-Page-nav-link" href="/">HOME</a>
+        </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/programming.html">Programming</a>
+          </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/lifestyle.html">Lifestyle</a>
+          </li>
+        
+      </ul>
+      <div class="ms-Page-social"><div class="ms-Social">
+  <a href="http://twitter.com/metaskills" title="MetaSkills On Twitter">
+    <span class="ms-Social-icon ms-Social-icon--twitter"><i class="icon-twitter"></i></span>
+  </a>
+  <a href="https://github.com/metaskills/" title="MetaSkills On GitHub">
+    <span class="ms-Social-icon ms-Social-icon--github"><i class="icon-github"></i></span>
+  </a>
+  <a href="http://www.linkedin.com/in/metaskills" title="Ken Collins On LinkedIn">
+    <span class="ms-Social-icon ms-Social-icon--linkedin"><i class="icon-linkedin"></i></span>
+  </a>
+</div>
+</div>
+      <div class="ms-Page-blurb">
+        Ruby, JavaScript, Sass, iOS. Stinky Cheese &amp; Beer Advocate. Working at CustomInk and loving it!
+      </div>
+    </section>
+  </header>
+  <article class="ms-Page-article">
+    <article class="ms-Post">
+  <header class="ms-Post-header">
+    <time class="ms-Post-time" pubdate datetime="2011-09-06T00:00:00-04:00">
+      2011 September 06
+    </time>
+    <h1 class="ms-Post-header-h1">How Do You Encapsulate Your JavaScript</h1>
+  </header>
+  <aside class="ms-Flash">
+  This page has been translated into <a href="http://www.webhostinghub.com/support/es/misc/encapsular-javascript">Spanish</a> language by Maria Ramos from <a href="http://www.webhostinghub.com/">Webhostinghub.com</a>.
+</aside>
+
+<p>
+  I ask this question a lot! To Job candidates, friends, and almost any developer that says they work with JavaScript. I believe how you encapsulate your JavaScript is a good indicator on your level of expertise with the language. I find that most beginners have come to JavaScript via jQuery and often define their functions at the top level namespace in some application.js file. These functions are loosely organized and often have no way of sharing simple object state and behavior. A good object oriented programmer would never write their application code like that. JavaScript should be no different and I think jQuery has a part in the blame of those not knowing this.
+</p>
+
+<p>
+  I've <a href="/2008/08/18/in-hell-oo-for-homemarks/">been writing rich object oriented JavaScript</a> for the better part of 4 years now using <a href="http://www.prototypejs.org/">Prototype.js</a>. That framework has always championed encapsulating your web application's behavior using a <a href="http://prototypejs.org/learn/class-inheritance">standard class and inheritance notation</a>. Sam Stephenson, the author of Prototype.js, did a good job trying to educate what real JavaScript Object Notation (JSON) is about and how you can encapsulate behavior using Prototype's Class structure while paying homage to <a href="http://dean.edwards.name/weblog/2006/03/base/">Dean Edward's Base.js</a> to which it owes its origins.
+</p>
+
+<p>
+  So jQuery is the proper winner and choice for anyone wanting to use a JavaScript framework to make working with the DOM in web sites easier. It has awesome event handling and delegation. So many things that Prototype.js lacked. It even has great documentation. About the only bad thing about jQuery is the widely different interfaces to it's AJAX functions and the arguments passed to their callbacks. Oh, and they totally screwed new JavaScript developers by not sheperding them into learning some sort of way to encapsulate their object behavior. So this article is for those that are not using <a href="http://jashkenas.github.com/coffee-script/">CoffeeScript's class system</a>, <a href="http://documentcloud.github.com/backbone/">Backbone.js's class system</a>, or jQuery's deeply nested plugin class system that is hidden away. So lets get to fixing that. Here is 32 lines of dirt simple JavaScript inheritance.
+</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="cm">/* Simple JavaScript Class
+   By John Resig. MIT Licensed. &lt;http://ejohn.org/blog/simple-javascript-inheritance/&gt; */</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">initializing</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">fnTest</span> <span class="o">=</span> <span class="sr">/xyz/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">xyz</span><span class="p">;})</span> <span class="p">?</span> <span class="sr">/</span><span class="se">\b</span><span class="sr">_super</span><span class="se">\b</span><span class="sr">/</span> <span class="p">:</span> <span class="sr">/.*/</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">JQClass</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){};</span>
+  <span class="nx">JQClass</span><span class="p">.</span><span class="nx">extend</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">prop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">_super</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+    <span class="nx">initializing</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="k">this</span><span class="p">();</span>
+    <span class="nx">initializing</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">name</span> <span class="k">in</span> <span class="nx">prop</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">prototype</span><span class="p">[</span><span class="nx">name</span><span class="p">]</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">prop</span><span class="p">[</span><span class="nx">name</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"function"</span> <span class="o">&amp;&amp;</span>
+        <span class="k">typeof</span> <span class="nx">_super</span><span class="p">[</span><span class="nx">name</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"function"</span> <span class="o">&amp;&amp;</span> <span class="nx">fnTest</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">prop</span><span class="p">[</span><span class="nx">name</span><span class="p">])</span> <span class="p">?</span>
+        <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">fn</span><span class="p">){</span>
+          <span class="k">return</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">tmp</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">_super</span> <span class="o">=</span> <span class="nx">_super</span><span class="p">[</span><span class="nx">name</span><span class="p">];</span>
+            <span class="kd">var</span> <span class="nx">ret</span> <span class="o">=</span> <span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">_super</span> <span class="o">=</span> <span class="nx">tmp</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span>
+          <span class="p">};</span>
+        <span class="p">})(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">prop</span><span class="p">[</span><span class="nx">name</span><span class="p">])</span> <span class="p">:</span>
+        <span class="nx">prop</span><span class="p">[</span><span class="nx">name</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">JQClass</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">initializing</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">init</span> <span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">init</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">JQClass</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">prototype</span><span class="p">;</span>
+    <span class="nx">JQClass</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="nx">JQClass</span><span class="p">;</span>
+    <span class="nx">JQClass</span><span class="p">.</span><span class="nx">extend</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">JQClass</span><span class="p">;</span>
+  <span class="p">};</span>
+<span class="p">})();</span>
+</code></pre></div>
+<p>
+  It is <a href="http://ejohn.org/blog/simple-javascript-inheritance/">worth reading the comments</a> John Resig's blog post for this piece of work as well as the full documentation. My code example above names this <code>JQClass</code> to avoid namespace collisions with other frameworks. Here is a simple example of its usage.
+</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Your namespace.</span>
+
+<span class="kd">var</span> <span class="nx">MyApp</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">models</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">};</span>
+
+<span class="c1">// Simple object example for page flash.</span>
+
+<span class="nx">MyApp</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">flash</span> <span class="o">=</span> <span class="nx">JQClass</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+
+  <span class="na">init</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">aPage</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">page</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">aPage</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">alertDiv</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'div.flash.alert'</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">noticeDiv</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'div.flash.notice'</span><span class="p">);</span>
+  <span class="p">},</span>
+
+  <span class="na">alert</span><span class="p">:</span>  <span class="kd">function</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">_doFlashFor</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">alertDiv</span><span class="p">,</span><span class="nx">content</span><span class="p">);</span> <span class="p">},</span>
+
+  <span class="na">notice</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">_doFlashFor</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">noticeDiv</span><span class="p">,</span><span class="nx">content</span><span class="p">);</span> <span class="p">},</span>
+
+  <span class="na">clear</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="err">#</span> <span class="p">...</span>
+  <span class="p">},</span>
+
+  <span class="na">_doFlashFor</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">flash</span><span class="p">,</span> <span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">mobile</span><span class="p">.</span><span class="nx">silentScroll</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+    <span class="nx">flash</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+    <span class="nx">flash</span><span class="p">.</span><span class="nx">show</span><span class="p">();</span>
+  <span class="p">}</span>
+
+<span class="p">});</span>
+</code></pre></div>
+<p>
+  This code example is pulled from a jQuery mobile project I recently finished. The real usage of the flash objects would be numerous as there would be one per page and I have a top level delegate object that finds the active page and finds or create the flash DOM elements. But this should be a good enough example to show why you might choose a simple class and object inheritance system vs putting all your logic in <code>$(document).ready({})</code> scopes. There are tons of ways to write good OO JavaScript and I hope some find this useful and explore some other ways.
+</p>
+
+  <footer class="ms-Post-footer">
+    
+
+<section id="disqus_thread">
+</section>
+<script type="text/javascript">
+  var disqus_shortname = 'metaskillsnet';
+  var disqus_identifier = '/2011/09/06/how-do-you-encapsulate-your-javascript/';
+  var disqus_title = "How Do You Encapsulate Your JavaScript";
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  </footer>
+</article>
+
+    
+    <footer class="ms-Footer">
+  <p>
+    &copy; 2006-2015 Ken Collins. All rights reserved.<br/>
+    MetaSkills.net is powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://disqus.com">Disqus</a>.
+  </p>
+</footer>
+
+  </article>
+</section>
+
+    <script src="/assets/site.js"></script>
+  </body>
+</html>

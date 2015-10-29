@@ -106,8 +106,8 @@
 &lt;p&gt;And lastly, I want to give a shout out to &lt;a href=&quot;https://github.com/larskanis&quot;&gt;Lars Kanis&lt;/a&gt; who has been a huge contributor over the past many months by making TinyTDS work well on Windows. Let him know it if you see his pull requests.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Oct 2015 00:00:00 -0400</pubDate>
-        <link>/2015/10/19/microsofts-first-open-source-datacamp</link>
-        <guid isPermaLink="true">/2015/10/19/microsofts-first-open-source-datacamp</guid>
+        <link>/2015/10/19/microsofts-first-open-source-datacamp/</link>
+        <guid isPermaLink="true">/2015/10/19/microsofts-first-open-source-datacamp/</guid>
       </item>
     
       <item>
@@ -234,8 +234,8 @@
 &lt;p&gt;And it all just works! Thanks for reading!&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Feb 2015 00:00:00 -0500</pubDate>
-        <link>/2015/02/08/customizing-rake-tasks-in-rails-41-and-higher</link>
-        <guid isPermaLink="true">/2015/02/08/customizing-rake-tasks-in-rails-41-and-higher</guid>
+        <link>/2015/02/08/customizing-rake-tasks-in-rails-41-and-higher/</link>
+        <guid isPermaLink="true">/2015/02/08/customizing-rake-tasks-in-rails-41-and-higher/</guid>
       </item>
     
       <item>
@@ -267,8 +267,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;activerecord-sqlserver-adapter&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;~&amp;gt; 4.2.0.pre&#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
-        <link>/2015/01/25/activerecord-sqlserver-v4-2-0-code-name-kantishna</link>
-        <guid isPermaLink="true">/2015/01/25/activerecord-sqlserver-v4-2-0-code-name-kantishna</guid>
+        <link>/2015/01/25/activerecord-sqlserver-v4-2-0-code-name-kantishna/</link>
+        <guid isPermaLink="true">/2015/01/25/activerecord-sqlserver-v4-2-0-code-name-kantishna/</guid>
       </item>
     
       <item>
@@ -397,8 +397,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 06 Jan 2015 00:00:00 -0500</pubDate>
-        <link>/2015/01/06/activerecord-42s-type-casting</link>
-        <guid isPermaLink="true">/2015/01/06/activerecord-42s-type-casting</guid>
+        <link>/2015/01/06/activerecord-42s-type-casting/</link>
+        <guid isPermaLink="true">/2015/01/06/activerecord-42s-type-casting/</guid>
       </item>
     
       <item>
@@ -470,8 +470,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;p&gt;&lt;img src=&quot;/assets/content/oak-display-stands/12-results2.jpg&quot; class=&quot;ms-Img ms-Img--responsive-ctr ms-Img--fancy&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 16 Dec 2014 00:00:00 -0500</pubDate>
-        <link>/2014/12/16/custom-oak-display-stands</link>
-        <guid isPermaLink="true">/2014/12/16/custom-oak-display-stands</guid>
+        <link>/2014/12/16/custom-oak-display-stands/</link>
+        <guid isPermaLink="true">/2014/12/16/custom-oak-display-stands/</guid>
       </item>
     
       <item>
@@ -657,8 +657,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;p&gt;In closing, thanks for reading and I hope you found this information helpful. If you have any questions, feel free to ask in the comments. Cheers!&lt;/p&gt;
 </description>
         <pubDate>Tue, 16 Sep 2014 00:00:00 -0400</pubDate>
-        <link>/2014/09/16/from-rails-3-2-to-4-2</link>
-        <guid isPermaLink="true">/2014/09/16/from-rails-3-2-to-4-2</guid>
+        <link>/2014/09/16/from-rails-3-2-to-4-2/</link>
+        <guid isPermaLink="true">/2014/09/16/from-rails-3-2-to-4-2/</guid>
       </item>
     
       <item>
@@ -814,8 +814,8 @@ After 4 weeks of work, the ActiveRecord SQL Server adapter is now ready for Rail
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 29 Aug 2014 00:00:00 -0400</pubDate>
-        <link>/2014/08/29/dynamic-svgs-using-defs-elements-and-javascript</link>
-        <guid isPermaLink="true">/2014/08/29/dynamic-svgs-using-defs-elements-and-javascript</guid>
+        <link>/2014/08/29/dynamic-svgs-using-defs-elements-and-javascript/</link>
+        <guid isPermaLink="true">/2014/08/29/dynamic-svgs-using-defs-elements-and-javascript/</guid>
       </item>
     
       <item>
@@ -1054,8 +1054,8 @@ Do you want to use your existing Rails&amp;#39; layouts &amp;amp; business logic
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 19 Apr 2014 00:00:00 -0400</pubDate>
-        <link>/2014/04/19/jekyll-style-blogging-on-rail</link>
-        <guid isPermaLink="true">/2014/04/19/jekyll-style-blogging-on-rail</guid>
+        <link>/2014/04/19/jekyll-style-blogging-on-rail/</link>
+        <guid isPermaLink="true">/2014/04/19/jekyll-style-blogging-on-rail/</guid>
       </item>
     
       <item>
@@ -1085,8 +1085,8 @@ So let me introduce you to my Mom and share a bit of her story which seems to st
 &lt;p&gt;In closing, many thanks to my Mom for allowing me to share her story with you all. I am forever grateful to her teaching me that I can do anything I want and exposing me to computers and many other things. Maybe this is not uncommon? Maybe many more male software developers owe many things to a strong matriarchal influence? That would be really neat and I&amp;#39;d love to hear your story about it. Thanks for reading mine.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Mar 2014 00:00:00 -0400</pubDate>
-        <link>/2014/03/15/mom</link>
-        <guid isPermaLink="true">/2014/03/15/mom</guid>
+        <link>/2014/03/15/mom/</link>
+        <guid isPermaLink="true">/2014/03/15/mom/</guid>
       </item>
     
       <item>
@@ -1212,8 +1212,8 @@ Have you ever wondered how tools like New Relic are able to gain valuable metric
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 15 Dec 2013 00:00:00 -0500</pubDate>
-        <link>/2013/12/15/instrumenting-your-code-with-activesupport-notifications</link>
-        <guid isPermaLink="true">/2013/12/15/instrumenting-your-code-with-activesupport-notifications</guid>
+        <link>/2013/12/15/instrumenting-your-code-with-activesupport-notifications/</link>
+        <guid isPermaLink="true">/2013/12/15/instrumenting-your-code-with-activesupport-notifications/</guid>
       </item>
     
       <item>
@@ -1249,8 +1249,8 @@ $ echo &quot;AWESOME_GEM_URL=https://awesome.com&quot;          &amp;gt; .env.pr
 &lt;p&gt;Happy environment usage! Have you been solving environment and application configuration in a different way (don&amp;#39;t say YAML), if so, I would love to hear about it!&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Oct 2013 00:00:00 -0400</pubDate>
-        <link>/2013/10/03/using-dotenv-in-rails</link>
-        <guid isPermaLink="true">/2013/10/03/using-dotenv-in-rails</guid>
+        <link>/2013/10/03/using-dotenv-in-rails/</link>
+        <guid isPermaLink="true">/2013/10/03/using-dotenv-in-rails/</guid>
       </item>
     
       <item>
@@ -1416,8 +1416,8 @@ jekyll build --limit_posts 1
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 02 Sep 2013 00:00:00 -0400</pubDate>
-        <link>/2013/09/02/jekyll-tips-and-tricks</link>
-        <guid isPermaLink="true">/2013/09/02/jekyll-tips-and-tricks</guid>
+        <link>/2013/09/02/jekyll-tips-and-tricks/</link>
+        <guid isPermaLink="true">/2013/09/02/jekyll-tips-and-tricks/</guid>
       </item>
     
       <item>
@@ -1496,8 +1496,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 05 Jan 2013 00:00:00 -0500</pubDate>
-        <link>/2013/01/05/in-loving-memory-kenneth-earle-collins</link>
-        <guid isPermaLink="true">/2013/01/05/in-loving-memory-kenneth-earle-collins</guid>
+        <link>/2013/01/05/in-loving-memory-kenneth-earle-collins/</link>
+        <guid isPermaLink="true">/2013/01/05/in-loving-memory-kenneth-earle-collins/</guid>
       </item>
     
       <item>
@@ -1760,8 +1760,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;p&gt;The HolyGrailHarness vendors these font files and the needed &lt;code&gt;font-awesome.scss&lt;/code&gt; file and requires them as part of the Twitter Bootstrap bundle shown above. More advanced users may prefer to only include the icon fonts needed in their application or a few custom icons. If that is the case, check out &lt;a href=&quot;http://endtwist.github.com/fontcustom/&quot;&gt;Font Custom&lt;/a&gt;, webfonts from the comfort of the command line.&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Dec 2012 00:00:00 -0500</pubDate>
-        <link>/2012/12/05/holygrailharness</link>
-        <guid isPermaLink="true">/2012/12/05/holygrailharness</guid>
+        <link>/2012/12/05/holygrailharness/</link>
+        <guid isPermaLink="true">/2012/12/05/holygrailharness/</guid>
       </item>
     
       <item>
@@ -1876,8 +1876,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 07 Aug 2012 00:00:00 -0400</pubDate>
-        <link>/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon-js</link>
-        <guid isPermaLink="true">/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon-js</guid>
+        <link>/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon-js/</link>
+        <guid isPermaLink="true">/2012/08/07/synchronized-times-in-ruby-and-javascript-acceptance-tests-using-capybara-timecop-and-sinon-js/</guid>
       </item>
     
       <item>
@@ -1941,8 +1941,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 05 Aug 2012 00:00:00 -0400</pubDate>
-        <link>/2012/08/05/rails-moment-js-and-time-zones</link>
-        <guid isPermaLink="true">/2012/08/05/rails-moment-js-and-time-zones</guid>
+        <link>/2012/08/05/rails-moment-js-and-time-zones/</link>
+        <guid isPermaLink="true">/2012/08/05/rails-moment-js-and-time-zones/</guid>
       </item>
     
       <item>
@@ -2167,8 +2167,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 22 May 2012 00:00:00 -0400</pubDate>
-        <link>/2012/05/22/view-controller-patterns-with-spine-js-and-spacepen</link>
-        <guid isPermaLink="true">/2012/05/22/view-controller-patterns-with-spine-js-and-spacepen</guid>
+        <link>/2012/05/22/view-controller-patterns-with-spine-js-and-spacepen/</link>
+        <guid isPermaLink="true">/2012/05/22/view-controller-patterns-with-spine-js-and-spacepen/</guid>
       </item>
     
       <item>
@@ -2279,8 +2279,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 12 Mar 2012 00:00:00 -0400</pubDate>
-        <link>/2012/03/12/store-configurable-a-lesson-in-recursion-in-ruby</link>
-        <guid isPermaLink="true">/2012/03/12/store-configurable-a-lesson-in-recursion-in-ruby</guid>
+        <link>/2012/03/12/store-configurable-a-lesson-in-recursion-in-ruby/</link>
+        <guid isPermaLink="true">/2012/03/12/store-configurable-a-lesson-in-recursion-in-ruby/</guid>
       </item>
     
       <item>
@@ -2358,8 +2358,8 @@ My Mom, Linda Campbell - now remarried, recently told this story to my Brother a
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 27 Feb 2012 00:00:00 -0500</pubDate>
-        <link>/2012/02/27/too-less-should-you-be-using-sass</link>
-        <guid isPermaLink="true">/2012/02/27/too-less-should-you-be-using-sass</guid>
+        <link>/2012/02/27/too-less-should-you-be-using-sass/</link>
+        <guid isPermaLink="true">/2012/02/27/too-less-should-you-be-using-sass/</guid>
       </item>
     
       <item>
@@ -2516,8 +2516,8 @@ in 0.653 seconds
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 01 Feb 2012 00:00:00 -0500</pubDate>
-        <link>/2012/02/01/pretty-console-logging-with-guardjasmine-black-coffee</link>
-        <guid isPermaLink="true">/2012/02/01/pretty-console-logging-with-guardjasmine-black-coffee</guid>
+        <link>/2012/02/01/pretty-console-logging-with-guardjasmine-black-coffee/</link>
+        <guid isPermaLink="true">/2012/02/01/pretty-console-logging-with-guardjasmine-black-coffee/</guid>
       </item>
     
       <item>
@@ -2644,8 +2644,8 @@ in 0.653 seconds
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 17 Jan 2012 00:00:00 -0500</pubDate>
-        <link>/2012/01/17/rails-and-spine-js-jasmine-testing-part-2</link>
-        <guid isPermaLink="true">/2012/01/17/rails-and-spine-js-jasmine-testing-part-2</guid>
+        <link>/2012/01/17/rails-and-spine-js-jasmine-testing-part-2/</link>
+        <guid isPermaLink="true">/2012/01/17/rails-and-spine-js-jasmine-testing-part-2/</guid>
       </item>
     
       <item>
@@ -2751,8 +2751,8 @@ in 0.653 seconds
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 16 Jan 2012 00:00:00 -0500</pubDate>
-        <link>/2012/01/16/rails-and-spine-js-jasmine-testing-part-1</link>
-        <guid isPermaLink="true">/2012/01/16/rails-and-spine-js-jasmine-testing-part-1</guid>
+        <link>/2012/01/16/rails-and-spine-js-jasmine-testing-part-1/</link>
+        <guid isPermaLink="true">/2012/01/16/rails-and-spine-js-jasmine-testing-part-1/</guid>
       </item>
     
       <item>
@@ -2822,8 +2822,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 15 Jan 2012 00:00:00 -0500</pubDate>
-        <link>/2012/01/15/rails-and-spine-js-using-the-coffeescript-source</link>
-        <guid isPermaLink="true">/2012/01/15/rails-and-spine-js-using-the-coffeescript-source</guid>
+        <link>/2012/01/15/rails-and-spine-js-using-the-coffeescript-source/</link>
+        <guid isPermaLink="true">/2012/01/15/rails-and-spine-js-using-the-coffeescript-source/</guid>
       </item>
     
       <item>
@@ -2905,8 +2905,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 26 Sep 2011 00:00:00 -0400</pubDate>
-        <link>/2011/09/26/less-is-more-using-twitter-bootstrap-in-the-rails-3-1-asset-pipeline</link>
-        <guid isPermaLink="true">/2011/09/26/less-is-more-using-twitter-bootstrap-in-the-rails-3-1-asset-pipeline</guid>
+        <link>/2011/09/26/less-is-more-using-twitter-bootstrap-in-the-rails-3-1-asset-pipeline/</link>
+        <guid isPermaLink="true">/2011/09/26/less-is-more-using-twitter-bootstrap-in-the-rails-3-1-asset-pipeline/</guid>
       </item>
     
       <item>
@@ -2976,8 +2976,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;span class=&quot;no&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;try_keypath&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;bar.deep.info&#39;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; nil&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sat, 17 Sep 2011 00:00:00 -0400</pubDate>
-        <link>/2011/09/17/keep-trying</link>
-        <guid isPermaLink="true">/2011/09/17/keep-trying</guid>
+        <link>/2011/09/17/keep-trying/</link>
+        <guid isPermaLink="true">/2011/09/17/keep-trying/</guid>
       </item>
     
       <item>
@@ -3031,8 +3031,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Sep 2011 00:00:00 -0400</pubDate>
-        <link>/2011/09/11/revisiting-my-design-past</link>
-        <guid isPermaLink="true">/2011/09/11/revisiting-my-design-past</guid>
+        <link>/2011/09/11/revisiting-my-design-past/</link>
+        <guid isPermaLink="true">/2011/09/11/revisiting-my-design-past/</guid>
       </item>
     
       <item>
@@ -3128,8 +3128,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 06 Sep 2011 00:00:00 -0400</pubDate>
-        <link>/2011/09/06/how-do-you-encapsulate-your-javascript</link>
-        <guid isPermaLink="true">/2011/09/06/how-do-you-encapsulate-your-javascript</guid>
+        <link>/2011/09/06/how-do-you-encapsulate-your-javascript/</link>
+        <guid isPermaLink="true">/2011/09/06/how-do-you-encapsulate-your-javascript/</guid>
       </item>
     
       <item>
@@ -3305,8 +3305,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 24 Aug 2011 00:00:00 -0400</pubDate>
-        <link>/2011/08/24/jquery-mobile-and-rails</link>
-        <guid isPermaLink="true">/2011/08/24/jquery-mobile-and-rails</guid>
+        <link>/2011/08/24/jquery-mobile-and-rails/</link>
+        <guid isPermaLink="true">/2011/08/24/jquery-mobile-and-rails/</guid>
       </item>
     
       <item>
@@ -3344,8 +3344,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 29 Jul 2011 00:00:00 -0400</pubDate>
-        <link>/2011/07/29/use-compass-sass-framework-files-with-the-rails-3-1-0-rc5-asset-pipeline</link>
-        <guid isPermaLink="true">/2011/07/29/use-compass-sass-framework-files-with-the-rails-3-1-0-rc5-asset-pipeline</guid>
+        <link>/2011/07/29/use-compass-sass-framework-files-with-the-rails-3-1-0-rc5-asset-pipeline/</link>
+        <guid isPermaLink="true">/2011/07/29/use-compass-sass-framework-files-with-the-rails-3-1-0-rc5-asset-pipeline/</guid>
       </item>
     
       <item>
@@ -3365,8 +3365,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Jul 2011 00:00:00 -0400</pubDate>
-        <link>/2011/07/01/free-the-enterprise-with-ruby-and-master-your-own-domain</link>
-        <guid isPermaLink="true">/2011/07/01/free-the-enterprise-with-ruby-and-master-your-own-domain</guid>
+        <link>/2011/07/01/free-the-enterprise-with-ruby-and-master-your-own-domain/</link>
+        <guid isPermaLink="true">/2011/07/01/free-the-enterprise-with-ruby-and-master-your-own-domain/</guid>
       </item>
     
       <item>
@@ -3428,8 +3428,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
   &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;myObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 22 May 2011 00:00:00 -0400</pubDate>
-        <link>/2011/05/22/bind-jquery-event-handlers-to-this-object-with-coffeescript</link>
-        <guid isPermaLink="true">/2011/05/22/bind-jquery-event-handlers-to-this-object-with-coffeescript</guid>
+        <link>/2011/05/22/bind-jquery-event-handlers-to-this-object-with-coffeescript/</link>
+        <guid isPermaLink="true">/2011/05/22/bind-jquery-event-handlers-to-this-object-with-coffeescript/</guid>
       </item>
     
       <item>
@@ -3456,8 +3456,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 21 May 2011 00:00:00 -0400</pubDate>
-        <link>/2011/05/21/the-browser-is-dead</link>
-        <guid isPermaLink="true">/2011/05/21/the-browser-is-dead</guid>
+        <link>/2011/05/21/the-browser-is-dead/</link>
+        <guid isPermaLink="true">/2011/05/21/the-browser-is-dead/</guid>
       </item>
     
       <item>
@@ -3498,8 +3498,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
   &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 18 May 2011 00:00:00 -0400</pubDate>
-        <link>/2011/05/18/use-compass-sass-framework-files-with-the-rails-3-1-asset-pipeline</link>
-        <guid isPermaLink="true">/2011/05/18/use-compass-sass-framework-files-with-the-rails-3-1-asset-pipeline</guid>
+        <link>/2011/05/18/use-compass-sass-framework-files-with-the-rails-3-1-asset-pipeline/</link>
+        <guid isPermaLink="true">/2011/05/18/use-compass-sass-framework-files-with-the-rails-3-1-asset-pipeline/</guid>
       </item>
     
       <item>
@@ -3523,8 +3523,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;p&gt;Lastly, I will review the bleeding edge tools being actively created for Windows developers to ease the transition to Ruby, Rails and OSS from a POSIX driven world. Many things have changed. It is time to learn and perform some occupational maintenance.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 May 2011 00:00:00 -0400</pubDate>
-        <link>/2011/05/06/speaking-at-madexpo</link>
-        <guid isPermaLink="true">/2011/05/06/speaking-at-madexpo</guid>
+        <link>/2011/05/06/speaking-at-madexpo/</link>
+        <guid isPermaLink="true">/2011/05/06/speaking-at-madexpo/</guid>
       </item>
     
       <item>
@@ -3585,8 +3585,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 26 Mar 2011 00:00:00 -0400</pubDate>
-        <link>/2011/03/26/using-minitest-spec-with-rails</link>
-        <guid isPermaLink="true">/2011/03/26/using-minitest-spec-with-rails</guid>
+        <link>/2011/03/26/using-minitest-spec-with-rails/</link>
+        <guid isPermaLink="true">/2011/03/26/using-minitest-spec-with-rails/</guid>
       </item>
     
       <item>
@@ -3608,8 +3608,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Rails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;backtrace_cleaner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_silencer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=~&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/my_noisy_library/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 22 Mar 2011 00:00:00 -0400</pubDate>
-        <link>/2011/03/22/mini-backtrace-for-minitest-and-rails</link>
-        <guid isPermaLink="true">/2011/03/22/mini-backtrace-for-minitest-and-rails</guid>
+        <link>/2011/03/22/mini-backtrace-for-minitest-and-rails/</link>
+        <guid isPermaLink="true">/2011/03/22/mini-backtrace-for-minitest-and-rails/</guid>
       </item>
     
       <item>
@@ -3792,8 +3792,8 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Mar 2011 00:00:00 -0400</pubDate>
-        <link>/2011/03/20/pdfkit-overview-and-advanced-usage</link>
-        <guid isPermaLink="true">/2011/03/20/pdfkit-overview-and-advanced-usage</guid>
+        <link>/2011/03/20/pdfkit-overview-and-advanced-usage/</link>
+        <guid isPermaLink="true">/2011/03/20/pdfkit-overview-and-advanced-usage/</guid>
       </item>
     
       <item>
@@ -3823,8 +3823,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;span class=&quot;k&quot;&gt;esac&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 09 Mar 2011 00:00:00 -0500</pubDate>
-        <link>/2011/03/09/gc-tune-ruby-1-9-2-with-rvm</link>
-        <guid isPermaLink="true">/2011/03/09/gc-tune-ruby-1-9-2-with-rvm</guid>
+        <link>/2011/03/09/gc-tune-ruby-1-9-2-with-rvm/</link>
+        <guid isPermaLink="true">/2011/03/09/gc-tune-ruby-1-9-2-with-rvm/</guid>
       </item>
     
       <item>
@@ -3875,8 +3875,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;p&gt;&lt;img src=&quot;/assets/xcs_commitfiles.png&quot; alt=&quot;XCode 4 Commit Files&quot; class=&quot;ms-Img ms-Img--responsive-ctr ms-Img--fancy&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2011 00:00:00 -0500</pubDate>
-        <link>/2011/03/03/code-sharing-with-xcode-4-an-alternative-to-static-libraries</link>
-        <guid isPermaLink="true">/2011/03/03/code-sharing-with-xcode-4-an-alternative-to-static-libraries</guid>
+        <link>/2011/03/03/code-sharing-with-xcode-4-an-alternative-to-static-libraries/</link>
+        <guid isPermaLink="true">/2011/03/03/code-sharing-with-xcode-4-an-alternative-to-static-libraries/</guid>
       </item>
     
       <item>
@@ -3892,8 +3892,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Feb 2011 00:00:00 -0500</pubDate>
-        <link>/2011/02/10/modern-sql-server-rails</link>
-        <guid isPermaLink="true">/2011/02/10/modern-sql-server-rails</guid>
+        <link>/2011/02/10/modern-sql-server-rails/</link>
+        <guid isPermaLink="true">/2011/02/10/modern-sql-server-rails/</guid>
       </item>
     
       <item>
@@ -3970,8 +3970,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Thu, 27 Jan 2011 00:00:00 -0500</pubDate>
-        <link>/2011/01/27/simple-memcached-reports-in-rails</link>
-        <guid isPermaLink="true">/2011/01/27/simple-memcached-reports-in-rails</guid>
+        <link>/2011/01/27/simple-memcached-reports-in-rails/</link>
+        <guid isPermaLink="true">/2011/01/27/simple-memcached-reports-in-rails/</guid>
       </item>
     
       <item>
@@ -4042,8 +4042,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 25 Jan 2011 00:00:00 -0500</pubDate>
-        <link>/2011/01/25/from-test-unit-shoulda-to-minitest-spec-minishoulda</link>
-        <guid isPermaLink="true">/2011/01/25/from-test-unit-shoulda-to-minitest-spec-minishoulda</guid>
+        <link>/2011/01/25/from-test-unit-shoulda-to-minitest-spec-minishoulda/</link>
+        <guid isPermaLink="true">/2011/01/25/from-test-unit-shoulda-to-minitest-spec-minishoulda/</guid>
       </item>
     
       <item>
@@ -4144,8 +4144,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/plist&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Mon, 03 Jan 2011 00:00:00 -0500</pubDate>
-        <link>/2011/01/03/automating-heroku-pg-backups</link>
-        <guid isPermaLink="true">/2011/01/03/automating-heroku-pg-backups</guid>
+        <link>/2011/01/03/automating-heroku-pg-backups/</link>
+        <guid isPermaLink="true">/2011/01/03/automating-heroku-pg-backups/</guid>
       </item>
     
       <item>
@@ -4165,8 +4165,8 @@ $ rvm install 1.9.2 --patch ~/192-gc.patch
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Dec 2010 00:00:00 -0500</pubDate>
-        <link>/2010/12/29/pyr-pressure</link>
-        <guid isPermaLink="true">/2010/12/29/pyr-pressure</guid>
+        <link>/2010/12/29/pyr-pressure/</link>
+        <guid isPermaLink="true">/2010/12/29/pyr-pressure/</guid>
       </item>
     
       <item>
@@ -4352,8 +4352,8 @@ section#page {
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 27 Dec 2010 00:00:00 -0500</pubDate>
-        <link>/2010/12/27/let-it-go-moving-from-mephisto-to-jekyll</link>
-        <guid isPermaLink="true">/2010/12/27/let-it-go-moving-from-mephisto-to-jekyll</guid>
+        <link>/2010/12/27/let-it-go-moving-from-mephisto-to-jekyll/</link>
+        <guid isPermaLink="true">/2010/12/27/let-it-go-moving-from-mephisto-to-jekyll/</guid>
       </item>
     
       <item>
@@ -4363,8 +4363,8 @@ section#page {
 &lt;p&gt;The benefits are speed, automatic casting to ruby primitives, and proper encoding support. It converts all SQL Server datatypes to native ruby objects supporting :utc or :local time zones for time-like types. To date it is the only ruby client library that allows client encoding options, defaulting to UTF-8, while connecting to SQL Server. It also properly encodes all string and binary data. The motivation for TinyTds is to become the de-facto low level connection mode for the SQL Server adapter for ActiveRecord. For further details see the special thanks to Erik Bryn for his help, the authors/contributors of the Mysql2 gem for inspiration, and Yehuda Katz for articulating ruby&#39;s need for proper encoding support. Please read up on it here.&lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Oct 2010 00:00:00 -0400</pubDate>
-        <link>/2010/10/18/tinytds-a-modern-simple-and-fast-freetds-library-for-ruby-using-db-library</link>
-        <guid isPermaLink="true">/2010/10/18/tinytds-a-modern-simple-and-fast-freetds-library-for-ruby-using-db-library</guid>
+        <link>/2010/10/18/tinytds-a-modern-simple-and-fast-freetds-library-for-ruby-using-db-library/</link>
+        <guid isPermaLink="true">/2010/10/18/tinytds-a-modern-simple-and-fast-freetds-library-for-ruby-using-db-library/</guid>
       </item>
     
       <item>
@@ -4428,8 +4428,8 @@ section#page {
 &lt;p&gt;The upload hash actually contains much more than just the id and name of the upload. There is a timestamp, filetype and other attributes. So if you wanted to extend this script, you could. I did not spent a lot of time with it, but I never figured out how to get more than the top 5 uploads too. I&#39;m sure some param hacking would yield some good results.&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Aug 2010 00:00:00 -0400</pubDate>
-        <link>/2010/08/19/how-to-clean-a-campfire-room-of-uploads</link>
-        <guid isPermaLink="true">/2010/08/19/how-to-clean-a-campfire-room-of-uploads</guid>
+        <link>/2010/08/19/how-to-clean-a-campfire-room-of-uploads/</link>
+        <guid isPermaLink="true">/2010/08/19/how-to-clean-a-campfire-room-of-uploads/</guid>
       </item>
     
       <item>
@@ -4459,8 +4459,8 @@ section#page {
 &lt;p&gt;&lt;img src=&quot;/assets/exclude_from_timemachine.gif&quot; alt=&quot;Time Machine Exclude Window&quot; class=&quot;ms-Img ms-Img--responsive-ctr ms-Img--fancy&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Aug 2010 00:00:00 -0400</pubDate>
-        <link>/2010/08/06/protip-exclude-your-rvm-install-from-timemachine-backups</link>
-        <guid isPermaLink="true">/2010/08/06/protip-exclude-your-rvm-install-from-timemachine-backups</guid>
+        <link>/2010/08/06/protip-exclude-your-rvm-install-from-timemachine-backups/</link>
+        <guid isPermaLink="true">/2010/08/06/protip-exclude-your-rvm-install-from-timemachine-backups/</guid>
       </item>
     
       <item>
@@ -4684,8 +4684,8 @@ section#page {
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 30 Jul 2010 00:00:00 -0400</pubDate>
-        <link>/2010/07/30/the-rvm-ruby-api</link>
-        <guid isPermaLink="true">/2010/07/30/the-rvm-ruby-api</guid>
+        <link>/2010/07/30/the-rvm-ruby-api/</link>
+        <guid isPermaLink="true">/2010/07/30/the-rvm-ruby-api/</guid>
       </item>
     
       <item>
@@ -4777,8 +4777,8 @@ variant utf8 {
  STATIC_LIB =
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Mon, 19 Jul 2010 00:00:00 -0400</pubDate>
-        <link>/2010/07/19/a-macport-rubyodbc-update</link>
-        <guid isPermaLink="true">/2010/07/19/a-macport-rubyodbc-update</guid>
+        <link>/2010/07/19/a-macport-rubyodbc-update/</link>
+        <guid isPermaLink="true">/2010/07/19/a-macport-rubyodbc-update/</guid>
       </item>
     
       <item>
@@ -4839,8 +4839,8 @@ variant utf8 {
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 09 Jul 2010 00:00:00 -0400</pubDate>
-        <link>/2010/07/09/interactive-javascript-console-with-textmate</link>
-        <guid isPermaLink="true">/2010/07/09/interactive-javascript-console-with-textmate</guid>
+        <link>/2010/07/09/interactive-javascript-console-with-textmate/</link>
+        <guid isPermaLink="true">/2010/07/09/interactive-javascript-console-with-textmate/</guid>
       </item>
     
       <item>
@@ -4877,8 +4877,8 @@ variant utf8 {
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 07 Jul 2010 00:00:00 -0400</pubDate>
-        <link>/2010/07/07/bit-fat-legacy-schema-inspection</link>
-        <guid isPermaLink="true">/2010/07/07/bit-fat-legacy-schema-inspection</guid>
+        <link>/2010/07/07/bit-fat-legacy-schema-inspection/</link>
+        <guid isPermaLink="true">/2010/07/07/bit-fat-legacy-schema-inspection/</guid>
       </item>
     
       <item>
@@ -4919,8 +4919,8 @@ variant utf8 {
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 06 Jul 2010 00:00:00 -0400</pubDate>
-        <link>/2010/07/06/custom-webrat-session-formatted-error-for-rails-with-nokogiri</link>
-        <guid isPermaLink="true">/2010/07/06/custom-webrat-session-formatted-error-for-rails-with-nokogiri</guid>
+        <link>/2010/07/06/custom-webrat-session-formatted-error-for-rails-with-nokogiri/</link>
+        <guid isPermaLink="true">/2010/07/06/custom-webrat-session-formatted-error-for-rails-with-nokogiri/</guid>
       </item>
     
       <item>
@@ -4973,8 +4973,8 @@ variant utf8 {
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 May 2010 00:00:00 -0400</pubDate>
-        <link>/2010/05/26/the-alias-method-chain-of-rake-override-rake-task</link>
-        <guid isPermaLink="true">/2010/05/26/the-alias-method-chain-of-rake-override-rake-task</guid>
+        <link>/2010/05/26/the-alias-method-chain-of-rake-override-rake-task/</link>
+        <guid isPermaLink="true">/2010/05/26/the-alias-method-chain-of-rake-override-rake-task/</guid>
       </item>
     
       <item>
@@ -5040,8 +5040,8 @@ variant utf8 {
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 13 Apr 2010 00:00:00 -0400</pubDate>
-        <link>/2010/04/13/restful-ajax-with-forgery-protection-with-rails-3</link>
-        <guid isPermaLink="true">/2010/04/13/restful-ajax-with-forgery-protection-with-rails-3</guid>
+        <link>/2010/04/13/restful-ajax-with-forgery-protection-with-rails-3/</link>
+        <guid isPermaLink="true">/2010/04/13/restful-ajax-with-forgery-protection-with-rails-3/</guid>
       </item>
     
       <item>
@@ -5078,8 +5078,8 @@ variant utf8 {
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 19 Mar 2010 00:00:00 -0400</pubDate>
-        <link>/2010/03/19/textmate-theme-key-bindings-for-xcode</link>
-        <guid isPermaLink="true">/2010/03/19/textmate-theme-key-bindings-for-xcode</guid>
+        <link>/2010/03/19/textmate-theme-key-bindings-for-xcode/</link>
+        <guid isPermaLink="true">/2010/03/19/textmate-theme-key-bindings-for-xcode/</guid>
       </item>
     
       <item>
@@ -5128,8 +5128,8 @@ build
 *.tm_build_errors
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 23 Feb 2010 00:00:00 -0500</pubDate>
-        <link>/2010/02/23/git-init-xcode-projects</link>
-        <guid isPermaLink="true">/2010/02/23/git-init-xcode-projects</guid>
+        <link>/2010/02/23/git-init-xcode-projects/</link>
+        <guid isPermaLink="true">/2010/02/23/git-init-xcode-projects/</guid>
       </item>
     
       <item>
@@ -5161,8 +5161,8 @@ build
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 12 Feb 2010 00:00:00 -0500</pubDate>
-        <link>/2010/02/12/synchronizing-core-data-with-rails-3-0-0-pre</link>
-        <guid isPermaLink="true">/2010/02/12/synchronizing-core-data-with-rails-3-0-0-pre</guid>
+        <link>/2010/02/12/synchronizing-core-data-with-rails-3-0-0-pre/</link>
+        <guid isPermaLink="true">/2010/02/12/synchronizing-core-data-with-rails-3-0-0-pre/</guid>
       </item>
     
       <item>
@@ -5200,8 +5200,8 @@ build
 &lt;span class=&quot;no&quot;&gt;IRB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:PROMPT_MODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:SIMPLE&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sat, 06 Feb 2010 00:00:00 -0500</pubDate>
-        <link>/2010/02/06/simple-script-console-function</link>
-        <guid isPermaLink="true">/2010/02/06/simple-script-console-function</guid>
+        <link>/2010/02/06/simple-script-console-function/</link>
+        <guid isPermaLink="true">/2010/02/06/simple-script-console-function/</guid>
       </item>
     
       <item>
@@ -5255,8 +5255,8 @@ build
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Jan 2010 00:00:00 -0500</pubDate>
-        <link>/2010/01/29/unobtrusive-js-in-rails-3-with-prototype</link>
-        <guid isPermaLink="true">/2010/01/29/unobtrusive-js-in-rails-3-with-prototype</guid>
+        <link>/2010/01/29/unobtrusive-js-in-rails-3-with-prototype/</link>
+        <guid isPermaLink="true">/2010/01/29/unobtrusive-js-in-rails-3-with-prototype/</guid>
       </item>
     
       <item>
@@ -5420,8 +5420,8 @@ Example Container
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 25 Jan 2010 00:00:00 -0500</pubDate>
-        <link>/2010/01/25/quickie-js-prototype-wrapper-for-quicktime</link>
-        <guid isPermaLink="true">/2010/01/25/quickie-js-prototype-wrapper-for-quicktime</guid>
+        <link>/2010/01/25/quickie-js-prototype-wrapper-for-quicktime/</link>
+        <guid isPermaLink="true">/2010/01/25/quickie-js-prototype-wrapper-for-quicktime/</guid>
       </item>
     
       <item>
@@ -5455,8 +5455,8 @@ Example Container
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 05 Jan 2010 00:00:00 -0500</pubDate>
-        <link>/2010/01/05/rails-button-links-in-embedded-forms</link>
-        <guid isPermaLink="true">/2010/01/05/rails-button-links-in-embedded-forms</guid>
+        <link>/2010/01/05/rails-button-links-in-embedded-forms/</link>
+        <guid isPermaLink="true">/2010/01/05/rails-button-links-in-embedded-forms/</guid>
       </item>
     
       <item>
@@ -5578,8 +5578,8 @@ Example Container
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 23 Nov 2009 00:00:00 -0500</pubDate>
-        <link>/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip</link>
-        <guid isPermaLink="true">/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip</guid>
+        <link>/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip/</link>
+        <guid isPermaLink="true">/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip/</guid>
       </item>
     
       <item>
@@ -5673,8 +5673,8 @@ Example Container
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Nov 2009 00:00:00 -0500</pubDate>
-        <link>/2009/11/11/meta-programming-in</link>
-        <guid isPermaLink="true">/2009/11/11/meta-programming-in</guid>
+        <link>/2009/11/11/meta-programming-in/</link>
+        <guid isPermaLink="true">/2009/11/11/meta-programming-in/</guid>
       </item>
     
       <item>
@@ -5770,8 +5770,8 @@ Finished in 146.834762 seconds.
 $ sudo passenger-install-apache2-module
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 27 Oct 2009 00:00:00 -0400</pubDate>
-        <link>/2009/10/27/installing-ree-with-the-snow-leopard-sql-server-stack</link>
-        <guid isPermaLink="true">/2009/10/27/installing-ree-with-the-snow-leopard-sql-server-stack</guid>
+        <link>/2009/10/27/installing-ree-with-the-snow-leopard-sql-server-stack/</link>
+        <guid isPermaLink="true">/2009/10/27/installing-ree-with-the-snow-leopard-sql-server-stack/</guid>
       </item>
     
       <item>
@@ -5785,8 +5785,8 @@ $ sudo passenger-install-apache2-module
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Oct 2009 00:00:00 -0400</pubDate>
-        <link>/2009/10/11/the-zombie-shotgun-revisited</link>
-        <guid isPermaLink="true">/2009/10/11/the-zombie-shotgun-revisited</guid>
+        <link>/2009/10/11/the-zombie-shotgun-revisited/</link>
+        <guid isPermaLink="true">/2009/10/11/the-zombie-shotgun-revisited/</guid>
       </item>
     
       <item>
@@ -5822,8 +5822,8 @@ $ sudo passenger-install-apache2-module
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Oct 2009 00:00:00 -0400</pubDate>
-        <link>/2009/10/04/757-studio</link>
-        <guid isPermaLink="true">/2009/10/04/757-studio</guid>
+        <link>/2009/10/04/757-studio/</link>
+        <guid isPermaLink="true">/2009/10/04/757-studio/</guid>
       </item>
     
       <item>
@@ -5847,8 +5847,8 @@ $ sudo passenger-install-apache2-module
 &lt;p&gt;&lt;img src=&quot;/assets/occupational_maintenance.png&quot; alt=&quot;Prag Books&quot; class=&quot;ms-Img ms-Img--responsive-ctr&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Sep 2009 00:00:00 -0400</pubDate>
-        <link>/2009/09/21/perform-occupational-maintenance</link>
-        <guid isPermaLink="true">/2009/09/21/perform-occupational-maintenance</guid>
+        <link>/2009/09/21/perform-occupational-maintenance/</link>
+        <guid isPermaLink="true">/2009/09/21/perform-occupational-maintenance/</guid>
       </item>
     
       <item>
@@ -6137,8 +6137,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;myconf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mate /opt/local/etc/mysql5/my.cnf&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sat, 05 Sep 2009 00:00:00 -0400</pubDate>
-        <link>/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86-64-macports-ruby-1-8-1-9-sql-server-more</link>
-        <guid isPermaLink="true">/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86-64-macports-ruby-1-8-1-9-sql-server-more</guid>
+        <link>/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86-64-macports-ruby-1-8-1-9-sql-server-more/</link>
+        <guid isPermaLink="true">/2009/09/05/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86-64-macports-ruby-1-8-1-9-sql-server-more/</guid>
       </item>
     
       <item>
@@ -6242,8 +6242,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 18 Aug 2009 00:00:00 -0400</pubDate>
-        <link>/2009/08/18/visor-terminal-on-snow-leopard</link>
-        <guid isPermaLink="true">/2009/08/18/visor-terminal-on-snow-leopard</guid>
+        <link>/2009/08/18/visor-terminal-on-snow-leopard/</link>
+        <guid isPermaLink="true">/2009/08/18/visor-terminal-on-snow-leopard/</guid>
       </item>
     
       <item>
@@ -6275,8 +6275,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 18 Jul 2009 00:00:00 -0400</pubDate>
-        <link>/2009/07/18/757rb-memcached-talk</link>
-        <guid isPermaLink="true">/2009/07/18/757rb-memcached-talk</guid>
+        <link>/2009/07/18/757rb-memcached-talk/</link>
+        <guid isPermaLink="true">/2009/07/18/757rb-memcached-talk/</guid>
       </item>
     
       <item>
@@ -6308,8 +6308,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 14 May 2009 00:00:00 -0400</pubDate>
-        <link>/2009/05/14/pdf-writer-for-ruby-1-9</link>
-        <guid isPermaLink="true">/2009/05/14/pdf-writer-for-ruby-1-9</guid>
+        <link>/2009/05/14/pdf-writer-for-ruby-1-9/</link>
+        <guid isPermaLink="true">/2009/05/14/pdf-writer-for-ruby-1-9/</guid>
       </item>
     
       <item>
@@ -6340,8 +6340,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 10 Mar 2009 00:00:00 -0400</pubDate>
-        <link>/2009/03/10/learning-objective-c-iphone-development</link>
-        <guid isPermaLink="true">/2009/03/10/learning-objective-c-iphone-development</guid>
+        <link>/2009/03/10/learning-objective-c-iphone-development/</link>
+        <guid isPermaLink="true">/2009/03/10/learning-objective-c-iphone-development/</guid>
       </item>
     
       <item>
@@ -6391,8 +6391,8 @@ $ sudo gem install mysql -- --with-mysql-config=/opt/local/bin/mysql_config5
 &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;final_report&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 01 Feb 2009 00:00:00 -0500</pubDate>
-        <link>/2009/02/01/git-subversion-user-commit-reports</link>
-        <guid isPermaLink="true">/2009/02/01/git-subversion-user-commit-reports</guid>
+        <link>/2009/02/01/git-subversion-user-commit-reports/</link>
+        <guid isPermaLink="true">/2009/02/01/git-subversion-user-commit-reports/</guid>
       </item>
     
       <item>
@@ -6501,8 +6501,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Jan 2009 00:00:00 -0500</pubDate>
-        <link>/2009/01/20/multiruby-the-macports-way-testing-your-rails-apps-with-ruby-1-9</link>
-        <guid isPermaLink="true">/2009/01/20/multiruby-the-macports-way-testing-your-rails-apps-with-ruby-1-9</guid>
+        <link>/2009/01/20/multiruby-the-macports-way-testing-your-rails-apps-with-ruby-1-9/</link>
+        <guid isPermaLink="true">/2009/01/20/multiruby-the-macports-way-testing-your-rails-apps-with-ruby-1-9/</guid>
       </item>
     
       <item>
@@ -6517,8 +6517,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 30 Dec 2008 00:00:00 -0500</pubDate>
-        <link>/2008/12/30/autotestify-brothers-and-sisters</link>
-        <guid isPermaLink="true">/2008/12/30/autotestify-brothers-and-sisters</guid>
+        <link>/2008/12/30/autotestify-brothers-and-sisters/</link>
+        <guid isPermaLink="true">/2008/12/30/autotestify-brothers-and-sisters/</guid>
       </item>
     
       <item>
@@ -6532,8 +6532,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Nov 2008 00:00:00 -0500</pubDate>
-        <link>/2008/11/26/go-buy-envycasts-now</link>
-        <guid isPermaLink="true">/2008/11/26/go-buy-envycasts-now</guid>
+        <link>/2008/11/26/go-buy-envycasts-now/</link>
+        <guid isPermaLink="true">/2008/11/26/go-buy-envycasts-now/</guid>
       </item>
     
       <item>
@@ -6551,8 +6551,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 23 Nov 2008 00:00:00 -0500</pubDate>
-        <link>/2008/11/23/sql-server-adapter-for-rails-2-2</link>
-        <guid isPermaLink="true">/2008/11/23/sql-server-adapter-for-rails-2-2</guid>
+        <link>/2008/11/23/sql-server-adapter-for-rails-2-2/</link>
+        <guid isPermaLink="true">/2008/11/23/sql-server-adapter-for-rails-2-2/</guid>
       </item>
     
       <item>
@@ -6583,8 +6583,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 13 Oct 2008 00:00:00 -0400</pubDate>
-        <link>/2008/10/13/code-o-lanterns-what-scares-you</link>
-        <guid isPermaLink="true">/2008/10/13/code-o-lanterns-what-scares-you</guid>
+        <link>/2008/10/13/code-o-lanterns-what-scares-you/</link>
+        <guid isPermaLink="true">/2008/10/13/code-o-lanterns-what-scares-you/</guid>
       </item>
     
       <item>
@@ -6607,8 +6607,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 11 Oct 2008 00:00:00 -0400</pubDate>
-        <link>/2008/10/11/plug-it-in-plug-it-in</link>
-        <guid isPermaLink="true">/2008/10/11/plug-it-in-plug-it-in</guid>
+        <link>/2008/10/11/plug-it-in-plug-it-in/</link>
+        <guid isPermaLink="true">/2008/10/11/plug-it-in-plug-it-in/</guid>
       </item>
     
       <item>
@@ -6734,8 +6734,8 @@ Now Running: ruby 1.9.1 (2008-12-01 revision 20438) [i386-darwin9]
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 28 Sep 2008 00:00:00 -0400</pubDate>
-        <link>/2008/09/28/jack-has-many-things</link>
-        <guid isPermaLink="true">/2008/09/28/jack-has-many-things</guid>
+        <link>/2008/09/28/jack-has-many-things/</link>
+        <guid isPermaLink="true">/2008/09/28/jack-has-many-things/</guid>
       </item>
     
       <item>
@@ -6782,8 +6782,8 @@ loading autotest/railsplugin
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 19 Sep 2008 00:00:00 -0400</pubDate>
-        <link>/2008/09/19/using-autotest-for-rails-plugin-development</link>
-        <guid isPermaLink="true">/2008/09/19/using-autotest-for-rails-plugin-development</guid>
+        <link>/2008/09/19/using-autotest-for-rails-plugin-development/</link>
+        <guid isPermaLink="true">/2008/09/19/using-autotest-for-rails-plugin-development/</guid>
       </item>
     
       <item>
@@ -6813,8 +6813,8 @@ loading autotest/railsplugin
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 14 Sep 2008 00:00:00 -0400</pubDate>
-        <link>/2008/09/14/going-horizontal-on-the-multicade</link>
-        <guid isPermaLink="true">/2008/09/14/going-horizontal-on-the-multicade</guid>
+        <link>/2008/09/14/going-horizontal-on-the-multicade/</link>
+        <guid isPermaLink="true">/2008/09/14/going-horizontal-on-the-multicade/</guid>
       </item>
     
       <item>
@@ -6845,8 +6845,8 @@ loading autotest/railsplugin
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Aug 2008 00:00:00 -0400</pubDate>
-        <link>/2008/08/18/in-hell-oo-for-homemarks</link>
-        <guid isPermaLink="true">/2008/08/18/in-hell-oo-for-homemarks</guid>
+        <link>/2008/08/18/in-hell-oo-for-homemarks/</link>
+        <guid isPermaLink="true">/2008/08/18/in-hell-oo-for-homemarks/</guid>
       </item>
     
       <item>
@@ -6900,8 +6900,8 @@ loading autotest/railsplugin
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 06 Jul 2008 00:00:00 -0400</pubDate>
-        <link>/2008/07/06/stop-exception-notifications-with-the-zombieshotgun</link>
-        <guid isPermaLink="true">/2008/07/06/stop-exception-notifications-with-the-zombieshotgun</guid>
+        <link>/2008/07/06/stop-exception-notifications-with-the-zombieshotgun/</link>
+        <guid isPermaLink="true">/2008/07/06/stop-exception-notifications-with-the-zombieshotgun/</guid>
       </item>
     
       <item>
@@ -6961,8 +6961,8 @@ loading autotest/railsplugin
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 18 Jun 2008 00:00:00 -0400</pubDate>
-        <link>/2008/06/18/restful-ajax-with-forgery-protection</link>
-        <guid isPermaLink="true">/2008/06/18/restful-ajax-with-forgery-protection</guid>
+        <link>/2008/06/18/restful-ajax-with-forgery-protection/</link>
+        <guid isPermaLink="true">/2008/06/18/restful-ajax-with-forgery-protection/</guid>
       </item>
     
       <item>
@@ -7032,8 +7032,8 @@ loading autotest/railsplugin
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 30 May 2008 00:00:00 -0400</pubDate>
-        <link>/2008/05/30/coulda-shoulda-woulda</link>
-        <guid isPermaLink="true">/2008/05/30/coulda-shoulda-woulda</guid>
+        <link>/2008/05/30/coulda-shoulda-woulda/</link>
+        <guid isPermaLink="true">/2008/05/30/coulda-shoulda-woulda/</guid>
       </item>
     
       <item>
@@ -7333,8 +7333,8 @@ loading autotest/railsplugin
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 24 May 2008 00:00:00 -0400</pubDate>
-        <link>/2008/05/24/the-ajax-head-design-pattern</link>
-        <guid isPermaLink="true">/2008/05/24/the-ajax-head-design-pattern</guid>
+        <link>/2008/05/24/the-ajax-head-design-pattern/</link>
+        <guid isPermaLink="true">/2008/05/24/the-ajax-head-design-pattern/</guid>
       </item>
     
       <item>
@@ -7383,8 +7383,8 @@ $ mv ~/Desktop/environment.plist ~/.MacOSX
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 25 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/25/using-rubyamp-textmate-bundle-with-opt-ruby</link>
-        <guid isPermaLink="true">/2008/04/25/using-rubyamp-textmate-bundle-with-opt-ruby</guid>
+        <link>/2008/04/25/using-rubyamp-textmate-bundle-with-opt-ruby/</link>
+        <guid isPermaLink="true">/2008/04/25/using-rubyamp-textmate-bundle-with-opt-ruby/</guid>
       </item>
     
       <item>
@@ -7426,8 +7426,8 @@ Exception class: ArgumentError
 &lt;ul&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/22/how-to-use-passenger-mod-rails-with-rails-edge-2-1</link>
-        <guid isPermaLink="true">/2008/04/22/how-to-use-passenger-mod-rails-with-rails-edge-2-1</guid>
+        <link>/2008/04/22/how-to-use-passenger-mod-rails-with-rails-edge-2-1/</link>
+        <guid isPermaLink="true">/2008/04/22/how-to-use-passenger-mod-rails-with-rails-edge-2-1/</guid>
       </item>
     
       <item>
@@ -7459,8 +7459,8 @@ Exception class: ArgumentError
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 13 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/13/now-on-passenger-mod-rails</link>
-        <guid isPermaLink="true">/2008/04/13/now-on-passenger-mod-rails</guid>
+        <link>/2008/04/13/now-on-passenger-mod-rails/</link>
+        <guid isPermaLink="true">/2008/04/13/now-on-passenger-mod-rails/</guid>
       </item>
     
       <item>
@@ -7510,8 +7510,8 @@ $ mv autotest_playlist .autotest_playlist &amp;amp;&amp;amp; rm autotest_playlis
 &lt;p&gt;The idea for this came from &lt;a href=&quot;http://www.fozworks.com/2007/7/28/autotest-sound-effects/&quot;&gt;FoxWorks&lt;/a&gt;. Shouts out &quot;Thank You&quot;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/06/autotest-playlist-for-red-green-feedback</link>
-        <guid isPermaLink="true">/2008/04/06/autotest-playlist-for-red-green-feedback</guid>
+        <link>/2008/04/06/autotest-playlist-for-red-green-feedback/</link>
+        <guid isPermaLink="true">/2008/04/06/autotest-playlist-for-red-green-feedback/</guid>
       </item>
     
       <item>
@@ -7549,8 +7549,8 @@ Dunno! config/uuid.state
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 06 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/06/autotest-infinite-loop-on-failure-error</link>
-        <guid isPermaLink="true">/2008/04/06/autotest-infinite-loop-on-failure-error</guid>
+        <link>/2008/04/06/autotest-infinite-loop-on-failure-error/</link>
+        <guid isPermaLink="true">/2008/04/06/autotest-infinite-loop-on-failure-error/</guid>
       </item>
     
       <item>
@@ -7584,8 +7584,8 @@ Dunno! config/uuid.state
   &lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/03/macbook-with-4gb-of-memory</link>
-        <guid isPermaLink="true">/2008/04/03/macbook-with-4gb-of-memory</guid>
+        <link>/2008/04/03/macbook-with-4gb-of-memory/</link>
+        <guid isPermaLink="true">/2008/04/03/macbook-with-4gb-of-memory/</guid>
       </item>
     
       <item>
@@ -7633,8 +7633,8 @@ Dunno! config/uuid.state
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 03 Apr 2008 00:00:00 -0400</pubDate>
-        <link>/2008/04/03/how-to-stop-delivery-of-an-email-within-an-actionmailer-method</link>
-        <guid isPermaLink="true">/2008/04/03/how-to-stop-delivery-of-an-email-within-an-actionmailer-method</guid>
+        <link>/2008/04/03/how-to-stop-delivery-of-an-email-within-an-actionmailer-method/</link>
+        <guid isPermaLink="true">/2008/04/03/how-to-stop-delivery-of-an-email-within-an-actionmailer-method/</guid>
       </item>
     
       <item>
@@ -7724,8 +7724,8 @@ Dunno! config/uuid.state
 &lt;span class=&quot;vi&quot;&gt;@packing_slip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shipments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;total&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 26 Mar 2008 00:00:00 -0400</pubDate>
-        <link>/2008/03/26/don-t-be-a-plinko-programmer</link>
-        <guid isPermaLink="true">/2008/03/26/don-t-be-a-plinko-programmer</guid>
+        <link>/2008/03/26/don-t-be-a-plinko-programmer/</link>
+        <guid isPermaLink="true">/2008/03/26/don-t-be-a-plinko-programmer/</guid>
       </item>
     
       <item>
@@ -7824,8 +7824,8 @@ Dunno! config/uuid.state
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sat, 22 Mar 2008 00:00:00 -0400</pubDate>
-        <link>/2008/03/22/metaskills-net-reborn-on-mephisto</link>
-        <guid isPermaLink="true">/2008/03/22/metaskills-net-reborn-on-mephisto</guid>
+        <link>/2008/03/22/metaskills-net-reborn-on-mephisto/</link>
+        <guid isPermaLink="true">/2008/03/22/metaskills-net-reborn-on-mephisto/</guid>
       </item>
     
       <item>
@@ -7866,8 +7866,8 @@ Dunno! config/uuid.state
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 31 Jan 2007 00:00:00 -0500</pubDate>
-        <link>/2007/01/31/rake-task-to-read-and-write-the-activerecord-schema-version-table</link>
-        <guid isPermaLink="true">/2007/01/31/rake-task-to-read-and-write-the-activerecord-schema-version-table</guid>
+        <link>/2007/01/31/rake-task-to-read-and-write-the-activerecord-schema-version-table/</link>
+        <guid isPermaLink="true">/2007/01/31/rake-task-to-read-and-write-the-activerecord-schema-version-table/</guid>
       </item>
     
       <item>
@@ -7901,8 +7901,8 @@ Dunno! config/uuid.state
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 29 Dec 2006 00:00:00 -0500</pubDate>
-        <link>/2006/12/29/web-service-woes</link>
-        <guid isPermaLink="true">/2006/12/29/web-service-woes</guid>
+        <link>/2006/12/29/web-service-woes/</link>
+        <guid isPermaLink="true">/2006/12/29/web-service-woes/</guid>
       </item>
     
       <item>
@@ -7918,8 +7918,8 @@ Dunno! config/uuid.state
 &lt;p&gt;So it is not like &lt;a href=&quot;http://www.techcrunch.com/2006/01/25/yes-this-weeks-ajax-homepage/&quot;&gt;the world needs another AJAX homepage&lt;/a&gt;, there are plenty out there. My problem is that they seem to go to far and build to much into them, Netvibes is a great &quot;poor&quot; example. I do not want XML Feeds, Images, News Headlines, or anything else in my start page. I just want links and only about 100 or so at maximum. For me bookmarks are very transitory objects. They need to be direct links to the things that I am working on, or referencing at that exact time. Once they are not, they get throw away and I can almost certainly find them in the 1st page of a Google result if I really needed to. So this is what &lt;a href=&quot;http://www.homemarks.com/&quot;&gt;HomeMarks&lt;/a&gt; is for me, simple software, using &lt;a href=&quot;http://gettingreal.37signals.com/ch02_Build_Less.php&quot;&gt;build less principals&lt;/a&gt;. If you choose to use it, I hope you enjoy using it. Note, only for Firefox or Safari/WebKit.&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Dec 2006 00:00:00 -0500</pubDate>
-        <link>/2006/12/21/homemarks-my-first-ruby-on-rails-pet-project</link>
-        <guid isPermaLink="true">/2006/12/21/homemarks-my-first-ruby-on-rails-pet-project</guid>
+        <link>/2006/12/21/homemarks-my-first-ruby-on-rails-pet-project/</link>
+        <guid isPermaLink="true">/2006/12/21/homemarks-my-first-ruby-on-rails-pet-project/</guid>
       </item>
     
       <item>
@@ -7933,8 +7933,8 @@ Dunno! config/uuid.state
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Oct 2006 00:00:00 -0500</pubDate>
-        <link>/2006/10/31/happy-halloween-from-textmate</link>
-        <guid isPermaLink="true">/2006/10/31/happy-halloween-from-textmate</guid>
+        <link>/2006/10/31/happy-halloween-from-textmate/</link>
+        <guid isPermaLink="true">/2006/10/31/happy-halloween-from-textmate/</guid>
       </item>
     
       <item>
@@ -7972,8 +7972,8 @@ Dunno! config/uuid.state
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Mon, 02 Oct 2006 00:00:00 -0400</pubDate>
-        <link>/2006/10/02/custom-rake-task-to-unload-fixtures</link>
-        <guid isPermaLink="true">/2006/10/02/custom-rake-task-to-unload-fixtures</guid>
+        <link>/2006/10/02/custom-rake-task-to-unload-fixtures/</link>
+        <guid isPermaLink="true">/2006/10/02/custom-rake-task-to-unload-fixtures/</guid>
       </item>
     
       <item>
@@ -8126,8 +8126,8 @@ $ sudo cp /opt/local/etc/php.ini-recommended /opt/local/etc/php.ini
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;cgi.fix_pathinfo = 1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 30 Jun 2006 00:00:00 -0400</pubDate>
-        <link>/2006/06/30/flying-light-configuring-drupal-and-lighttpd</link>
-        <guid isPermaLink="true">/2006/06/30/flying-light-configuring-drupal-and-lighttpd</guid>
+        <link>/2006/06/30/flying-light-configuring-drupal-and-lighttpd/</link>
+        <guid isPermaLink="true">/2006/06/30/flying-light-configuring-drupal-and-lighttpd/</guid>
       </item>
     
       <item>
@@ -8167,8 +8167,8 @@ $ sudo cp /opt/local/etc/php.ini-recommended /opt/local/etc/php.ini
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Jun 2006 00:00:00 -0400</pubDate>
-        <link>/2006/06/13/quake-style-terminal-window-on-os-x</link>
-        <guid isPermaLink="true">/2006/06/13/quake-style-terminal-window-on-os-x</guid>
+        <link>/2006/06/13/quake-style-terminal-window-on-os-x/</link>
+        <guid isPermaLink="true">/2006/06/13/quake-style-terminal-window-on-os-x/</guid>
       </item>
     
       <item>
@@ -8216,8 +8216,8 @@ $ sudo cp /opt/local/etc/php.ini-recommended /opt/local/etc/php.ini
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 06 Jun 2006 00:00:00 -0400</pubDate>
-        <link>/2006/06/06/back-in-black</link>
-        <guid isPermaLink="true">/2006/06/06/back-in-black</guid>
+        <link>/2006/06/06/back-in-black/</link>
+        <guid isPermaLink="true">/2006/06/06/back-in-black/</guid>
       </item>
     
       <item>
@@ -8363,8 +8363,8 @@ $ sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 29 May 2006 00:00:00 -0400</pubDate>
-        <link>/2006/05/29/my-own-soup-to-nuts-recipe-for-ruby-on-rails-on-os-x</link>
-        <guid isPermaLink="true">/2006/05/29/my-own-soup-to-nuts-recipe-for-ruby-on-rails-on-os-x</guid>
+        <link>/2006/05/29/my-own-soup-to-nuts-recipe-for-ruby-on-rails-on-os-x/</link>
+        <guid isPermaLink="true">/2006/05/29/my-own-soup-to-nuts-recipe-for-ruby-on-rails-on-os-x/</guid>
       </item>
     
       <item>
@@ -8386,8 +8386,8 @@ $ sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 19 May 2006 00:00:00 -0400</pubDate>
-        <link>/2006/05/19/pragmatic-studio-alumni-member</link>
-        <guid isPermaLink="true">/2006/05/19/pragmatic-studio-alumni-member</guid>
+        <link>/2006/05/19/pragmatic-studio-alumni-member/</link>
+        <guid isPermaLink="true">/2006/05/19/pragmatic-studio-alumni-member/</guid>
       </item>
     
       <item>
@@ -8465,8 +8465,8 @@ $ sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 19 Mar 2006 00:00:00 -0500</pubDate>
-        <link>/2006/03/19/getting-on-good-terms-with-the-os-x-shell</link>
-        <guid isPermaLink="true">/2006/03/19/getting-on-good-terms-with-the-os-x-shell</guid>
+        <link>/2006/03/19/getting-on-good-terms-with-the-os-x-shell/</link>
+        <guid isPermaLink="true">/2006/03/19/getting-on-good-terms-with-the-os-x-shell/</guid>
       </item>
     
       <item>
@@ -8567,8 +8567,8 @@ $ sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 05 Mar 2006 00:00:00 -0500</pubDate>
-        <link>/2006/03/05/learn-to-program-in-ruby-and-basic-sql</link>
-        <guid isPermaLink="true">/2006/03/05/learn-to-program-in-ruby-and-basic-sql</guid>
+        <link>/2006/03/05/learn-to-program-in-ruby-and-basic-sql/</link>
+        <guid isPermaLink="true">/2006/03/05/learn-to-program-in-ruby-and-basic-sql/</guid>
       </item>
     
       <item>
@@ -8596,8 +8596,8 @@ $ sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 02 Mar 2006 00:00:00 -0500</pubDate>
-        <link>/2006/03/02/if-microsoft-designed-the-ipod-packaging</link>
-        <guid isPermaLink="true">/2006/03/02/if-microsoft-designed-the-ipod-packaging</guid>
+        <link>/2006/03/02/if-microsoft-designed-the-ipod-packaging/</link>
+        <guid isPermaLink="true">/2006/03/02/if-microsoft-designed-the-ipod-packaging/</guid>
       </item>
     
       <item>
@@ -8655,8 +8655,8 @@ find /Volumes/Your_NetworkVolume -name &lt;span class=&quot;s1&quot;&gt;&#39;._*
 find /Volumes/Your_NetworkVolume -name &lt;span class=&quot;s1&quot;&gt;&#39;._*&#39;&lt;/span&gt; -print0 | xargs -t0 rm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Fri, 24 Feb 2006 00:00:00 -0500</pubDate>
-        <link>/2006/02/24/shell-script-to-delete-all-invisible-resource-files</link>
-        <guid isPermaLink="true">/2006/02/24/shell-script-to-delete-all-invisible-resource-files</guid>
+        <link>/2006/02/24/shell-script-to-delete-all-invisible-resource-files/</link>
+        <guid isPermaLink="true">/2006/02/24/shell-script-to-delete-all-invisible-resource-files/</guid>
       </item>
     
       <item>
@@ -8786,8 +8786,8 @@ Content-Type: image/png
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 19 Feb 2006 00:00:00 -0500</pubDate>
-        <link>/2006/02/19/how-to-control-browser-caching-with-apache-2</link>
-        <guid isPermaLink="true">/2006/02/19/how-to-control-browser-caching-with-apache-2</guid>
+        <link>/2006/02/19/how-to-control-browser-caching-with-apache-2/</link>
+        <guid isPermaLink="true">/2006/02/19/how-to-control-browser-caching-with-apache-2/</guid>
       </item>
     
       <item>
@@ -8843,8 +8843,8 @@ Content-Type: image/png
 &lt;p&gt;Above is a comp I put together at CafePress.com. I even mailed it to Digg.com and asked what they thought. They kindly asked that I refrain from using their mark on resale items until their lawyers finished helping them with their copyrights and licensing agreements. Maybe I will go back to /. &lt;/p&gt;
 </description>
         <pubDate>Thu, 16 Feb 2006 00:00:00 -0500</pubDate>
-        <link>/2006/02/16/a-review-of-digg-com-traffic-and-cdns</link>
-        <guid isPermaLink="true">/2006/02/16/a-review-of-digg-com-traffic-and-cdns</guid>
+        <link>/2006/02/16/a-review-of-digg-com-traffic-and-cdns/</link>
+        <guid isPermaLink="true">/2006/02/16/a-review-of-digg-com-traffic-and-cdns/</guid>
       </item>
     
       <item>
@@ -8956,8 +8956,8 @@ Content-Type: image/png
 &lt;p&gt;That&#39;s it! If you have any questions, please let me know. Or perhaps, maybe you have some ideas on what I could work on for version two of the network?&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Feb 2006 00:00:00 -0500</pubDate>
-        <link>/2006/02/05/mini-network-with-a-big-xserve-style</link>
-        <guid isPermaLink="true">/2006/02/05/mini-network-with-a-big-xserve-style</guid>
+        <link>/2006/02/05/mini-network-with-a-big-xserve-style/</link>
+        <guid isPermaLink="true">/2006/02/05/mini-network-with-a-big-xserve-style/</guid>
       </item>
     
       <item>
@@ -8999,8 +8999,8 @@ Content-Type: image/png
 &lt;p&gt;Please feel free to browse this site and comment and ask question. If you see any problems, let me know as I will be actively supporting this them for upcoming Drupal releases. &lt;/p&gt;
 </description>
         <pubDate>Sat, 28 Jan 2006 00:00:00 -0500</pubDate>
-        <link>/2006/01/28/cooking-with-drupal</link>
-        <guid isPermaLink="true">/2006/01/28/cooking-with-drupal</guid>
+        <link>/2006/01/28/cooking-with-drupal/</link>
+        <guid isPermaLink="true">/2006/01/28/cooking-with-drupal/</guid>
       </item>
     
       <item>
@@ -9024,8 +9024,8 @@ Content-Type: image/png
 &lt;p&gt;Right here.   I&#39;ve packaged it for Mac and Windows. If your a Linux or Atari junky and want ProFont, go check out an &lt;a href=&quot;http://www.tobias-jung.de/seekingprofont/&quot; title=&quot;ProFont for Windows, for Macintosh, for Linux, and even for Atari!&quot;&gt;indepentdant maintainer&lt;/a&gt; for the font and download those verions from his website. &lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Jan 2006 00:00:00 -0500</pubDate>
-        <link>/2006/01/11/the-best-font-for-mac-programmers-profont</link>
-        <guid isPermaLink="true">/2006/01/11/the-best-font-for-mac-programmers-profont</guid>
+        <link>/2006/01/11/the-best-font-for-mac-programmers-profont/</link>
+        <guid isPermaLink="true">/2006/01/11/the-best-font-for-mac-programmers-profont/</guid>
       </item>
     
       <item>
@@ -9072,8 +9072,8 @@ Content-Type: image/png
 &lt;p&gt;Lastly, I would love to hear why some other people have moved to using TextMate or perhaps you may have an example of another editor that is the end all for geeks like us?&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Dec 2005 00:00:00 -0500</pubDate>
-        <link>/2005/12/22/textmate-by-programmers-for-efficiency-experts</link>
-        <guid isPermaLink="true">/2005/12/22/textmate-by-programmers-for-efficiency-experts</guid>
+        <link>/2005/12/22/textmate-by-programmers-for-efficiency-experts/</link>
+        <guid isPermaLink="true">/2005/12/22/textmate-by-programmers-for-efficiency-experts/</guid>
       </item>
     
       <item>
@@ -9111,8 +9111,8 @@ Subject: Cron &amp;lt;kencollins@ken-pb&amp;gt; &quot;/Applications/MySQL Admini
 &lt;p&gt; To run this script, save it to a text file like MyDB-Backup.command or .sh and make it executable. My favorite way of doing this is to use &lt;a href=&quot;http://macromates.com/&quot; title=&quot;The Best Text Editor for the Mac OS X&quot;&gt;TextMate&#39;s&lt;/a&gt; built-in UNIX Shell automation scripts, but if you do not have such a fancy text editor, simple use the Terminal and enter this command on the file &lt;code&gt;chmod +x yourfilename.sh&lt;/code&gt; Lastly, you can schedule this job to run at any interval using the system&#39;s crontab. This can be added using Webmin or by opening up the crontab, located at &lt;code&gt;/etc/crontab&lt;/code&gt; and then follow the example in the header of the file. &lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Dec 2005 00:00:00 -0500</pubDate>
-        <link>/2005/12/19/how-to-setup-a-simple-mysql-backup-script</link>
-        <guid isPermaLink="true">/2005/12/19/how-to-setup-a-simple-mysql-backup-script</guid>
+        <link>/2005/12/19/how-to-setup-a-simple-mysql-backup-script/</link>
+        <guid isPermaLink="true">/2005/12/19/how-to-setup-a-simple-mysql-backup-script/</guid>
       </item>
     
   </channel>

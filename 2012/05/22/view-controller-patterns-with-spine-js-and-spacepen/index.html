@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ken Collins" />
+  <meta name="google-site-verification" content="W3DG-CkoWHypH24OfrGmGbMezvhC6AyLql4jLI7hXhI" />
+  <meta name="description" content="The personal blog of Ken Collins aka MetaSkills" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  
+  <title>View Controller Patterns With Spine.JS &amp; SpacePen - Ken Collins @MetaSkills.net</title>
+  <link rel="author" href="mailto:ken@metaskills.net" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/site/icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/site/icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/site/icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/site/icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/site/icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/site/icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/site/icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/site/icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/site/icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/assets/site/icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/site/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/site/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/site/icon-32x32.png">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://metaskills.net/feed.xml" />
+  <meta name="apple-mobile-web-app-title" content="MetaSkills">
+  <meta name="application-name" content="MetaSkills" />
+  <meta name="msapplication-TileImage" content="/assets/site/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="052838">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+
+  <body>
+    <section class="ms-Page ">
+  <header class="ms-Page-header">
+    <section class="ms-Page-header-bg">
+      <object class="ms-Page-header-bg-svg" data="/assets/site/page-svg.svg" type="image/svg+xml"></object>
+    </section>
+    <section class="ms-Page-header-content">
+      <div class="ms-Page-header-avatar">
+<a class="ms-Avatar" href="/pages/colophon.html" title"About Ken Collins">
+  <div class="ms-Avatar-flipable">
+    <div class="ms-Avatar-front">
+      <img class="ms-Avatar-img" alt="Ken Collins" src="/assets/site/avatar.jpg">
+    </div>
+    <div class="ms-Avatar-back">
+      <svg class="ms-Avatar-aboutme" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="47px" viewBox="0 0 350 47" preserveAspectRatio="xMidYMax meet" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000, 1.000)"><path d="M161.250 4.91 L-0.014 -0.12 L17.975 44.67 L178.787 37.22 L330.559 44.67 L347.824 -0.12 L161.250 4.91 Z" fill="#E4522A"/><g stroke="#FFFBE1"><path d="M275.89 25.53 L290.71 25.53 L287.55 20.31 L321.9 20.31 "/><path d="M276.55 22.54 L291.36 22.54 L288.2 17.33 L322.56 17.33 "/></g><g stroke="#FFFBE1"><path d="M72.76 25.53 L57.94 25.53 L61.1 20.31 L26.75 20.31 "/><path d="M72.1 22.54 L57.29 22.54 L60.45 17.33 L26.09 17.33 "/></g></g><path d="M89.184 15.23 L81.776 15.23 L81.724 15.52 C83.226 16.68 83.64 17.12 83.64 18.6 L83.641 31.76 L89.184 31.76 L89.184 27.43 L90.842 27.43 C91.955 27.43 92.19 28.05 92.19 29.04 L92.189 31.76 L97.732 31.76 L97.732 27.98 C97.732 24.92 96.9 24.04 93.64 24.04 L98.327 15.23 L92.189 15.23 L89.184 24.74 L89.184 15.23 Z M113.357 25.72 L113.357 21.99 L109.109 21.99 L109.109 19.14 L115.247 19.14 L115.247 15.23 L101.701 15.23 L101.649 15.52 C103.151 16.68 103.57 17.12 103.57 18.6 L103.566 31.76 L115.507 31.76 L115.507 28.03 L109.109 28.03 L109.109 25.72 L113.357 25.72 Z M119.346 15.23 L119.294 15.52 C120.797 16.68 121.21 17.12 121.21 18.6 L121.211 31.76 L126.754 31.76 L126.754 18.83 L129.008 18.83 C129.888 18.83 130.02 19.12 130.02 20 L130.018 31.76 L135.561 31.76 L135.561 19.84 C135.561 16.48 134.68 15.23 131.05 15.23 L119.346 15.23 Z M161.112 25.88 L161.112 26.92 C161.112 28.05 160.91 28.37 160.08 28.37 L159.014 28.37 C158.160 28.37 157.95 28.05 157.95 26.92 L157.952 20.26 C157.952 19.12 158.16 18.86 159.01 18.86 L160.076 18.86 C160.905 18.86 161.11 19.12 161.11 20.26 L161.112 23 L166.707 23 L166.707 20.05 C166.707 16.43 165.8 15.23 162.43 15.23 L156.631 15.23 C153.264 15.23 152.36 16.43 152.36 20.05 L152.357 26.53 C152.357 30.72 153.89 31.76 156.92 31.76 L162.433 31.76 C165.801 31.76 166.71 30.88 166.71 27.12 L166.707 25.88 L161.112 25.88 Z M186.606 20.05 C186.606 16.43 185.7 15.23 182.33 15.23 L176.375 15.23 C173.008 15.23 172.1 16.43 172.1 20.05 L172.101 26.53 C172.101 30.72 173.63 31.76 176.66 31.76 L182.332 31.76 C185.700 31.76 186.61 30.88 186.61 27.12 L186.606 20.05 Z M181.011 26.92 C181.011 28.05 180.8 28.37 179.97 28.37 L178.758 28.37 C177.903 28.37 177.7 28.05 177.7 26.92 L177.696 20.26 C177.696 19.12 177.9 18.86 178.76 18.86 L179.975 18.86 C180.804 18.86 181.01 19.12 181.01 20.26 L181.011 26.92 Z M198.216 15.23 L190.808 15.23 L190.757 15.52 C192.259 16.68 192.67 17.12 192.67 18.6 L192.673 31.76 L203.863 31.76 L203.863 28.03 L198.216 28.03 L198.216 15.23 Z M214.230 15.23 L206.822 15.23 L206.770 15.52 C208.272 16.68 208.69 17.12 208.69 18.6 L208.687 31.76 L219.877 31.76 L219.877 28.03 L214.230 28.03 L214.230 15.23 Z M230.244 15.23 L222.836 15.23 L222.784 15.52 C224.286 16.68 224.7 17.12 224.7 18.6 L224.700 31.76 L230.244 31.76 L230.244 15.23 Z M234.653 15.23 L234.601 15.52 C236.103 16.68 236.52 17.12 236.52 18.6 L236.518 31.76 L242.061 31.76 L242.061 18.83 L244.314 18.83 C245.195 18.83 245.32 19.12 245.32 20 L245.325 31.76 L250.868 31.76 L250.868 19.84 C250.868 16.48 249.99 15.23 246.36 15.23 L234.653 15.23 Z M268.410 15.23 L258.696 15.23 C256.805 15.23 256.13 16.06 256.13 17.36 C256.132 17.88 256.37 18.55 256.7 19.07 L261.753 27.07 C261.830 27.18 261.88 27.36 261.88 27.51 C261.882 27.82 261.65 28.03 261.18 28.03 L255.743 28.03 L255.743 31.76 L266.130 31.76 C268.073 31.76 268.8 30.49 268.8 29.45 C268.798 28.75 268.49 28.21 268.18 27.74 L262.970 20.13 C262.841 19.92 262.76 19.77 262.76 19.61 C262.763 19.33 263.02 19.14 263.49 19.14 L268.410 19.14 L268.410 15.23 Z" fill="#FFFBE1"/></g></svg>
+
+    </div>
+  </div>
+</a>
+</div>
+      <ul class="ms-Page-nav">
+        <li class="ms-Page-nav-item">
+          <a class="ms-Page-nav-link" href="/">HOME</a>
+        </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/programming.html">Programming</a>
+          </li>
+        
+          
+          
+          <li class="ms-Page-nav-item">
+            <a class="ms-Page-nav-link" href="/categories/lifestyle.html">Lifestyle</a>
+          </li>
+        
+      </ul>
+      <div class="ms-Page-social"><div class="ms-Social">
+  <a href="http://twitter.com/metaskills" title="MetaSkills On Twitter">
+    <span class="ms-Social-icon ms-Social-icon--twitter"><i class="icon-twitter"></i></span>
+  </a>
+  <a href="https://github.com/metaskills/" title="MetaSkills On GitHub">
+    <span class="ms-Social-icon ms-Social-icon--github"><i class="icon-github"></i></span>
+  </a>
+  <a href="http://www.linkedin.com/in/metaskills" title="Ken Collins On LinkedIn">
+    <span class="ms-Social-icon ms-Social-icon--linkedin"><i class="icon-linkedin"></i></span>
+  </a>
+</div>
+</div>
+      <div class="ms-Page-blurb">
+        Ruby, JavaScript, Sass, iOS. Stinky Cheese &amp; Beer Advocate. Working at CustomInk and loving it!
+      </div>
+    </section>
+  </header>
+  <article class="ms-Page-article">
+    <article class="ms-Post">
+  <header class="ms-Post-header">
+    <time class="ms-Post-time" pubdate datetime="2012-05-22T00:00:00-04:00">
+      2012 May 22
+    </time>
+    <h1 class="ms-Post-header-h1">View Controller Patterns With Spine.JS &amp; SpacePen</h1>
+  </header>
+  <h2>The VC in 'MVC'</h2>
+
+<p>
+  As Addy Osmani points out in his <a href="http://speakerdeck.com/u/addyosmani/p/scaling-your-javascript-applications">Scaling Your JavaScript Applications</a> presentation, all JavaScript 'MVC' frameworks interpret MVC differently. These differences are an academic rabbit hole and if you are really interested about them, I recommend reading some of the resource links at the bottom of this post. One in particular by Jonas Nicklas really outlined how I think client side JavaScript applications should be developed. It is titled <a href="http://elabs.se/blog/33-why-serenade-js">Why Serenade.js</a> and in it, Jonas describes his reasons for yet another JavaScript MVC framework. In doing so, he outlines the responsibilities of the MVC triad as follows:
+</p>
+
+<p>
+  <strong>Views:</strong> Present data from the model and update it if it changes, notify controllers of user interaction events. <strong>Controllers:</strong> React to user interaction events by instructing the model to perform certain actions. <strong>Models:</strong> Handle business logic and persistence, notify the view of any changes to the data.
+</p>
+
+<p>
+  <!--<span class="floatr" style="margin:0 0 15px 15px; -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5); box-shadow: 5px 5px 5px rgba(0,0,0,0.5); -moz-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg);">
+    <img src="/assets/todomvc.png" alt="TodoMVC JavaScript Frameworks" width="354" height="263" />
+  </span>-->
+  Seems straight forward right? In actuality it is easy to stray from and there is a lot of wiggle room for both the MV* framework authors and their developers to re-interpret one or all of these components. The two that I think are most open for debate are the View and the Controller stacks. For example, how many <a href="http://addyosmani.github.com/todomvc/">JavaScript frameworks</a> do you know allow you to choose your own view framework? How many times have you heard too that views should be "logic-less" and how does each of these play into helping newcomers understand the proper way to code these precious views and controllers together? My answer, ask Apple!
+</p>
+
+<h2>Apple's View Controller Programming Guide</h2>
+
+<p>
+  Some might be surprised that JavaScript applications for the browser can and should be coded much like modern desktop applications. Having developed iOS applications before, many of the same MVC principals and application structure apply. Apple has tons of documentation about general application design and one of my favorites is their <a href="http://developer.apple.com/library/ios/#featuredarticles/ViewControllerPGforiPhoneOS/Introduction/Introduction.html">View Controller Programming Guide</a>. I highly recommend anyone developing MVC JavaScript applications to read this guide. I'll paraphrase a few points:
+</p>
+
+<blockquote>
+  A view controller manages a discrete portion of your app’s user interface. Often that view is the root view for a more complex hierarchy of other views. View controllers typically fall in one of two categories, either content or container. Content view controllers are great for things like lists and images. Container view controllers coordinate with other view controllers like tab view controllers or navigation controllers.
+</blockquote>
+
+<p>
+  It is also worth reading both the <a href="https://developer.apple.com/library/ios/#documentation/uikit/reference/UIViewController_Class/Reference/Reference.html">UIViewController</a> and <a href="https://developer.apple.com/library/ios/#documentation/uikit/reference/uiview_class/UIView/UIView.html">UIView</a> class references too. So what should be your major take away from reading those? The first is that every controller in your JavaScript application manages a view. That view is going to be a DOM node that will most likely have a complex hierarchy of other views possibly managed by other controllers which themselves champion a node with a specific application concern. Second is that views are themselves valid objects built by classes with their own methods. It's best to think of UIViews as an instance of a jQuery object. Views should not be dumb either. They sometimes have handles back to model objects so they can establish bindings for updates. Views can also expose an interface that canonize how controllers should work with them and most often will have helper methods that break up their complexity. All of this is a good thing. If you disagree, stop reading now!
+</p>
+
+<h2>SpacePen - Markup On The Final Frontier</h2>
+
+<p>
+  I found the <a href="https://github.com/nathansobo/space-pen">SpacePen project on github</a> a few months ago and I have never looked at another templating solution since. For the first time my JavaScript application's view and controller stacks feel natural. No longer do I find myself writing any view related code in my controllers. SpacePen allows me to write view objects that encapsulate their concerns, stay DRY and build Spine.JS web applications that hit the MVC mark. So what is SpacePen? Basically a CoffeeScript subclass of a jQuery object.
+</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">SpacePort</span> <span class="n">extends</span> <span class="no">View</span>
+
+  <span class="vi">@content</span><span class="p">:</span> <span class="o">-&gt;</span>
+    <span class="vi">@div</span> <span class="o">=&gt;</span>
+      <span class="vi">@h1</span> <span class="s2">"Space Ships"</span>
+      <span class="vi">@ol</span> <span class="o">=&gt;</span>
+        <span class="vi">@li</span> <span class="s2">"Apollo"</span>
+        <span class="vi">@li</span> <span class="s2">"Soyuz"</span>
+        <span class="vi">@li</span> <span class="s2">"Space Shuttle"</span>
+</code></pre></div><div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">view</span> <span class="o">=</span> <span class="kp">new</span> <span class="no">SpacePort</span>
+<span class="n">view</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s1">'ol'</span><span class="p">).</span><span class="nf">append</span><span class="p">(</span><span class="s1">'&lt;li&gt;Star Destroyer&lt;/li&gt;'</span><span class="p">)</span>
+
+<span class="n">view</span><span class="p">.</span><span class="nf">click</span> <span class="s1">'li'</span><span class="p">,</span> <span class="o">-&gt;</span>
+  <span class="n">alert</span> <span class="s2">"You clicked on </span><span class="si">#{</span><span class="err">$</span><span class="p">(</span><span class="n">this</span><span class="p">).</span><span class="nf">text</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span>
+</code></pre></div>
+<p>
+  This simple example shows how your SpacePen view class defines its markup in a <code>@content</code> class function. This function yields a builder syntax where you can easily add attributes and values. My advice is to do basic structure only in your <code>@content</code> function and rarely take advantage of the fact that it also takes the same parameters argument passed to your constructor. I will explain more on that advice later. But first, I did say that views should expose interfaces to controllers and are first class code citizens that champion their own concerns right? Let's look at a common pattern, views building new nodes within itself.
+</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">SpacePort</span> <span class="n">extends</span> <span class="no">View</span>
+
+  <span class="vi">@content</span><span class="p">:</span> <span class="o">-&gt;</span>
+    <span class="vi">@div</span> <span class="o">=&gt;</span>
+      <span class="vi">@h1</span> <span class="s2">"SpacePort"</span>
+      <span class="vi">@ol</span> <span class="ss">outlet: </span><span class="s1">'shipList'</span>
+
+  <span class="ss">addShip: </span><span class="p">(</span><span class="n">ship</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@shipList</span><span class="p">.</span><span class="nf">append</span> <span class="s2">"&lt;li&gt;</span><span class="si">#{</span><span class="n">ship</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2">&lt;/li&gt;"</span>
+</code></pre></div><div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">view</span> <span class="o">=</span> <span class="kp">new</span> <span class="no">SpacePort</span>
+<span class="n">view</span><span class="p">.</span><span class="nf">addShip</span> <span class="s2">"Enterprise"</span>
+</code></pre></div>
+<p>
+  The example has been changed slightly so that the view now exposes a public function called <code>addShip()</code> which takes an object to add to the view. It can easily implement this because I have declared the ordered list to be an outlet called <code>shipList</code> which will automatically be assigned as a property on each view instance. Calling append on that node is possible because like the view object itself, any outlet is a jQuery object as well.
+</p>
+
+<p>
+  Though contrived, this example illustrates a powerful technique. If the view was refactored to some other structure besides an ordered list with items, the controller interface would stay the same. Pulling the thread, it is easy to see how a complex view hierarchy could have views building and managing messages to their subviews too. This is the crux of my article, but first, lets talk about controllers.
+</p>
+
+<h2>Spine.JS Controllers</h2>
+
+<p>
+  Spine.JS is my goto JavaScript MVC framework and if you are unfamiliar with it, check out their <a href="http://spinejs.com/docs/introduction">introduction</a> or read <a href="http://destroytoday.com/blog/reasons-for-spinejs/">why others</a> have chosen to use it. The main reasons I love Spine.JS can be summed up like so. First, it is authored in CoffeeScript, which means I can read the code to learn it. Second, all model instances will reflect changes by any other instance. Lastly, the controllers are minimally implemented and nicely abstract managing a view and the way controllers respond to events that bubble up to it.
+</p>
+
+<p>
+  A Spine.JS controller always has an element associated to it which can be accessed via the <code>el</code> property. This element represents the view that controller manages. It will either be created for you or it can be assigned via the constructor. Many patterns in Spine.JS rely on appending elements to a controller and most of the functions for adding these subviews either take an element or an object that has an <code>el</code> property. This means building complex view/controller hierarchies by stacking Spine.JS controllers is both idiomatic and almost identical to how iOS view controllers work.
+</p>
+
+<h2>Using SpacePen Views With Spine.JS Controllers</h2>
+
+<p>
+  With the overview of these components out of the way, let's jump right into how they can work together to punch the VC up a notch in your next JavaScript MVC application. These examples below are pared down version of a scheduler application I just completed. The model is similar to an iCal day interface for calendar events. In such, there would be a view controller that manages the presentation of your schedule "by day". This controller's view would have a header for the current day and a set of controls for going to the previous day, today and the next day. This controller would act as a navigation controller and correlate to Apple's notion of a "container" view controller. When needed, it would find or create a day controller and append it to one of its subviews. The code for that container controller and view is out of the scope of this article, but its one of many day "content" controllers and view are perfect examples. Here we go!
+</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># In app/assets/javascripts/app/controller/day.js.coffee</span>
+
+<span class="k">class</span> <span class="nc">App</span><span class="o">.</span><span class="no">Controllers</span><span class="o">.</span><span class="no">Day</span> <span class="n">extends</span> <span class="no">Spine</span><span class="o">.</span><span class="no">Controller</span>
+
+  <span class="ss">constructor: </span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@view</span> <span class="o">=</span> <span class="kp">new</span> <span class="no">App</span><span class="o">.</span><span class="no">Views</span><span class="o">.</span><span class="no">Day</span>
+    <span class="k">super</span> <span class="ss">el: </span><span class="vi">@view</span>
+</code></pre></div><div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># In app/assets/javascripts/app/views/day.js.coffee</span>
+
+<span class="k">class</span> <span class="nc">App</span><span class="o">.</span><span class="no">Views</span><span class="o">.</span><span class="no">Day</span> <span class="n">extends</span> <span class="no">View</span>
+
+  <span class="vi">@content</span><span class="p">:</span> <span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@div</span> <span class="ss">class: </span><span class="s1">'day'</span><span class="p">,</span> <span class="o">=&gt;</span>
+      <span class="c1"># ...</span>
+
+  <span class="ss">initialize: </span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@attr</span> <span class="s1">'data-date'</span><span class="p">,</span> <span class="n">params</span><span class="p">.</span><span class="nf">moment</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="s1">'YYYY-MM-DD'</span><span class="p">)</span>
+</code></pre></div>
+<p>
+  So rule number one, always create an instance of a SpacePen view and assign that to the <code>@view</code> property of every Spine.JS controller. That <code>@view</code> will be assigned to the controller's <code>@el</code> property when it supers up.
+</p>
+
+<p>
+  Rule number two, keep the <code>@content</code> function for your views concerned with building the structure only. In my example, I set the date for the event using the <code>initialize</code> hook provided by SpacePen. This rule is important when you want to bind views to model events and update that view accordingly. All customization of the view to a model object should be done in a set/update helper of that view.
+</p>
+
+<h2>In Greater Detail</h2>
+
+<p>
+  Here is the same controller and view example with a bit more detail. First up, the view. This day view CoffeeScript file has a public <code>App.Views.Day</code> view and a private <code>EventView</code> that represents a subview and would be bound to a model instance. This public day view exposes a few public functions for a controller to hook into. The <code>addEvent</code> function will actually build a new SpacePen views for the passed model and append it as a subview. Notice too the <code>findEvent</code> helper function which can find the DOM element for a model object and then use the <code>view()</code> function provided by SpacePen to get to the SpacePen instance for this node.
+</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">App</span><span class="o">.</span><span class="no">Views</span><span class="o">.</span><span class="no">Day</span> <span class="n">extends</span> <span class="no">View</span>
+
+  <span class="vi">@content</span><span class="p">:</span> <span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@div</span> <span class="ss">class: </span><span class="s1">'day'</span><span class="p">,</span> <span class="o">=&gt;</span>
+      <span class="c1"># ...</span>
+      <span class="vi">@div</span> <span class="ss">outlet: </span><span class="s1">'events'</span><span class="p">,</span> <span class="ss">class: </span><span class="s1">'events'</span>
+      <span class="c1"># ...</span>
+
+  <span class="ss">initialize: </span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@date</span> <span class="o">=</span> <span class="n">params</span><span class="p">.</span><span class="nf">moment</span><span class="p">.</span><span class="nf">clone</span><span class="p">()</span>
+    <span class="vi">@attr</span> <span class="s1">'data-date'</span><span class="p">,</span> <span class="vi">@date</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="s1">'YYYY-MM-DD'</span><span class="p">)</span>
+
+  <span class="ss">addEvent: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="n">view</span> <span class="o">=</span> <span class="kp">new</span> <span class="no">EventView</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+    <span class="vi">@events</span><span class="p">.</span><span class="nf">append</span>
+
+  <span class="ss">updateEvent: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@findEvent</span><span class="p">(</span><span class="n">event</span><span class="p">)?.</span><span class="nf">update</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+
+  <span class="ss">removeEvent: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@findEvent</span><span class="p">(</span><span class="n">event</span><span class="p">)?.</span><span class="nf">remove</span><span class="p">()</span>
+
+  <span class="c1"># Private</span>
+
+  <span class="ss">findEvent: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="n">selector</span> <span class="o">=</span> <span class="s2">".event[data-event-id='</span><span class="si">#{</span><span class="n">event</span><span class="p">.</span><span class="nf">startsAtFormat</span><span class="p">()</span><span class="si">}</span><span class="s2">']"</span>
+    <span class="vi">@events</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">selector</span><span class="p">).</span><span class="nf">view</span><span class="p">()</span>
+
+  <span class="ss">afterAttach: </span><span class="o">-&gt;</span>
+    <span class="vi">@startSpinner</span><span class="p">()</span>
+    <span class="vi">@loadEvents</span><span class="p">()</span>
+
+  <span class="c1"># ...</span>
+
+<span class="k">class</span> <span class="nc">EventView</span> <span class="n">extends</span> <span class="no">View</span>
+
+  <span class="vi">@content</span><span class="p">:</span> <span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@div</span> <span class="ss">class: </span><span class="s1">'.event'</span><span class="p">,</span> <span class="s1">'data-event-id'</span><span class="p">:</span> <span class="n">event</span><span class="p">.</span><span class="nf">id</span> <span class="o">=&gt;</span>
+      <span class="vi">@div</span> <span class="ss">outlet: </span><span class="s1">'description'</span>
+      <span class="vi">@div</span> <span class="ss">outlet: </span><span class="s1">'duration'</span>
+
+  <span class="ss">initialize: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@update</span> <span class="n">event</span>
+
+  <span class="ss">update: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@attr</span> <span class="s1">'data-starts-at'</span><span class="p">,</span> <span class="n">event</span><span class="p">.</span><span class="nf">startsAtFormat</span><span class="p">()</span>
+    <span class="vi">@description</span><span class="p">.</span><span class="nf">text</span> <span class="n">event</span><span class="p">.</span><span class="nf">description</span>
+    <span class="vi">@duration</span><span class="p">.</span><span class="nf">text</span> <span class="n">event</span><span class="p">.</span><span class="nf">duration</span>
+</code></pre></div>
+<p>
+  Next up, the expanded day controller example that manages the view above. In this example we bind to two of the the Spine.JS <code>CalendarEvent</code> model events. One for update and one for destroy. These events are then pushed down to the view and will do any work necessary. Just in case this controller is ever discarded for performance reasons, we hook into the <code>release()</code> function provided by Spine.JS controllers to remove the event listeners.
+</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">App</span><span class="o">.</span><span class="no">Controllers</span><span class="o">.</span><span class="no">Day</span> <span class="n">extends</span> <span class="no">Spine</span><span class="o">.</span><span class="no">Controller</span>
+
+  <span class="vi">@events</span><span class="p">:</span>
+    <span class="s1">'click .event'</span><span class="p">:</span> <span class="s1">'selectEvent'</span>
+
+  <span class="ss">constructor: </span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@date</span> <span class="o">=</span> <span class="n">params</span><span class="p">.</span><span class="nf">moment</span>
+    <span class="vi">@view</span> <span class="o">=</span> <span class="kp">new</span> <span class="no">App</span><span class="o">.</span><span class="no">Views</span><span class="o">.</span><span class="no">Day</span> <span class="ss">moment: </span><span class="vi">@date</span>
+    <span class="k">super</span> <span class="ss">el: </span><span class="vi">@view</span>
+    <span class="no">CalendarEvent</span><span class="p">.</span><span class="nf">bind</span> <span class="s1">'update'</span><span class="p">,</span> <span class="vi">@updateEvent</span>
+    <span class="no">CalendarEvent</span><span class="p">.</span><span class="nf">bind</span> <span class="s1">'beforeDestroy'</span><span class="p">,</span> <span class="vi">@destroyEvent</span>
+
+  <span class="ss">release:
+    </span><span class="no">CalendarEvent</span><span class="p">.</span><span class="nf">unbind</span> <span class="s1">'update'</span><span class="p">,</span> <span class="vi">@updateEvent</span>
+    <span class="no">CalendarEvent</span><span class="p">.</span><span class="nf">unbind</span> <span class="s1">'beforeDestroy'</span><span class="p">,</span> <span class="vi">@removeEvent</span>
+    <span class="k">super</span>
+
+  <span class="c1"># Private</span>
+
+  <span class="ss">selectEvent: </span><span class="o">-&gt;</span>
+    <span class="c1"># ...</span>
+
+  <span class="ss">updateEvent: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@view</span><span class="p">.</span><span class="nf">updateEvent</span> <span class="n">event</span>
+    <span class="c1"># ...</span>
+
+  <span class="ss">removeEvent: </span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="vi">@view</span><span class="p">.</span><span class="nf">removeEvent</span> <span class="n">event</span>
+    <span class="c1"># ...</span>
+</code></pre></div>
+<p>
+  Hope you found this mini introduction to SpacePen and Spine.JS controllers useful. There is literally tons of ways you can use these tools together to make your controllers and views fun to build and maintainable. Be excellent and let me know what works for you!
+</p>
+
+<h2>Resources</h2>
+
+<ul>
+  <li><a href="http://elabs.se/blog/33-why-serenade-js">Why Serenade.js</a></li>
+  <li><a href="http://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers/">Understanding MVVM - A Guide For JavaScript Developers</a></li>
+  <li><a href="http://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/">Understanding MVC And MVP (For JavaScript And Backbone Developers)</a></li>
+  <li><a href="http://developer.apple.com/library/ios/#featuredarticles/ViewControllerPGforiPhoneOS/Introduction/Introduction.html">View Controller Programming Guide for iOS</a></li>
+  <li><a href="https://github.com/nathansobo/space-pen">SpacePen - Markup On The Final Frontier</a></li>
+  <li><a href="http://spinejs.com/docs/introduction">An Introduction To Spine.JS</a></li>
+  <li><a href="http://destroytoday.com/blog/reasons-for-spinejs/">10 Reasons Why I Switched To Spine.JS</a></li>
+  <li><a href="/2012/01/15/rails-and-spine-js-using-the-coffeescript-source/">Rails &amp; Spine.JS - Using The CoffeeScript Source</a></li>
+</ul>
+
+  <footer class="ms-Post-footer">
+    
+
+<section id="disqus_thread">
+</section>
+<script type="text/javascript">
+  var disqus_shortname = 'metaskillsnet';
+  var disqus_identifier = '/2012/05/22/view-controller-patterns-with-spine-js-and-spacepen/';
+  var disqus_title = "View Controller Patterns With Spine.JS &amp; SpacePen";
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  </footer>
+</article>
+
+    
+    <footer class="ms-Footer">
+  <p>
+    &copy; 2006-2015 Ken Collins. All rights reserved.<br/>
+    MetaSkills.net is powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://disqus.com">Disqus</a>.
+  </p>
+</footer>
+
+  </article>
+</section>
+
+    <script src="/assets/site.js"></script>
+  </body>
+</html>
