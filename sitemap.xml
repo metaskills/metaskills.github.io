@@ -732,10 +732,16 @@
     <loc>/categories/lifestyle/</loc>
   </url>
   <url>
+    <loc>/lifestyle.html</loc>
+  </url>
+  <url>
     <loc>/categories/miscellaneous.html</loc>
   </url>
   <url>
     <loc>/categories/programming/</loc>
+  </url>
+  <url>
+    <loc>/programming.html</loc>
   </url>
   <url>
     <loc>/pages/resume/</loc>
