@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/metaskills
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://metaskills.net
+  * I am metaskills (https://keybase.io/metaskills) on keybase.
+  * I have a public key with fingerprint DFA0 1D4E E9DF FB79 1A09  E068 7373 5FA2 8923 044A
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01014019a88129b5ec84bf9755feb5cdd0f8d6146ac2adce551b9033418ce458f8540a",
+            "fingerprint": "dfa01d4ee9dffb791a09e06873735fa28923044a",
+            "host": "keybase.io",
+            "key_id": "73735fa28923044a",
+            "kid": "01014019a88129b5ec84bf9755feb5cdd0f8d6146ac2adce551b9033418ce458f8540a",
+            "uid": "b946ca771e519498c192fd368db26800",
+            "username": "metaskills"
+        },
+        "service": {
+            "hostname": "metaskills.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1459902349,
+    "expire_in": 157680000,
+    "prev": "b75da08094a4c29c938534bd70ca721666b3bd2f9f2cb0526e560cdc62084a09",
+    "seqno": 19,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbSBVBGD6mlhpFEGVlD7WYFanM7s7szkgZJoEVZlEk2uWwuzN73I7u
+nnZX7RSHhC5YWUicIlJIjC4o3aOiq1m9dCqoCCMIKULoYCEV4kO3XamneuxpmH++
+7/u/75//wYTUQFbKqtxq+ePlptUpiXvt9YHKtMoD2znVolGuaDsXZqMHq6XMcYNh
+g3JFHOABDwFPFIx5gaiIaRiqOpER0pmKNEqBjqnEQ0nRBIVqDCFeJUAUIY81BhHW
+MYJA4fI53TBDzI7Yhul6slRXAE8hY4TquioTXgGEAQnLoiwiXREwEUQAoU+ssRyf
+4ZlTFYcVGpZX8y7BUXv/wP9n3/WjciqBkqbIMs8QTyDBGk8EnYoSpqogYQB8oMNs
+U6ljHrqOuYoTNmprHS6Wz3n1BkNj/mj9LH9hCk3mevyIbbmWZtV6bzWuG3GKfK4b
+jfjgRqYGf8sEVcOk3iw9RgOzHcMyuSLeQ2qu4evyEBECBBGSfI5tjRg2Cxo+Asm+
+TQD8PqzBTyQjqgAMCFSgJhCNiBiJUKUy8HIKvCRJqqhSQSe6oKkACRJDEtCoJgkA
+Q++3OD/YFtPytL1WrhLyNB0jZCpuvc24WG/PhrRASlZgbPoYf8kCWZmT/qxefntG
+oEWPj4/m3OtMzKt6GJ79vWxhd8HNvo0lyYGKT/Nz2mH1vhMrXj051n9269CjZduO
+BF8ntlWtwSVrd+6+nt36bMXh+yndOFrcdGHlcMm18m87zMbzeS/K3815/7XiVLRp
+MNEUvlod7pNu7e8vuX1leLk143i8+PRL69zdWGe8pefKwWTqeS53ZG4ELmi92pNZ
+nGw7PX7V7FnjNk99LGcfKjyzdFPBW2Phh2T6jmktjYUXuVhqKPukuG7909KJbTN3
+dWxITjuXcSItXtOchzqmxN4075n+rWXk6HC63TX3xtrnixc9j4/84KvLur60LbnU
+lqzoFe/s/Tz4szRnYGhyXWmB3QlS9/wCj7Q+aA==
+=HLsL
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/metaskills
+
+==================================================================
