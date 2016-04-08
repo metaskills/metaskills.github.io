@@ -3037,11 +3037,7 @@ $ git submodule add git://github.com/maccman/spine.git vendor/assets/javascripts
     
       <item>
         <title>How Do You Encapsulate Your JavaScript</title>
-        <description>&lt;aside class=&quot;ms-Flash&quot;&gt;
-  This page has been translated into &lt;a href=&quot;http://www.webhostinghub.com/support/es/misc/encapsular-javascript&quot;&gt;Spanish&lt;/a&gt; language by Maria Ramos from &lt;a href=&quot;http://www.webhostinghub.com/&quot;&gt;Webhostinghub.com&lt;/a&gt;.
-&lt;/aside&gt;
-
-&lt;p&gt;
+        <description>&lt;p&gt;
   I ask this question a lot! To Job candidates, friends, and almost any developer that says they work with JavaScript. I believe how you encapsulate your JavaScript is a good indicator on your level of expertise with the language. I find that most beginners have come to JavaScript via jQuery and often define their functions at the top level namespace in some application.js file. These functions are loosely organized and often have no way of sharing simple object state and behavior. A good object oriented programmer would never write their application code like that. JavaScript should be no different and I think jQuery has a part in the blame of those not knowing this.
 &lt;/p&gt;
 
