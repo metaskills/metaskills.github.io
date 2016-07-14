@@ -7,6 +7,77 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Types of Pain</title>
+        <description>&lt;p&gt;Just sharing some pains for the first commit(s) to the SQL Server Rails v5 support effort. These are very raw findings I captured while working. The idea is to share the pains/gains in making a 3rd party adapter for Rails 5. Goals include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Have fun with ActiveRecord v5.&lt;/li&gt;
+&lt;li&gt;Learn where things are hard for us because we may be doing it wrong!&lt;/li&gt;
+&lt;li&gt;Learn where things are hard for 3rd party adapters in general.&lt;/li&gt;
+&lt;li&gt;Make contributions to Rails when it makes sense.&lt;/li&gt;
+&lt;li&gt;Share how the SQL Server adapter is different.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The title of this post is for humor only. The internals of Rails&amp;#39; ActiveRecord have moved forward with leaps and bounds. The ones most interesting for me &amp;amp; the adapter are the new type system. I wrote a little about Sean Griffin&amp;#39;s excellent work in a post called &lt;a href=&quot;http://technology.customink.com/blog/2015/01/06/activerecord-42s-type-casting/&quot;&gt;ActiveRecord 4.2&amp;#39;s Type Casting&lt;/a&gt; last year. This year, I was totally expecting Sean to deliver on his promises to decouple types and quoting to help make ActiveRecord better.&lt;/p&gt;
+
+&lt;h2 id=&quot;forward-our-prepared-statement-methodology&quot;&gt;Forward: Our Prepared Statement Methodology&lt;/h2&gt;
+
+&lt;p&gt;Is completely different than most other adapters whereby we use the &lt;code&gt;sp_executesql&lt;/code&gt; stored procedure to cache frequently used query plans at the database itself. See this &lt;a href=&quot;https://blog.engineyard.com/2011/sql-server-10xs-faster-with-rails-3-1&quot;&gt;2011 Engine Yard Blog&lt;/a&gt; which talks about this methodology.&lt;/p&gt;
+
+&lt;h2 id=&quot;schema-reflection&quot;&gt;Schema Reflection&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;SchemaStatements#columns&lt;/code&gt; is the first thing that usually breaks when we upgrade for major Rails releases. Like many other low level adapter parts, when it breaks... NOTHING works till you get it fixed. I had a particularly fun time with the changes needed this time around.&lt;/p&gt;
+
+&lt;p&gt;Our lowest level method to look up all things schema related is our &lt;code&gt;column_definitions&lt;/code&gt; method. The SQL here is responsible for joining many info schema tables to give us everything we need to know for the current database as well as other schemas. Even though there are caches in ActiveRecord just for schema reflection, we found this SQL has to be fast. Hence we create our own binds to leverage &lt;code&gt;sp_executesql&lt;/code&gt;&amp;#39;s statement cache abilities.&lt;/p&gt;
+
+&lt;p&gt;Previously we created binds by making a new column object using the &lt;code&gt;INFORMATION_SCHEMA.COLUMNS.TABLE_NAME&lt;/code&gt; of type &lt;code&gt;nvarchar(128)&lt;/code&gt; with whatever table name value requested by ActiveRecord. Optionally we did the same with the &lt;code&gt;TABLE_SCHEMA&lt;/code&gt; if a table name identifier was fully qualified. This kept our DB reflection fast. However, binds no longer contain column information. This is what I found in the &lt;code&gt;ActiveRecord::Relation&lt;/code&gt; class where binds and substitutions are made:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;QueryAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;type_for_attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In some ActiveRecord tests, we see the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;QueryAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;type_for_attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It was now apparent to me how ActiveRecord broke columns out of the type/cast/quote layer by using columns further up the stack. The &lt;code&gt;Relation::QueryAttribute&lt;/code&gt; is actually a subclass of &lt;code&gt;ActiveRecord::Attribute&lt;/code&gt;. My solution to fix schema reflection was to manually create some query attributes for our binds.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;nv128&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SQLServer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;UnicodeVarchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;limit: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;binds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;QueryAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;TABLE_NAME&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;identifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nv128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;binds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;QueryAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;TABLE_SCHEMA&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;identifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nv128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;identifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;blank?&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sp_executesql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;SCHEMA&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we were able to reflect on the database again. However, because we need to know the SQL Server data type for our binds to work with &lt;code&gt;sp_executesql&lt;/code&gt;, we have extended our types to respond to a &lt;code&gt;sqlserver_type&lt;/code&gt; similar to the simplified type. This way, we can ask our binds for &lt;code&gt;type.sqlserver_type&lt;/code&gt; and get the tidy type arguments needed for &lt;code&gt;sp_executesql&lt;/code&gt;. That was a lot of type&amp;#39;in 😀&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ActiveRecord&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ConnectionAdapters&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;SQLServer&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Type&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Sql&lt;/span&gt;
+
+          &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sqlserver_type&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ActiveModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SQLServer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Sql&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;updating-our-types&quot;&gt;Updating Our Types&lt;/h2&gt;
+
+&lt;p&gt;This is where things get hard for us. Unlike other databases, quoting a Ruby type for the database is often dependent on the SQL Server data type of a specific column. For example, a string might be easy for MySQL. But for SQL Server, only non-national (single byte) strings/types can be quoted with single quotes. For multi-byte strings of database type &lt;code&gt;nchar&lt;/code&gt;, &lt;code&gt;nvarchar&lt;/code&gt;, &lt;code&gt;ntext&lt;/code&gt;, and &lt;code&gt;nvarchar(max)&lt;/code&gt; – we have to quote using the &lt;code&gt;N&amp;#39;string&amp;#39;&lt;/code&gt; &amp;quot;national&amp;quot; prefix. Fun! More interesting are supporting our date and time types. Many of which have different fractional precision and quoting is important to each.&lt;/p&gt;
+
+&lt;p&gt;ActiveRecord&amp;#39;s types have been moved to ActiveModel and each needs their own &lt;code&gt;serialize(value)&lt;/code&gt; implementation vs the old &lt;code&gt;type_cast_for_database(value)&lt;/code&gt; which now resides at the connection and a type caster map object. We easily updated our type objects to use the serialize method. But I have yet to dig down to see how many types I will have to couple to quoting as the project moves forward.&lt;/p&gt;
+
+&lt;p&gt;At first glance, our column objects are getting smaller and the type objects are getting fatter.&lt;/p&gt;
+
+&lt;h2 id=&quot;during-inserts&quot;&gt;During Inserts&lt;/h2&gt;
+
+&lt;p&gt;Our &lt;code&gt;exec_insert&lt;/code&gt; relied on knowing two critical things. First, if a identity column is being inserted. Second, the target table name of that insert so that we enable identity inserts (table scope) for the duration of that insert statement. Since binds no longer have column information, we are going to have to start trusting the &lt;code&gt;pk&lt;/code&gt; parameter signaling that an ID has been set. We were somewhat doing this anyway in our &lt;code&gt;sql_for_insert&lt;/code&gt; method. Also, once again, we need to pick up the pattern of using regular expressions on the &lt;code&gt;sql&lt;/code&gt; value to pull the table name out. It appears the PostgreSQL adapter does this as well. It will be interesting to see if this slows us down or not.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Jul 2016 00:00:00 -0400</pubDate>
+        <link>/2016/07/14/types-of-pain/</link>
+        <guid isPermaLink="true">/2016/07/14/types-of-pain/</guid>
+      </item>
+    
+      <item>
         <title>Microsoft&#39;s First Open Source DataCamp</title>
         <description>&lt;p&gt;Rarely do the words &amp;quot;open source&amp;quot; come to mind when the Microsoft Corporation is mentioned. As the maintainer of the SQL Server stack for both Ruby &amp;amp; Rails, and a long time Apple/UNIX fan, I have been engineering solutions to make working with SQL Server as easy as possible. Often times the work has required outside in hacks to a closed &amp;amp; proprietary set of technologies. That changed last week.&lt;/p&gt;
 
